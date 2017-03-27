@@ -1,5 +1,9 @@
 # Node.js, TC-39 и Modules
+--
 ## Перевод статьи [James M Snell](https://twitter.com/jasnell). [Node.js, TC-39, and Modules](https://hackernoon.com/node-js-tc-39-and-modules-a1118aecf95e#.j9ikfnvkr)
+--
+### [Статья на Medium](https://medium.com/devschacht/node-js-tc-39-and-modules-3813d2f37370)
+
 
 На этой неделе я первый раз участвовал во встрече TC-39. Для тех, кто не знает, TC-39  это комитет, определяющий развитие языка ECMAScript (или «JavaScript», более известное в широких кругах название). На встречах различные нюансы и детали языка JavaScript утверждаются (часто болезненно) и прорабатываются так, чтобы гарантировать, что язык программирования JavaScript продолжает развиваться и удовлетворять потребности разработчиков.
 
