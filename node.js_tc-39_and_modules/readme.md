@@ -1,7 +1,5 @@
 # Node.js, TC-39 и Modules
---
 ## Перевод статьи [James M Snell](https://twitter.com/jasnell). [Node.js, TC-39, and Modules](https://hackernoon.com/node-js-tc-39-and-modules-a1118aecf95e#.j9ikfnvkr)
---
 ### [Статья на Medium](https://medium.com/devschacht/node-js-tc-39-and-modules-3813d2f37370)
 
 
