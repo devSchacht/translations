@@ -2,7 +2,7 @@
 
 ## Перевод статьи [Kim Maida](https://twitter.com/KimMaida). [Glossary of Modern JavaScript Concepts: Part 1](https://auth0.com/blog/glossary-of-modern-javascript-concepts/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
 
-### [Статья на Medium](https://medium.com/devschacht/devschacht-cbf560417311)
+### [Статья на Medium](https://medium.com/devschacht/glossary-of-modern-javascript-concepts-1198b24e8f56)
 
 ## Основы функционального программирования, реактивного программирования и функционального реактивного программирования на JavaScript.
 
