@@ -325,7 +325,7 @@ atLunchToday(); // "Hi!"
 * [Функции как объекты первого класса в JavaScript](http://helephant.com/2008/08/19/functions-are-first-class-objects-in-javascript/)
 * [Функции высшего порядка в JavaScript](https://www.sitepoint.com/higher-order-functions-javascript/)
 * [Функции высшего порядка. Часть 1 Функционального программирования в JavaScript](https://www.youtube.com/watch?v=BMUiFMZr7vk)
-* [Eloquent JavaScript - Функции высшего порядка](https://github.com/karmazzin/eloquentjavascript_ru/blob/master/chapters/chapter5.md)
+* [Выразительный JavaScript - Функции высшего порядка](https://github.com/karmazzin/eloquentjavascript_ru/blob/master/chapters/chapter5.md)
 * [Функции высшего порядка](https://medium.com/functional-javascript/higher-order-functions-78084829fff4#.dwg58papp)
 
 ### Функциональное программирование
