@@ -20,7 +20,7 @@ function listen(element, eventName) {
 
         // Возвращаем функцию очистки, которая будет отменять поток событий
         return () => {
-            // Открепляем подписчика от элемента
+            // Удаляем подписку с элемента
             element.removeEventListener(eventName, handler, true);
         };
     });
