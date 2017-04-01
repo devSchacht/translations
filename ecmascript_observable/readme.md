@@ -1,6 +1,8 @@
 # ECMAScript Observable
 *Перевод [предложения](https://github.com/tc39/proposal-observable/blob/master/README.md) [Марка Беннета](https://github.com/MarkBennett) на рассмотрение типа Observable в стандартную библиотеку ECMAScript. Актуален по состоянию на 31.03.2017.*
 
+### [Предложение на Medium](https://medium.com/devschacht/ecmascript-observable-1f29d5c5e95c)
+
 Предложение вводит тип **Observable** в стандартную библиотеку ECMAScript. Тип **Observable** может использоваться для обработки источников данных, основанных на внешнем воздействии (*push*), таких как события DOM, интервалы таймера и сокеты. Кроме того, observables являются:
 
 - *Композициями*: Observables могут быть объединены с комбинаторами высшего порядка.
