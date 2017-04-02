@@ -88,7 +88,40 @@ React.createElement('ul', { className: 'list' },
 </ul>
 ```
 
-Так мы заставим Babel заменить `React.createElement` на наш `h`.
+Хорошо, на самом деле сообщает babel'ю - "эй, скомпилируй этот jsx но вместо React.createElement, подставь h. Вы можете подставить все, что угодно вместо h здесь. И это будет скомпилированно.
+
+Итак, подводя итоги того, что я сказал раньше, мы будем писать наш дом таким образом:
+```html
+/** @jsx h */
+const a = (
+  <ul className=”list”>
+    <li>item 1</li>
+    <li>item 2</li>
+  </ul>
+);
+```
+И это будест скомпилированно babel'ем в такой код:
+```js
+const a = (
+  h(‘ul’, { className: ‘list’ },
+    h(‘li’, {}, ‘item 1’),
+    h(‘li’, {}, ‘item 2’),
+  );
+);
+```
+
+When function `h` executes, it will return plain JS objects — our Virtual DOM representation:
+Выполнение функции h вернет обычный JS объект - наше представление виртуального дома.
+
+```js
+const a = (
+  { type: ‘ul’, props: { className: ‘list’ }, children: [
+    { type: ‘li’, props: {}, children: [‘item 1’] },
+    { type: ‘li’, props: {}, children: [‘item 2’] }
+  ] }
+);
+```
+Попробуйте сами на [JSFiddle](https://jsfiddle.net/deathmood/5qyLubt4/?utm_source=website&utm_medium=embed&utm_campaign=5qyLubt4) (Не забуте указать Babel в качестве языка)
 
 ## Применение нашего DOM дерева
 
