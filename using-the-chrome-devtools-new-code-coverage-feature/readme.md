@@ -1,4 +1,4 @@
-# Использование code coverage – нового инструмента Chrome devtools.
+# Использование code coverage – нового инструмента Chrome DevTools.
 
 *Перевод заметки [Ben Edelstein](https://blog.logrocket.com/@edelstein): [Using the Chrome devtools new code coverage feature](https://blog.logrocket.com/using-the-chrome-devtools-new-code-coverage-feature-ca96c3dddcaf)*
 
