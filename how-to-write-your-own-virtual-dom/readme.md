@@ -171,7 +171,7 @@ function createElement(node) {
 
 Вау, выглядит отлично. Давайте пока оставим в стороне **props** ноды. Мы поговорим о них позже. Они не нужны нам для базового понимания концепций виртуального DOM и только добавят сложности.
 
-Давайте пойдем дальше и попробую это в [JSFiddle](https://jsfiddle.net/deathmood/cL0Lc7au/?utm_source=website&utm_medium=embed&utm_campaign=cL0Lc7au).
+Давайте пойдем дальше и попробуем это в [JSFiddle](https://jsfiddle.net/deathmood/cL0Lc7au/?utm_source=website&utm_medium=embed&utm_campaign=cL0Lc7au).
 
 ## Обработка изменений
 Хорошо, теперь мы можем превратить наш виртуальный DOM в настоящий DOM, пора подумать про сравнение наших виртуальных деревьев.
