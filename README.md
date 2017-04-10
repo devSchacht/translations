@@ -8,4 +8,4 @@
 6. [Современный JavaScript для древних веб-разработчиков](https://github.com/devSchacht/translations/tree/master/gina-trapani-modern-javascript-for-ancient-web-developers)
 7. [Как написать ваш собственный виртуальный DOM](https://github.com/devSchacht/translations/tree/master/how-to-write-your-own-virtual-dom)
 8. [Использование code coverage – нового инструмента Chrome DevTools](https://github.com/devSchacht/translations/blob/master/using-the-chrome-devtools-new-code-coverage-feature/readme.md)
-9. [Использование Observables в реальной жизни](https://github.com/devSchacht/translations/blob/master/nicolas-carlo-using-observables-in-real-life/readme.md)
+9. [Использование Observables в реальной жизни](https://github.com/devSchacht/translations/tree/master/nicolas-carlo-using-observables-in-real-life)
