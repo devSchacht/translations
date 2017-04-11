@@ -9,4 +9,5 @@
 7. [Как написать ваш собственный виртуальный DOM](https://github.com/devSchacht/translations/tree/master/how-to-write-your-own-virtual-dom)
 8. [Использование code coverage – нового инструмента Chrome DevTools](https://github.com/devSchacht/translations/blob/master/using-the-chrome-devtools-new-code-coverage-feature/readme.md)
 9. [Использование Observables в реальной жизни](https://github.com/devSchacht/translations/tree/master/nicolas-carlo-using-observables-in-real-life)
-11. [Cпецификация волшебного мира 1: Daggy](https://medium.com/devschacht/cпецификация-волшебного-мира-1-daggy-ef332ae68dd8)
+10. [V8: за кулисами (Мартовское издание. Запуск I+TF и декларативный JavaScript)](https://github.com/devSchacht/translations/tree/master/benedikt_meurer_v8_behind_the_scenes_march_edition)
+11. [Cпецификация волшебного мира 1: Daggy](https://github.com/devSchacht/translations/tree/master/tom-harding-fantas-eel-and-specification-1-daggy)
