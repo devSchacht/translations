@@ -9,3 +9,4 @@
 7. [Как написать ваш собственный виртуальный DOM](https://github.com/devSchacht/translations/tree/master/how-to-write-your-own-virtual-dom)
 8. [Использование code coverage – нового инструмента Chrome DevTools](https://github.com/devSchacht/translations/blob/master/using-the-chrome-devtools-new-code-coverage-feature/readme.md)
 9. [Использование Observables в реальной жизни](https://github.com/devSchacht/translations/tree/master/nicolas-carlo-using-observables-in-real-life)
+10. [Функциональный JavaScript: развязка методов из их объектов](https://github.com/devSchacht/translations/tree/master/joel-thoms-functional-javascript-decoupling-methods-from-their-objects)
