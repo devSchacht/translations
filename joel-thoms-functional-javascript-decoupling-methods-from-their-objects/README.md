@@ -1,6 +1,6 @@
 # Функциональный JavaScript: развязка методов из их объектов
 
-*Перевод статьи [Joel Thoms](https://hackernoon.com/@joelthoms). [Functional JavaScript: Decoupling methods from their objects](https://hackernoon.com/functional-javascript-decoupling-methods-from-their-objects-aa3ca13d7ae8).*
+*Перевод статьи [Joel Thoms](https://hackernoon.com/@joelthoms): [Functional JavaScript: Decoupling methods from their objects](https://hackernoon.com/functional-javascript-decoupling-methods-from-their-objects-aa3ca13d7ae8)*
 
 ![](https://cdn-images-1.medium.com/max/800/1*OkWOLixnGyTmjucx-9PVRQ.jpeg)
 
