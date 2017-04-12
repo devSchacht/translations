@@ -130,7 +130,7 @@ catSpeak()
 
 ```js
 Const cat = {sound: 'meow'}
-Const speak = ({sound}) => console.log (звук)
+Const speak = ({sound}) => console.log (sound)
 
 speak(cat)
 // => 'meow'
