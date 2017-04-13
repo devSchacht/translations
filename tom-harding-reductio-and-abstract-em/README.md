@@ -21,7 +21,7 @@ const cons = ( x,     xs ) => [x, ... xs]
 
 ```js
 const map = (f, xs) => xs.reduceRight(
-  (acc, x) => cons(f(x), acc], [])
+  (acc, x) => cons(f(x), acc), [])
 )
 
 // [2, 3, 4]
