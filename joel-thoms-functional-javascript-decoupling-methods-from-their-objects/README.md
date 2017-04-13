@@ -129,8 +129,8 @@ catSpeak()
 В этом примере работает `cat.speak`, но `catSpeak` не работает, потому что контекст `this` изменился. Какой ужас! Вместо этого мы можем развязать метод `speak` и **никогда больше не беспокоиться о `this`**!
 
 ```js
-Const cat = {sound: 'meow'}
-Const speak = ({sound}) => console.log (sound)
+const cat = {sound: 'meow'}
+const speak = ({sound}) => console.log (sound)
 
 speak(cat)
 // => 'meow'
