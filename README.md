@@ -12,3 +12,4 @@
 10. [V8: за кулисами (Мартовское издание. Запуск I+TF и декларативный JavaScript)](https://github.com/devSchacht/translations/tree/master/benedikt_meurer_v8_behind_the_scenes_march_edition)
 11. [Cпецификация волшебного мира 1: Daggy](https://github.com/devSchacht/translations/tree/master/tom-harding-fantas-eel-and-specification-1-daggy)
 12. [Функциональный JavaScript: развязка методов из их объектов](https://github.com/devSchacht/translations/tree/master/joel-thoms-functional-javascript-decoupling-methods-from-their-objects)
+13. [Доказательство и выводы](https://github.com/devSchacht/translations/tree/master/tom-harding-reductio-and-abstract-em)
