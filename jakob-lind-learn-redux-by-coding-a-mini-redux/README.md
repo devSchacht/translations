@@ -145,3 +145,5 @@ store.dispatch({ type: 'DECREMENT' })
 - - - -
 
 *Слушайте наш подкаст на [SoundCloud](https://soundcloud.com/devschacht), читайте на [Medium](https://medium.com/devschacht), контрибьютьте на [GitHub](https://github.com/devSchacht), общайтесь в [группе Telegram](https://t.me/devSchacht), следите в [Twitter](https://twitter.com/DevSchacht) и [канале Telegram](https://t.me/devSchachtChannel), рекомендуйте в [VK](https://vk.com/devschacht) и [Facebook](https://www.facebook.com/devSchacht).*
+
+[Статья на Medium](https://medium.com/devschacht/jakob-lind-learn-redux-by-coding-a-mini-redux-d1a58e830514)
