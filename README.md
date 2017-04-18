@@ -13,3 +13,5 @@
 11. [Cпецификация волшебного мира 1: Daggy](https://github.com/devSchacht/translations/tree/master/tom-harding-fantas-eel-and-specification-1-daggy)
 12. [Функциональный JavaScript: развязка методов из их объектов](https://github.com/devSchacht/translations/tree/master/joel-thoms-functional-javascript-decoupling-methods-from-their-objects)
 13. [Доказательство и выводы](https://github.com/devSchacht/translations/tree/master/tom-harding-reductio-and-abstract-em)
+14. [Асинхронные функции 101](https://github.com/devSchacht/translations/tree/master/ire-aderinokun-asynchronous-functions-101)
+
