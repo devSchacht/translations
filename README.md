@@ -14,3 +14,4 @@
 12. [Функциональный JavaScript: развязка методов из их объектов](joel-thoms-functional-javascript-decoupling-methods-from-their-objects)
 13. [Доказательство и выводы](tom-harding-reductio-and-abstract-em)
 14. [Асинхронные функции 101](https://github.com/devSchacht/translations/tree/master/ire-aderinokun-asynchronous-functions-101)
+15. [Изучаем Redux на примере создания мини-Redux](https://github.com/devSchacht/translations/tree/master/jakob-lind-learn-redux-by-coding-a-mini-redux)
