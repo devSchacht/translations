@@ -18,3 +18,4 @@
 16. [Методы обхода массива](https://github.com/devSchacht/translations/tree/master/jordan-harband-array-iteration-methods-summarized)
 17. [Создаем свой собственный Redux, часть 2: функция connect](https://github.com/devSchacht/translations/tree/master/jakob-lind-code-your-own-redux-part-2-the-connect-function)
 18. [Иногда undefined это defined](https://github.com/devSchacht/translations/blob/master/benedikt-meurer-sometimes-undefined-is-defined)
+19. [Информатика в JavaScript: Быстрая сортировка (Quicksort)](https://github.com/devSchacht/translations/tree/master/nicholas-c-zakas-computer-science-in-javascript-quicksort)
