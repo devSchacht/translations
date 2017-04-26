@@ -144,6 +144,8 @@ var result = quickSort(items);
 
 Quicksort, как правило, считается самой эффективной и быстрой и поэтому используется в V8 как реализация `Array.prototype.sort()` для массивов с более чем 23 элементами. Для менее чем 23 элемента в V8 используется insertion sort[2](https://www.nczonline.net/images/wp-content/uploads/2012/11/quicksort_21.png). Merge sort - конкурент quicksort, аналогично ему он также эффективный и быстрый, но имеет дополнительное преимущество - стабильность. Поэтому Mozila и Safari используют его для имплементации `Array.prototype.sort()`.
 
+---
+
 *Слушайте наш подкаст в [iTunes](https://itunes.apple.com/ru/podcast/девшахта/id1226773343) и [SoundCloud](https://soundcloud.com/devschacht), читайте нас на [Medium](https://medium.com/devschacht), контрибьютьте на [GitHub](https://github.com/devSchacht), общайтесь в [группе Telegram](https://t.me/devSchacht), следите в [Twitter](https://twitter.com/DevSchacht) и [канале Telegram](https://t.me/devSchachtChannel), рекомендуйте в [VK](https://vk.com/devschacht) и [Facebook](https://www.facebook.com/devSchacht).*
 
 [Статья на Medium](https://medium.com/p/5688bb93974b)
