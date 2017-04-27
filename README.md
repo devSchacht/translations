@@ -19,3 +19,4 @@
 17. [Создаем свой собственный Redux, часть 2: функция connect](https://github.com/devSchacht/translations/tree/master/jakob-lind-code-your-own-redux-part-2-the-connect-function)
 18. [Иногда undefined это defined](https://github.com/devSchacht/translations/blob/master/benedikt-meurer-sometimes-undefined-is-defined)
 19. [Информатика в JavaScript: Быстрая сортировка (Quicksort)](https://github.com/devSchacht/translations/tree/master/nicholas-c-zakas-computer-science-in-javascript-quicksort)
+20. [Cпецификация волшебного мира 2: Описание типов](tom-harding-fantas-eel-and-specification-2-type-signatures)
