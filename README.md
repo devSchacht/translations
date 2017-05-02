@@ -20,3 +20,4 @@
 18. [Иногда undefined это defined](https://github.com/devSchacht/translations/blob/master/benedikt-meurer-sometimes-undefined-is-defined)
 19. [Информатика в JavaScript: Быстрая сортировка (Quicksort)](https://github.com/devSchacht/translations/tree/master/nicholas-c-zakas-computer-science-in-javascript-quicksort)
 20. [Cпецификация волшебного мира 2: Описание типов](tom-harding-fantas-eel-and-specification-2-type-signatures)
+21. [Исчерпывающее руководство по объектным потокам в Node.js](stefan-baumgartner-the-definitive-guide-to-object-streams-in-nodejs)
