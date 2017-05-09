@@ -54,7 +54,7 @@ console.log(isDefined(1));          // false
 Вы можете избежать этих проблем, используя оператор `void` вместо `undefined`, когда хотите быть уверенны, что получили настоящее значение `undefined` (и поверьте мне, вы всегда этого хотите, если пишите `undefined`).
 
 ![](https://cdn-images-1.medium.com/max/1440/1*FiFSYpmswu-zbs4FcdAXzQ.png)
-[tc39.github.io/ecma262/#sec-void-operator](tc39.github.io/ecma262/#sec-void-operator)
+[tc39.github.io/ecma262/#sec-void-operator](https://tc39.github.io/ecma262/#sec-void-operator)
 
 Оператор `void` всегда возвращает значение `undefined`. Так как выражение, переданное ему, вычисляется, но результат не используется, то для нашего трюка подойдёт любое. Я предлагаю придерживаться `void 0`, так как это читается коротко и легко.
 
