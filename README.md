@@ -24,3 +24,4 @@
 22. [Peano's Forte](tom-harding-peanos-forte)
 23. [Обратитесь к спецификации](rachel-andrew-refer-to-the-spec)
 24. [Как продвигается внедрение ES6-модулей в Node.js](james-snell-an-update-on-es6-modules-in-node-js)
+25. [Цикл событий Node.js, таймеры и process.nextTick()](event-loop-timers-and-nexttick)
