@@ -25,4 +25,4 @@
 23. [Обратитесь к спецификации](rachel-andrew-refer-to-the-spec)
 24. [Как продвигается внедрение ES6-модулей в Node.js](james-snell-an-update-on-es6-modules-in-node-js)
 25. [Цикл событий Node.js, таймеры и process.nextTick()](event-loop-timers-and-nexttick)
-26. [Обратитесь к спецификации: что предваряет спецификацию?](rachel-refer-to-the-spec-what-is-all-that-stuff-at-the-top-of-the-spec)
+26. [Обратитесь к спецификации: что ее предваряет?](rachel-refer-to-the-spec-what-is-all-that-stuff-at-the-top-of-the-spec)
