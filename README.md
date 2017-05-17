@@ -27,3 +27,4 @@
 25. [Цикл событий Node.js, таймеры и process.nextTick()](event-loop-timers-and-nexttick)
 26. [Обратитесь к спецификации: что ее предваряет?](rachel-refer-to-the-spec-what-is-all-that-stuff-at-the-top-of-the-spec)
 27. [Cпецификация волшебного мира 3: Setoid](tom-harding-fantas-eel-and-specification-3-setoid)
+28. [Каррируй, мой блудный сын](tom-harding-curry-on-wayward-son)
