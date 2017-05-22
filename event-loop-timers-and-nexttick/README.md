@@ -1,6 +1,6 @@
 # Цикл событий Node.js, таймеры и process.nextTick()
 
-*Перевод [официальной документации](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/#poll) Node.js*
+*Перевод [официальной документации](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/) Node.js*
 
 ## Что такое Event Loop?
 
