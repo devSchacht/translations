@@ -29,3 +29,4 @@
 27. [Cпецификация волшебного мира 3: Setoid](tom-harding-fantas-eel-and-specification-3-setoid)
 28. [Каррируй, мой блудный сын](tom-harding-curry-on-wayward-son)
 29. [Ленивый синтаксический анализ JavaScript в V8](matt-zeunert-lazy-javascript-parsing-in-v8)
+30. [Введение в webpack](aggelos-arvanitakis-an-introduction-to-webpack-s-philosophy)
