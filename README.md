@@ -30,3 +30,4 @@
 28. [Каррируй, мой блудный сын](tom-harding-curry-on-wayward-son)
 29. [Ленивый синтаксический анализ JavaScript в V8](matt-zeunert-lazy-javascript-parsing-in-v8)
 30. [Введение в философию Webpack](aggelos-arvanitakis-an-introduction-to-webpack-s-philosophy)
+31. [JIT для начинающих](fedor-indutny-how-to-start-jitting)
