@@ -368,13 +368,13 @@ const getKeywords = (arr) =>
 function processCopy(str, prepFn, arrFn, countFn, kwFn) {
   const copyArray = arrFn(prepFn(str));
 
-  console.log(`Word count: ${countFn(copyArray)}`);
-  console.log(`Keywords: ${kwFn(copyArray)}`);
+  console.log(`Число слов: ${countFn(copyArray)}`);
+  console.log(`Ключевые слова: ${kwFn(copyArray)}`);
 }
 
 processCopy(fpCopy, stripPunctuation, getArr, getWordCount, getKeywords);
-// результат: число слов: 11
-// результат: ключевые слова: functional,programming,powerful,enjoyable
+// результат: Число слов: 11
+// результат: Ключевые слова: functional,programming,powerful,enjoyable
 ```
 
 Код доступен для запуска здесь - [JSFiddle: Functional Programming with JavaScript](https://jsfiddle.net/kmaida/xxc7g0ve/). Он разбит на понятные, декларативные функции с четким назначением. Если мы пройдем по нему и прочитаем комментарии, то никаких дополнительных разъяснений кода не потребуется. Каждая функция ядра - модульная и зависит только от ее входных данных ([чистая](https://github.com/devSchacht/translations/tree/master/glossary_of_modern_javaScript_concepts_part_1#Чистота)). Последняя функция обрабатывает ядро ​​для генерации общих выходных данных. Функция `processCopy()` - нечистый контейнер, выполняющий ядро ​​и управляющий побочными эффектами. Мы использовали [функцию высшего порядка](https://github.com/devSchacht/translations/tree/master/glossary_of_modern_javaScript_concepts_part_1#Функции-высшего-порядка), принимающую другие функции в качестве аргументов для поддержания функционального стиля.
