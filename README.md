@@ -31,4 +31,4 @@
 29. [Ленивый синтаксический анализ JavaScript в V8](matt-zeunert-lazy-javascript-parsing-in-v8)
 30. [Введение в философию Webpack](aggelos-arvanitakis-an-introduction-to-webpack-s-philosophy)
 31. [JIT для начинающих](fedor-indutny-how-to-start-jitting)
-32. [Повышение производительности React и Redux с Reselect](aggelos-arvanitakis-an-introduction-to-webpack-s-philosophy)
+32. [Повышение производительности React и Redux с Reselect](neil-fenton-improving-react-and-redux-performance-with-reselect)
