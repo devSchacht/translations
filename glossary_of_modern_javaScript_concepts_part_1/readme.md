@@ -390,7 +390,7 @@ processCopy(fpCopy, stripPunctuation, getArr, getWordCount, getKeywords);
 * [Итак, вы хотите быть функциональным программистом](https://medium.com/@cscalfani/so-you-want-to-be-a-functional-programmer-part-1-1f15e387e536#.q8a7nwjat)
 * [Lodash - Руководство по функциональному программированию](https://github.com/lodash/lodash/wiki/FP-Guide)
 * [В чем разница между функциональными и императивными языками программирования?](http://stackoverflow.com/questions/17826380/what-is-difference-between-functional-and-imperative-programming-languages)
-* [Eloquent JavaScript - Функциональное программирование](https://github.com/karmazzin/eloquentjavascript_ru/blob/master/chapters/chapter3.md)
+* [Выразительный JavaScript - Функциональное программирование](https://github.com/karmazzin/eloquentjavascript_ru/blob/master/chapters/chapter3.md)
 * [Функциональное программирование на примере](http://tobyho.com/2015/11/09/functional-programming-by-example/)
 * [Функциональное программирование в JavaScript - серия видео](https://www.youtube.com/watch?v=BMUiFMZr7vk&list=PL0zVEGEvSaeEd9hlmCXrk5yUyqUag-n84)
 * [Введение в функциональный JavaScript](https://medium.com/functional-javascript/introduction-to-functional-javascript-45a9dca6c64a#.2qjh0i04y)
