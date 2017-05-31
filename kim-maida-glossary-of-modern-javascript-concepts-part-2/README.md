@@ -20,14 +20,14 @@
 
 Отсюда вы можете напрямую перейти к каждой концепции или продолжить чтение по порядку.
 
-* [Область видимости (глобальная, локальная, лексическая) и замыкания](https://github.com/maksugr/devSchacht/tree/master/translations/kim-maida-glossary-of-modern-javascript-concepts-part-2#Область-видимости-глобальная-локальная-лексическая-и-замыкания)
-* [Однонаправленный поток данных и двухсторонняя привязка данных](https://github.com/maksugr/devSchacht/tree/master/translations/kim-maida-glossary-of-modern-javascript-concepts-part-2#Однонаправленный-поток-данных-и-двухсторонняя-привязка-данных)
-* [Обнаружение изменений в JavaScript фреймворке: грязная проверка, аксессоры, виртуальный DOM](https://github.com/maksugr/devSchacht/tree/master/translations/kim-maida-glossary-of-modern-javascript-concepts-part-2#Обнаружение-изменений-в-javascript-фреймворке-грязная-проверка-аксессоры-виртуальный-dom)
-* [Веб-компоненты](https://github.com/maksugr/devSchacht/tree/master/translations/kim-maida-glossary-of-modern-javascript-concepts-part-2#Веб-компоненты)
-* [Умные и глупые компоненты](https://github.com/maksugr/devSchacht/tree/master/translations/kim-maida-glossary-of-modern-javascript-concepts-part-2#Умные-и-глупые-компоненты)
-* [JIT (Just-In-Time) компиляция](https://github.com/maksugr/devSchacht/tree/master/translations/kim-maida-glossary-of-modern-javascript-concepts-part-2#jit-just-in-time-компиляция)
-* [AOT (Ahead-of-Time) компиляция](https://github.com/maksugr/devSchacht/tree/master/translations/kim-maida-glossary-of-modern-javascript-concepts-part-2#aot-ahead-of-time-компиляция)
-* [Tree shaking](https://github.com/maksugr/devSchacht/tree/master/translations/kim-maida-glossary-of-modern-javascript-concepts-part-2#tree-shaking)
+* [Область видимости (глобальная, локальная, лексическая) и замыкания](https://github.com/devSchacht/translations/tree/master/kim-maida-glossary-of-modern-javascript-concepts-part-2#Область-видимости-глобальная-локальная-лексическая-и-замыкания)
+* [Однонаправленный поток данных и двухсторонняя привязка данных](https://github.com/devSchacht/translations/tree/master/kim-maida-glossary-of-modern-javascript-concepts-part-2#Однонаправленный-поток-данных-и-двухсторонняя-привязка-данных)
+* [Обнаружение изменений в JavaScript фреймворке: грязная проверка, аксессоры, виртуальный DOM](https://github.com/devSchacht/translations/tree/master/kim-maida-glossary-of-modern-javascript-concepts-part-2#Обнаружение-изменений-в-javascript-фреймворке-грязная-проверка-аксессоры-виртуальный-dom)
+* [Веб-компоненты](https://github.com/devSchacht/translations/tree/master/kim-maida-glossary-of-modern-javascript-concepts-part-2#Веб-компоненты)
+* [Умные и глупые компоненты](https://github.com/devSchacht/translations/tree/master/kim-maida-glossary-of-modern-javascript-concepts-part-2#Умные-и-глупые-компоненты)
+* [JIT (Just-In-Time) компиляция](https://github.com/devSchacht/translations/tree/master/kim-maida-glossary-of-modern-javascript-concepts-part-2#jit-just-in-time-компиляция)
+* [AOT (Ahead-of-Time) компиляция](https://github.com/devSchacht/translations/tree/master/kim-maida-glossary-of-modern-javascript-concepts-part-2#aot-ahead-of-time-компиляция)
+* [Tree shaking](https://github.com/devSchacht/translations/tree/master/kim-maida-glossary-of-modern-javascript-concepts-part-2#tree-shaking)
 
 ### Область видимости (глобальная, локальная, лексическая) и замыкания
 
@@ -236,7 +236,7 @@ class OneWay extends React.Component {
 
 Данные текут только в одном направлении: от модели вниз. Инпут не имеет прямого доступа к модели. Если мы хотим обновить состояние в ответ на изменения из пользовательского интерфейса, инпут должен отправить сообщение со всей необходимой информацией. Единственный способ, которым пользовательский интерфейс может влиять на модель, - это событие и [метод setState()](https://facebook.github.io/react/docs/react-component.html#setstate). Пользовательский интерфейс никогда магическим образом не обновляет модель.
 
-**Примечание:** Чтобы пользовательский интерфейс отобразил произошедшие в модели изменения, React создает новый виртуальный DOM и сопоставляет его со старым виртуальным DOM. Затем в реальном DOM отображаются только изменения. Мы поговорим об этом подробнее в разделе об [обнаружении изменений](https://github.com/maksugr/devSchacht/tree/master/translations/kim-maida-glossary-of-modern-javascript-concepts-part-2#Обнаружение-изменений-в-javascript-фреймворке-грязная-проверка-аксессоры-виртуальный-dom).
+**Примечание:** Чтобы пользовательский интерфейс отобразил произошедшие в модели изменения, React создает новый виртуальный DOM и сопоставляет его со старым виртуальным DOM. Затем в реальном DOM отображаются только изменения. Мы поговорим об этом подробнее в разделе об [обнаружении изменений](https://github.com/devSchacht/translations/tree/master/kim-maida-glossary-of-modern-javascript-concepts-part-2#Обнаружение-изменений-в-javascript-фреймворке-грязная-проверка-аксессоры-виртуальный-dom).
 
 #### Двусторонняя привязка данных
 
@@ -282,7 +282,7 @@ class OneWay extends React.Component {
 
 Это двухсторонняя привязка данных в AngularJS. Как вы можете видеть, мы не настраивали какие-либо события или обработчики, чтобы явно сигнализировать контроллеру, что модель была обновлена ​​в пользовательском интерфейсе. Привязка данных `text` в шаблоне автоматически использует [наблюдателя](https://medium.com/@kentcdodds/counting-angularjs-watchers-11c5134dc2ef) для отображения изменений в модели. Мы также можем наблюдать (`$watch()`) модель. Обычно наблюдение должно выполняться в службах или в директивных функциях `link`, а не в контроллерах.
 
-**Примечание:** Для сравнения нового значения с предыдущим AngularJS использует так называемый [цикл дайджеста](https://docs.angularjs.org/api/ng/type/$rootScope.Scope#$digest) (грязную проверку). Вы можете больше узнать о грязной проверке в AngularJS в разделе об [обнаружении изменений](https://github.com/maksugr/devSchacht/tree/master/translations/kim-maida-glossary-of-modern-javascript-concepts-part-2#Обнаружение-изменений-в-javascript-фреймворке-грязная-проверка-аксессоры-виртуальный-dom).
+**Примечание:** Для сравнения нового значения с предыдущим AngularJS использует так называемый [цикл дайджеста](https://docs.angularjs.org/api/ng/type/$rootScope.Scope#$digest) (грязную проверку). Вы можете больше узнать о грязной проверке в AngularJS в разделе об [обнаружении изменений](https://github.com/devSchacht/translations/tree/master/kim-maida-glossary-of-modern-javascript-concepts-part-2#Обнаружение-изменений-в-javascript-фреймворке-грязная-проверка-аксессоры-виртуальный-dom).
 
 #### Дополнительная информация: Двухсторонняя привязка данных в Angular
 
@@ -634,7 +634,7 @@ JIT компиляция используется браузерами для к
 * Раннее обнаружение ошибок шаблона: компилятор обнаруживает ошибки во время сборки, а не во время выполнения
 * Улучшенная безопасность: сборка уже выполнена, что снижает вероятность инъекции
 
-AOT также позволяет осуществлять [tree shaking](https://github.com/maksugr/devSchacht/tree/master/translations/kim-maida-glossary-of-modern-javascript-concepts-part-2#tree-shaking). Приложение, собранное с помощью AOT, в браузере способствует сокращению общего времени загрузки благодаря предварительной компиляции. Начальное время рендеринга также уменьшается, потому что требуется анализировать меньшее количество кода.
+AOT также позволяет осуществлять [tree shaking](https://github.com/devSchacht/translations/tree/master/kim-maida-glossary-of-modern-javascript-concepts-part-2#tree-shaking). Приложение, собранное с помощью AOT, в браузере способствует сокращению общего времени загрузки благодаря предварительной компиляции. Начальное время рендеринга также уменьшается, потому что требуется анализировать меньшее количество кода.
 
 Тем не менее, AOT увеличит время сборки, в сравнении с JIT, и для любых изменений потребуется полная перекомпиляция всего приложения.
 
