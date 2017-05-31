@@ -32,3 +32,4 @@
 30. [Введение в философию Webpack](aggelos-arvanitakis-an-introduction-to-webpack-s-philosophy)
 31. [JIT для начинающих](fedor-indutny-how-to-start-jitting)
 32. [Повышение производительности React и Redux с Reselect](neil-fenton-improving-react-and-redux-performance-with-reselect)
+33. [Справочник современных концепций JavaScript: часть 2](kim-maida-glossary-of-modern-javascript-concepts-part-2)
