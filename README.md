@@ -33,3 +33,4 @@
 31. [JIT для начинающих](fedor-indutny-how-to-start-jitting)
 32. [Повышение производительности React и Redux с Reselect](neil-fenton-improving-react-and-redux-performance-with-reselect)
 33. [Справочник современных концепций JavaScript: часть 2](kim-maida-glossary-of-modern-javascript-concepts-part-2)
+34. [npm@5 теперь npm@latest](npm-5-is-now-npm-latest)
