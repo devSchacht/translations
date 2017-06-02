@@ -34,3 +34,4 @@
 32. [Повышение производительности React и Redux с Reselect](neil-fenton-improving-react-and-redux-performance-with-reselect)
 33. [Справочник современных концепций JavaScript: часть 2](kim-maida-glossary-of-modern-javascript-concepts-part-2)
 34. [npm@5 теперь npm@latest](npm-5-is-now-npm-latest)
+35. [Node.js 8: Большие улучшения для экосистемы нативных модулей и процесса отладки](node-js-8-big-improvements-for-the-debugging-and-native-module-ecosystem)
