@@ -1,5 +1,5 @@
 # Node.js 8: Большие улучшения для экосистемы нативных модулей и процесса отладки
-*Перевод статьи из [офциального блога Node.js](https://medium.com/@nodejs): [Node.js 8: Big Improvements for the Debugging and Native Module Ecosystem](https://medium.com/@nodejs/node-js-8-big-improvements-for-the-debugging-and-native-module-ecosystem-58454861f2fc).*
+*Перевод статьи из [официального блога Node.js](https://medium.com/@nodejs): [Node.js 8: Big Improvements for the Debugging and Native Module Ecosystem](https://medium.com/@nodejs/node-js-8-big-improvements-for-the-debugging-and-native-module-ecosystem-58454861f2fc).*
 
 Мы рады представить сегодня `Node.js 8.0.0`. Улучшения и новые возможности этой версии направлены также на улучшение рабочего процесса разработчиков Node.js. Важные обновления и функции включают в себя добавление Node.js API для разработчиков нативных модулей, `async_hooks`, JS-биндинги для инспектора, `Buffer` с заполнением нулями, `util.promisify` и так далее.
 
