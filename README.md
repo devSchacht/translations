@@ -37,3 +37,4 @@
 35. [Node.js 8: Большие улучшения для экосистемы нативных модулей и процесса отладки](node-js-8-big-improvements-for-the-debugging-and-native-module-ecosystem)
 36. [Обязательно изучите функциональное программирование в 2017 году](allan-macgregor-you-should-learn-functional-programming-in-2017)
 37. [Частичное применение функций](functional-reactive-ninja-partial-application-of-functions)
+38. [Функции высшего порядка в Lodash](michał-piotrkowski-higher-order-functions-in-lodash)
