@@ -2,6 +2,8 @@
 
 *Перевод статьи  Michał Piotrkowski: [Higher-order functions in Lodash](http://pragmatists.pl/blog/2017/05/higher-order-functions-in-lodash).*
 
+![](https://cdn-images-1.medium.com/max/800/1*jAlgVy_OVt7mlVhfMX0IUA.png)
+
 В этой статье я хочу объяснить концепцию функций высшего порядка и как они повсеместно представлены в моей любимой
 JavaScript библиотеке - Lodash.
 
