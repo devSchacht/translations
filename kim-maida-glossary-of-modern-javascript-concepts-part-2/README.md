@@ -669,7 +669,7 @@ import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 
 #### Подводя итог: tree shaking
 
-Tree shaking - живое включение кода JavaScript в сборщиках, использующих статические `import` и `export` [ES2015](https://auth0.com/blog/a-rundown-of-es6-features/) для «вытряхивают» ненужных зависимостей.
+Tree shaking - живое включение кода JavaScript в сборщиках, использующих статические `import` и `export` [ES2015](https://auth0.com/blog/a-rundown-of-es6-features/) для «вытряхивания» ненужных зависимостей.
 
 Дополнительную информацию о **tree shaking** можно найти на следующих ресурсах:
 
