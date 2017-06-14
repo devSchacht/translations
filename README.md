@@ -40,3 +40,4 @@
 36. [Обязательно изучите функциональное программирование в 2017 году](allan-macgregor-you-should-learn-functional-programming-in-2017)
 37. [Частичное применение функций](functional-reactive-ninja-partial-application-of-functions)
 38. [Функции высшего порядка в Lodash](michał-piotrkowski-higher-order-functions-in-lodash)
+39. [Сигнатура типов функции в JavaScript](functional-reactive-ninja-function-type-signatures-in-javascript)
