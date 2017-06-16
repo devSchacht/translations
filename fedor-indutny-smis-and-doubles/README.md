@@ -1,5 +1,6 @@
 # Small Integer и Doubles
 ![](https://cdn-images-1.medium.com/max/800/1*CqKlEeRH3amQwBDuplpXug.jpeg)
+
 *Перевод статьи [Фёдора Индутного](https://blog.indutny.com/): [Allocating numbers](http://darksi.de/6.smis-and-doubles/). Распространяется по [лицензии MIT](http://opensource.org/licenses/mit-license.php).*
 
 Это третий пост в серии «JIT для начинающих». Для лучшего понимания материала, пожалуйста, ознакомьтесь с [предыдущей статьёй](https://medium.com/devschacht/fedor-indutny-alocating-numbers-b0b138d0c684).
