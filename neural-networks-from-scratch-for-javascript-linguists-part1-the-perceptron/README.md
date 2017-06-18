@@ -79,7 +79,6 @@ const w4 = 1.05;
 const Threshold = 1;
 const bias = 0.3;
 
-// The value evaluated against the threshold is the sum of the
 // Значение вычисляемое для сравнения с пороговым - сумма
 // произведений входных значений
 // (1*1.5)+(.3*0.2)+(.2*1.1)+(.5*1.05)
@@ -111,7 +110,11 @@ const doorWillOpen = activation(sumInputsWeights + bias) > Threshold; // true
 ![В зависимости от случая кошка может быть не того класса, что ожидается](https://cdn-images-1.medium.com/max/800/1*QEwusFfiilfoeeNNLXFygg.gif)
 
 Теперь, когда мы натренировали наш перцептрон, мы можем классифицировать образцы, которых он никогда не видел:
-**[Здесь](https://rosenblattperceptron.herokuapp.com/) живая демонстрации. [Здесь](https://github.com/Dvorson/rosenblattperceptronjs) - исходный код с переводом интерфейса. Нет, серьезно, зацените.**
+
+**[Здесь](https://rosenblattperceptron.herokuapp.com/) живая демка.
+[Здесь](https://github.com/Dvorson/rosenblattperceptronjs) - исходный код с переводом интерфейса. 
+Нет, серьезно, зацените.**
+
 То, в чем Минский упрекал Розенблатта, состояло примерно в следующем: что, если вдруг мой тренировочный набор содержал **гигантскую змею**, почти не имеющую зубов, но большую, как слон.
 
 ![Тренировочный набор бывает невозможно разделить одной линией](https://cdn-images-1.medium.com/max/800/1*izrfOXRu3B1dL2Ys5fBZkg.png)
