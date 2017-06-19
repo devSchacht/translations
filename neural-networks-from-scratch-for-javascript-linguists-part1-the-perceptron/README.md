@@ -309,14 +309,13 @@ class Perceptron {
 
 Мы закончим поэтическими строками от отца нейронных сетей Уоррена Мак-Каллока (он [действительно](https://en.wikipedia.org/wiki/Warren_Sturgis_McCulloch#Biography) был поэтом).
 Надеюсь, вы кое-чему научились, и я скоро увижу вас в Части 2.
-*
+
 ```
 Our knowledge of the world, including ourselves, 
 is incomplete as to space and indefinite as to time. 
 This ignorance, implicit in all our brains, 
 is the counterpart of the abstraction which renders our knowledge useful.
 ```
-*
 
 ---
 
