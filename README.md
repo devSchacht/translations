@@ -44,3 +44,4 @@
 40. [JIT для начинающих: Выделяем память для хранения чисел](fedor-indutny-alocating-numbers)
 41. [JIT для начинающих: Small Integer и Double](fedor-indutny-smis-and-doubles)
 42. [Быстрый курс по управлению памятью](lin-clark-a-crash-course-in-memory-management)
+43. [Разбираемся с lock-файлами в NPM 5](jiri-pospisil-understanding-lock-files-in-npm-5)
