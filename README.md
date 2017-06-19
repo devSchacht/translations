@@ -41,3 +41,6 @@
 37. [Частичное применение функций](functional-reactive-ninja-partial-application-of-functions)
 38. [Функции высшего порядка в Lodash](michał-piotrkowski-higher-order-functions-in-lodash)
 39. [Сигнатура типов функции в JavaScript](functional-reactive-ninja-function-type-signatures-in-javascript)
+40. [JIT для начинающих: Выделяем память для хранения чисел](fedor-indutny-alocating-numbers)
+41. [JIT для начинающих: Small Integer и Double](fedor-indutny-smis-and-doubles)
+42. [Быстрый курс по управлению памятью](lin-clark-a-crash-course-in-memory-management)
