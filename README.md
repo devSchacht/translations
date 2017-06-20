@@ -45,3 +45,4 @@
 41. [JIT для начинающих: Small Integer и Double](fedor-indutny-smis-and-doubles)
 42. [Быстрый курс по управлению памятью](lin-clark-a-crash-course-in-memory-management)
 43. [Разбираемся с lock-файлами в NPM 5](jiri-pospisil-understanding-lock-files-in-npm-5)
+44. [Нейросети с нуля для JavaScript разработчиков (Часть 1: Перцептрон)](neural-networks-from-scratch-for-javascript-linguists-part1-the-perceptron)
