@@ -7,7 +7,7 @@
 
 Существует большая вероятность, что за последние месяцы вы хотя бы раз слышали о нейронной сети или искусственном интеллекте, которые, как представляется, творят чудеса: [оценка вашего селфи](http://karpathy.github.io/2015/10/25/selfie/), [SIRI, понимающая ваш голос](http://mashable.com/2014/08/18/siri-fails/#hMwSkraMiPqp), победа над человеком в таких играх, как Шахматы и [Го](http://www.cbc.ca/news/technology/go-google-alphago-lee-sedol-deepmind-1.3488913), [превращение лошади в зебру](https://twitter.com/goodfellow_ian/status/851124988903997440) на произвольной картинке или нейросеть, делающая вас моложе, старше или [меняющая ваш пол](https://www.faceapp.com/) на любом фото.
 
-От частого использования словосочетания «Искусственный Интеллект» в разных контекстах само понятие стало настолько размытым, что оно в лучшем случае коррелирует с «[чем-то, что выглядит умным](https://twitter.com/amyhoy/status/847097034536554497)». 
+От частого использования словосочетания «Искусственный Интеллект» в разных контекстах само понятие стало настолько размытым, что оно в лучшем случае коррелирует с «[чем-то, что выглядит умным](https://twitter.com/amyhoy/status/847097034536554497)».
 
 Возможно, из-за такой путаницы машинное обучение кажется слишком сложным для понимания, типа: «Готов поспорить, столько математики - не для меня!».
 
@@ -73,7 +73,7 @@
 ![](https://cdn-images-1.medium.com/max/800/1*yMBxDghV-iI7M9ABmXeY1g.gif)<br/>
 *Деполяризация нейрона*
 
-В общем случае в коде это выглядит так: 
+В общем случае в коде это выглядит так:
 
 ```javascript
 // Инициализируем входные сигналы
@@ -123,7 +123,7 @@ const doorWillOpen = activation(sumInputsWeights + bias) > Threshold; // true
 Его также можно назвать [**линейный классификатор**](https://ru.wikipedia.org/wiki/Линейный_классификатор). Его цель состоит в том, чтобы определить, **к какому классу принадлежит объект** в соответствии со своими **характеристиками** (или «функциями»: наши **x1-x4**), производя итерации до тех пор, пока не будет найдена **линия**, которая правильно **отделяет** объекты разных классов друг от друга.
 
 Мы даем нашему классификатору некоторые примеры ожидаемых результатов, учитывая некоторые исходные данные, и **он тренируется** на поиск этого разделения путем регулировки **сдвига** и **весов** на каждом вводе.
-    
+
 В качестве примера давайте с использованием перцептрона классифицируем некоторые сущности по принципу **«опасен или нет»** в соответствии с двумя характеристиками: **количество зубов** и **размер**.
 
 ![](https://cdn-images-1.medium.com/max/800/1*QEwusFfiilfoeeNNLXFygg.gif)<br/>
@@ -268,7 +268,7 @@ y = (-w1/w2)x + (-bias/w2)
 Собрав воедино все, что мы узнали, мы, наконец, кодим перцептрон:
 
 ```javascript
-// Полная версия: https://github.com/Elyx0/rosenblattperceptronjs/blob/master/src/Perceptron.js 
+// Полная версия: https://github.com/Elyx0/rosenblattperceptronjs/blob/master/src/Perceptron.js
 class Perceptron {
   constructor(bias=1,learningRate=0.1,weights=[]) {
     this.bias = bias;
@@ -326,12 +326,14 @@ class Perceptron {
 Надеюсь, вы кое-чему научились, и я скоро увижу вас в Части 2.
 
 ```
-Our knowledge of the world, including ourselves, 
-is incomplete as to space and indefinite as to time. 
-This ignorance, implicit in all our brains, 
+Our knowledge of the world, including ourselves,
+is incomplete as to space and indefinite as to time.
+This ignorance, implicit in all our brains,
 is the counterpart of the abstraction which renders our knowledge useful.
 ```
 
 ---
 
 *Слушайте наш подкаст в [iTunes](https://itunes.apple.com/ru/podcast/девшахта/id1226773343) и [SoundCloud](https://soundcloud.com/devschacht), читайте нас на [Medium](https://medium.com/devschacht), контрибьютьте на [GitHub](https://github.com/devSchacht), общайтесь в [группе Telegram](https://t.me/devSchacht), следите в [Twitter](https://twitter.com/DevSchacht) и [канале Telegram](https://t.me/devSchachtChannel), рекомендуйте в [VK](https://vk.com/devschacht) и [Facebook](https://www.facebook.com/devSchacht).*
+
+[Статья на Medium](https://medium.com/devschacht/neural-networks-from-scratch-for-javascript-linguists-part1-the-perceptron-30c64ee9dbba)
