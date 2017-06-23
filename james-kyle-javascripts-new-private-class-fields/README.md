@@ -1,6 +1,6 @@
 # Новые #приватные поля классов в JavaScript
 
-### Что это такое, как оно работает, и почему оно так выглядит
+### Что это такое, как оно работает, и почему оно выглядит
 
 *Перевод статьи [James Kyle](https://github.com/thejameskyle/): [JavaScript's new #private class fields](http://thejameskyle.com/javascripts-new-private-class-fields.html). Распространяется по лицензии [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).*
 
