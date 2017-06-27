@@ -47,3 +47,4 @@
 43. [Разбираемся с lock-файлами в NPM 5](jiri-pospisil-understanding-lock-files-in-npm-5)
 44. [Нейросети с нуля для JavaScript разработчиков (Часть 1: Перцептрон)](neural-networks-from-scratch-for-javascript-linguists-part1-the-perceptron)
 45. [Новые #приватные поля классов в JavaScript](james-kyle-javascripts-new-private-class-fields)
+46. [(Нe) все в JavaScript - объект](daniel-li-not-everything-in-javascript-is-an-object)
