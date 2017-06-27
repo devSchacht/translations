@@ -101,8 +101,7 @@ foo.bar; // "baz"
 ```js
 const foo = {};
 foo.bar = function () { console.log("baz"); };
-foo.ba
-r(); // "baz"
+foo.bar(); // "baz"
 ```
 
 ## Функции-конструкторы
