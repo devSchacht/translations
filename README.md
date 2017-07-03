@@ -49,3 +49,4 @@
 45. [Новые #приватные поля классов в JavaScript](james-kyle-javascripts-new-private-class-fields)
 45. [Иллюстрированное введение в ArrayBuffers и SharedArrayBuffers](lin-clark-a-cartoon-intro-to-arraybuffers-and-sharedarraybuffers)
 47. [(Нe) все в JavaScript - объект](daniel-li-not-everything-in-javascript-is-an-object)
+48. [Существуют ли чистые функции в JavaScript?](robin-pokorny-do-pure-functions-exist-in-javascript)
