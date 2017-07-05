@@ -50,3 +50,4 @@
 45. [Иллюстрированное введение в ArrayBuffers и SharedArrayBuffers](lin-clark-a-cartoon-intro-to-arraybuffers-and-sharedarraybuffers)
 47. [(Нe) все в JavaScript - объект](daniel-li-not-everything-in-javascript-is-an-object)
 48. [Существуют ли чистые функции в JavaScript?](robin-pokorny-do-pure-functions-exist-in-javascript)
+49. [Избегаем состояния гонки в SharedArrayBuffers с помощью Atomics](link-clark-avoiding-race-conditions-in-sharedarraybuffers-with-atomics)
