@@ -53,3 +53,4 @@
 49. [Избегаем состояния гонки в SharedArrayBuffers с помощью Atomics](link-clark-avoiding-race-conditions-in-sharedarraybuffers-with-atomics)
 50. [Шаблоны оптимизации JavaScript. Часть 1](https://github.com/devSchacht/translations/tree/master/benedikt-meurer-javascript-optimization-patterns-part1)
 51. [Ленивые массивы в JavaScript](boris-cherny-introducing-lazy-arrays-in-javascript)
+52. [Представляем npx: утилиту для запуска npm-пакетов](kat-marchan-introducing-npx-an-npm-package-runner)
