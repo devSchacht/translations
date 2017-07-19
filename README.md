@@ -54,3 +54,4 @@
 50. [Шаблоны оптимизации JavaScript. Часть 1](https://github.com/devSchacht/translations/tree/master/benedikt-meurer-javascript-optimization-patterns-part1)
 51. [Ленивые массивы в JavaScript](boris-cherny-introducing-lazy-arrays-in-javascript)
 52. [Представляем npx: утилиту для запуска npm-пакетов](kat-marchan-introducing-npx-an-npm-package-runner)
+53. [Реактивные интерфейсы на нативном JavaScript - Часть 1: Чистый функциональный стиль](brandon-smith-reactive-uis-with-vanillajs-part-1-pure-functional-style)
