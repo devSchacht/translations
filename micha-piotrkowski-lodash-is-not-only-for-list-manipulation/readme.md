@@ -1,4 +1,8 @@
-Это продолжение моего предыдущего поста про Функции высшего порядка в Lodash. Большиство людей знает Lodash по конструкциям вроде такой:
+# Lodash не (только) для манипуляции списками!
+
+*Перевод статьи  Michał Piotrkowski: [Lodash is not (only) for list manipulation!](https://blog.pragmatists.com/lodash-is-not-only-for-list-manipulation-791c2e3b9de1).*
+
+Это продолжение моего предыдущего поста про [Функции высшего порядка в Lodash](https://medium.com/devschacht/michal-piotrkowski-higher-order-functions-in-lodash-56cb196c584d). Большиство людей знает Lodash по конструкциям вроде такой:
 
 ```javascript
 var cities = require('./cities.json');
