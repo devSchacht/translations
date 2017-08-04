@@ -56,4 +56,4 @@
 52. [Представляем npx: утилиту для запуска npm-пакетов](kat-marchan-introducing-npx-an-npm-package-runner)
 53. [Реактивные интерфейсы на нативном JavaScript - Часть 1: Чистый функциональный стиль](brandon-smith-reactive-uis-with-vanillajs-part-1-pure-functional-style)
 54. [Паттерны оптимизации JavaScript. Часть 2](benedikt-meurer-javascript-optimization-patterns-part2)
-55. [emotion](kye-hohenberger-emotion)
+55. [emotion. Следующее поколение CSS-in-JS](kye-hohenberger-emotion)
