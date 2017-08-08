@@ -1,4 +1,4 @@
-# Реактивные интерфейсы на нативном JavaScript - Часть 1: Чистый функциональный стиль
+# Реактивные интерфейсы на ванильном JavaScript - Часть 1: Чистый функциональный стиль
 
 *Перевод статьи [Brandon Smith](http://www.brandonsmith.ninja/): [Reactive UI’s with VanillaJS – Part 1: Pure Functional Style](https://css-tricks.com/reactive-uis-vanillajs-part-1-pure-functional-style/).*
 
