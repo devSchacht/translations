@@ -2,7 +2,7 @@
 
 *Перевод статьи  Michał Piotrkowski: [Lodash is not (only) for list manipulation!](https://blog.pragmatists.com/lodash-is-not-only-for-list-manipulation-791c2e3b9de1).*
 
-![](https://http://thenextfamily.com/wp-content/uploads/2014/03/To-Do-List-e1395762970248.jpg.)
+![](http://thenextfamily.com/wp-content/uploads/2014/03/To-Do-List-e1395762970248.jpg.)
 
 Это продолжение моего предыдущего поста про [Функции высшего порядка в Lodash](https://medium.com/devschacht/michal-piotrkowski-higher-order-functions-in-lodash-56cb196c584d). Большинство людей знает Lodash по конструкциям вроде такой:
 
