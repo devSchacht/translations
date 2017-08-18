@@ -425,7 +425,7 @@ function customizer(val, operator){
 let matches = _.isMatchWith(customizer);
 ```
 
-Улучшенный `customizer` эффективно преобразовывает `_.isMatchWith` в нечно даже более гибкое чем [_.conforms()]((https://lodash.com/docs/#conforms)), поскольку позволяет проверять соответствие свойств объекта как с фиксированными значениями, так и c регулярными выражениями и c предикатами:
+Улучшенный `customizer` эффективно преобразовывает `_.isMatchWith` в нечно даже более гибкое чем [_.conforms()](https://lodash.com/docs/#conforms), поскольку позволяет проверять соответствие свойств объекта как с фиксированными значениями, так и c регулярными выражениями и c предикатами:
 
 ```javascript
 let involvesLearning = matches({ title: /[Ll]earn/ });
