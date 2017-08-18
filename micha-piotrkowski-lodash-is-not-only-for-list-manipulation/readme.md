@@ -564,3 +564,9 @@ console.log(program({items: []}));
 Является ли этот функциональный подход лучше/чище/моднее/подставьте_свое_прилагательное, чем классический императивный подход? Я оставлю читателю этот вопрос на его усмотрение. Однако, независимо от ответа, определенно важно быть в курсе всех этих крутых функций кастомизации, предоставляемых Lodash.
 
 В следующей статье мы расширим наш пример интерфейсом пользователя и построим полностью работоспособное приложение списка To-Do. Оставайтесь на связи!
+
+----
+
+*Слушайте наш подкаст в [iTunes](https://itunes.apple.com/ru/podcast/девшахта/id1226773343) и [SoundCloud](https://soundcloud.com/devschacht), читайте нас на [Medium](https://medium.com/devschacht), контрибьютьте на [GitHub](https://github.com/devSchacht), общайтесь в [группе Telegram](https://t.me/devSchacht), следите в [Twitter](https://twitter.com/DevSchacht) и [канале Telegram](https://t.me/devSchachtChannel), рекомендуйте в [VK](https://vk.com/devschacht) и [Facebook](https://www.facebook.com/devSchacht).*
+
+[Статья на Medium](https://medium.com/@dmitriy.gershun/lodash-не-только-для-манипуляции-списками-c78a5929a62c)
