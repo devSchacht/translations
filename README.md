@@ -60,3 +60,4 @@
 56. [Критический запрос](the-critical-request)
 57. [Быстрый старт: начало работы с безголовым Chrome в Node.js](brian-greig-quick-tip-getting-started-with-headless-chrome-in-nodejs)
 58. [Реактивность Vue.js](anthony-gore-reactivity-in-vue.js)
+59. [Объяснение работы async_hooks в Node.js с иллюстрациями]()
