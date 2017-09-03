@@ -1,4 +1,4 @@
-# Объяснение работы async_hooks в Node.js с иллюстрациями
+# Иллюстрированное объяснение работы async_hooks в Node.js
 
 *Перевод статьи [Ирины Шестак](https://medium.com/@_lrlna?source=post_header_lockup):[async_hooks in node.js, illustrated](https://medium.com/the-node-js-collection/async-hooks-in-node-js-illustrated-b7ce1344111f). Опубликовано с разрешения автора.*
 
