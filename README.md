@@ -57,4 +57,5 @@
 53. [Реактивные интерфейсы на нативном JavaScript - Часть 1: Чистый функциональный стиль](brandon-smith-reactive-uis-with-vanillajs-part-1-pure-functional-style)
 54. [Паттерны оптимизации JavaScript. Часть 2](benedikt-meurer-javascript-optimization-patterns-part2)
 55. [emotion. Следующее поколение CSS-in-JS](kye-hohenberger-emotion)
-56. [Быстрый старт: начало работы с безголовым Chrome в Node.js](brian-greig-quick-tip-getting-started-with-headless-chrome-in-nodejs)
+56. [Критический запрос](the-critical-request)
+57. [Быстрый старт: начало работы с безголовым Chrome в Node.js](brian-greig-quick-tip-getting-started-with-headless-chrome-in-nodejs)
