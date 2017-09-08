@@ -1,5 +1,7 @@
 # Простой способ размещения Vue-приложения на Heroku
 
+*Статья основана на оригинальной статье [Sagar Jauhari](https://twitter.com/sagarjauhari): [Quick-n-clean way to deploy Vue + Webpack apps on Heroku](https://medium.com/@sagarjauhari/quick-n-clean-way-to-deploy-vue-webpack-apps-on-heroku-b522d3904bc8).*
+
 ![Heroku Logo](./heroku-logo.jpg "Heroku Logo")
 
 Если есть необходимость отделить процесс разработки приложения от процесса сборки и его размещения на удаленном сервере, то можно выбрать следующий вариант. Создать статические страницы на локальной машине, а затем отправить собранное приложение на Heroku.
