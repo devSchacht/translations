@@ -62,3 +62,4 @@
 58. [Быстрый старт: начало работы с безголовым Chrome в Node.js](brian-greig-quick-tip-getting-started-with-headless-chrome-in-nodejs)
 59. [Реактивность Vue.js](anthony-gore-reactivity-in-vue.js)
 60. [Иллюстрированное объяснение работы async_hooks в Node.js](ira-shestak-async-hooks-in-node-js-illustrated)
+61. [Изучите, как отладить JavaScript с помощью Chrome DevTools](brandon-morelli-learn-how-to-debug-javascript-with-chrome-devtools)
