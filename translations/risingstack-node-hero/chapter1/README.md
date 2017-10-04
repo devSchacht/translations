@@ -1,8 +1,6 @@
 # НАЧАЛО РАБОТЫ С NODE.JS
 
-
-Перевод книги Node Hero от RisingStack https://risingstack.com/resources/node-hero
-
+*Перевод книги [Node Hero](https://risingstack.com/resources/node-hero) от [RisingStack](https://risingstack.com/)*
 
 
 Мы начнем с основ — никаких предварительных знаний Node.js не требуется. Цель этой книги — начать работу с Node.js и убедиться, что вы понимаете, как писать приложение с использованием этой платформы.
@@ -194,3 +192,9 @@ module.exports.sum = sum
 ---
 
 В следующей главе под названием «Использование NPM» мы рассмотрим, как использовать NPM, менеджер пакетов для JavaScript.
+
+---
+
+*Слушайте наш подкаст в [iTunes](https://itunes.apple.com/ru/podcast/девшахта/id1226773343) и [SoundCloud](https://soundcloud.com/devschacht), читайте нас на [Medium](https://medium.com/devschacht), контрибьютьте на [GitHub](https://github.com/devSchacht), общайтесь в [группе Telegram](https://t.me/devSchacht), следите в [Twitter](https://twitter.com/DevSchacht) и [канале Telegram](https://t.me/devSchachtChannel), рекомендуйте в [VK](https://vk.com/devschacht) и [Facebook](https://www.facebook.com/devSchacht).*
+
+[Статья на Medium]()
