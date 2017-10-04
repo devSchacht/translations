@@ -1,6 +1,6 @@
 # Начало работы с Node.js
 
-*Перевод книги [Node Hero](https://risingstack.com/resources/node-hero) от [RisingStack](https://risingstack.com/). Публикуется с разрешения правообладателей.*
+*Перевод книги [Node Hero](https://risingstack.com/resources/node-hero) от [RisingStack](https://risingstack.com/). Переведено с разрешения правообладателей.*
 
 Мы начнем с основ: никаких предварительных знаний Node.js не требуется. Цель этой книги — начать работу с Node.js и убедиться, что вы понимаете, как писать приложение с использованием этой платформы.
 
@@ -85,13 +85,13 @@ $ node
 
 ```
 $ node
-> console.log(‘hello from Node.js’)
+> console.log('hello from Node.js')
 ```
 
 После нажатия Enter вы получите следующее:
 
 ```
-> console.log(‘hello from Node.js’)
+> console.log('hello from Node.js')
 hello from Node.js
 undefined
 ```
@@ -106,7 +106,7 @@ undefined
 
 ```
 // index.js
-console.log(‘hello from Node.js’)
+console.log('hello from Node.js')
 ```
 
 Чтобы запустить этот файл, вы должны снова открыть свой терминал и перейти в каталог, в котором размещён `index.js`.
@@ -119,8 +119,8 @@ console.log(‘hello from Node.js’)
 
 ```
 ├── app
-| ├── calc.js
-| └── index.js
+|  ├── calc.js
+|  └── index.js
 ├── index.js
 └── package.json
 ```
@@ -132,15 +132,15 @@ console.log(‘hello from Node.js’)
 ```javascript
 // package.json
 {
-  “name”: “@risingstack/node-hero”,
-  “version”: “1.0.0”,
-  “description”: “”,
-  “main”: “index.js”,
-  “scripts”: {
-    “test”: “echo \”Error: no test speci ed\” && exit 1”,
-    “start”: “node index.js”
+  "name": “@risingstack/node-hero",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
-  “author”: “”, “license”: “ISC”
+  "author": "", "license": "ISC"
 }
 ```
 
@@ -150,7 +150,7 @@ console.log(‘hello from Node.js’)
 
 ```javascript
 // index.js
-require(‘./app/index’)
+require('./app/index')
 ```
 
 Теперь пришло время приступить к созданию реального приложения. Откройте файл `index.js` из папки `/app`, чтобы создать очень простой пример: добавление массива чисел. В этом случае файл `index.js` будет содержать только числа, которые мы хотим добавить, а логика, требующая вычислений, должна быть помещена в отдельный модуль.
@@ -159,7 +159,7 @@ require(‘./app/index’)
 
 ```javascript
 // app/index.js
-const calc = require(‘./calc’)
+const calc = require('./calc')
 const numbersToAdd = [
     3,
     4,
