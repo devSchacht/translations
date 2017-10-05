@@ -1,5 +1,11 @@
 # Переводы
 
+## Содержание репозитория
+
+* [Node Hero](https://github.com/devSchacht/translations#node-hero)
+* [Переводы статей](https://github.com/devSchacht/translations#Переводы-статей)
+* **[Участие в переводах](CONTRIBUTING.md)**
+
 ## [Node Hero](node-hero)
 
 ## Переводы статей
