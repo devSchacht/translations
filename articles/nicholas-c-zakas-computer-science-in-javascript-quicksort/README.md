@@ -1,5 +1,5 @@
 # Информатика в JavaScript: Быстрая сортировка (Quicksort)
- 
+
 *Перевод статьи  [Nicholas C. Zakas](https://twitter.com/slicknet): [Computer science in JavaScript: Quicksort](https://www.nczonline.net/blog/2012/11/27/computer-science-in-javascript-quicksort/).*
 
 Большинство дискуссий по поводу алгоритмов сортировки, как правило, заканчиваются обсуждением алгоритма быстрой сортировки из-за его скорости. Курсы информатики, как правило, охватывают quicksort[¹](https://www.nczonline.net/images/wp-content/uploads/2012/11/quicksort_partition1.png) потому, что он имеет отличный показатель средней сложности O(n log n) и относительно высокую производительность по сравнению с другими, менее эффективными алгоритмами вроде buble sort или insert sort для больших наборов данных. В отличие от других алгоритмов сортировки, существует множество различных реализаций quicksort, одни направлены на повышение производительности, другие — на устойчивость (эквивалентные элементы, остаются в том же порядке, в котором они изначально встречаются).
@@ -147,5 +147,3 @@ Quicksort, как правило, считается самой эффектив
 ---
 
 *Слушайте наш подкаст в [iTunes](https://itunes.apple.com/ru/podcast/девшахта/id1226773343) и [SoundCloud](https://soundcloud.com/devschacht), читайте нас на [Medium](https://medium.com/devschacht), контрибьютьте на [GitHub](https://github.com/devSchacht), общайтесь в [группе Telegram](https://t.me/devSchacht), следите в [Twitter](https://twitter.com/DevSchacht) и [канале Telegram](https://t.me/devSchachtChannel), рекомендуйте в [VK](https://vk.com/devschacht) и [Facebook](https://www.facebook.com/devSchacht).*
-
-[Статья на Medium](https://medium.com/p/5688bb93974b)

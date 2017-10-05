@@ -11,7 +11,7 @@
 5. [Сборщик мусора в V8, иллюстрированное руководство](/articles/ira_shestak_garbage_collection_in_v8)
 6. [Современный JavaScript для древних веб-разработчиков](/articles/gina-trapani-modern-javascript-for-ancient-web-developers)
 7. [Как написать ваш собственный виртуальный DOM](/articles/how-to-write-your-own-virtual-dom)
-8. [Спецификация Fantasy Land](/articles/https://github.com/devSchacht/fantasy-land)
+8. [Спецификация Fantasy Land](https://github.com/devSchacht/fantasy-land)
 9. [Использование code coverage – нового инструмента Chrome DevTools](/articles/using-the-chrome-devtools-new-code-coverage-feature)
 10. [Использование Observables в реальной жизни](/articles/nicolas-carlo-using-observables-in-real-life)
 11. [V8: за кулисами (Мартовское издание. Запуск I+TF и декларативный JavaScript)](/articles/benedikt_meurer_v8_behind_the_scenes_march_edition)
