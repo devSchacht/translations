@@ -75,3 +75,4 @@
 63. [Изучите, как отладить JavaScript с помощью Chrome DevTools](/articles/brandon-morelli-learn-how-to-debug-javascript-with-chrome-devtools)
 64. [Пять плагинов Vuex](/articles/anthony-gore-code-five-plugins-vuex)
 65. [Используем axios вместе с Vue.js](/articles/vue-js-rest-api-consumption-with-axios)
+66. [Quasar Framework - универсальный Vue-фреймворк](/articles/greg-kroczek-quasar-framework)
