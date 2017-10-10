@@ -76,3 +76,4 @@
 64. [Пять плагинов Vuex](/articles/anthony-gore-code-five-plugins-vuex)
 65. [Используем axios вместе с Vue.js](/articles/vue-js-rest-api-consumption-with-axios)
 66. [Quasar Framework - универсальный Vue-фреймворк](/articles/greg-kroczek-quasar-framework)
+67. [Асинхронные стектрейсы: почему await побеждает .then()](/articles/mathias-bynens-asynchronous-stack-traces-why-await-beats-then)
