@@ -2,7 +2,7 @@
 
 *Перевод заметки [Mathias Bynens](https://mathiasbynens.be): [Asynchronous stack traces: why await beats .then()](https://mathiasbynens.be/notes/async-stack-traces). Опубликовано с разрешения автора.*
 
-![Асинхронные стектрейсы: почему `await` побеждает `.then()](./async-await-1024x430.jpg)
+![Асинхронные стектрейсы: почему await побеждает .then()](./async-await-1024x430.jpg)
 
 В сравнении использованием промисов напрямую, [async/await](https://developers.google.com/web/fundamentals/getting-started/primers/async-functions) не только делают код более читабельным для разработчиков, но также добавляют некоторые оптимизации в движке JavaScript.
 
