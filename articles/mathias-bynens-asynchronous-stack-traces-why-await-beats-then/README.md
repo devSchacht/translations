@@ -2,6 +2,8 @@
 
 *Перевод заметки [Mathias Bynens](https://mathiasbynens.be): [Asynchronous stack traces: why await beats .then()](https://mathiasbynens.be/notes/async-stack-traces). Опубликовано с разрешения автора.*
 
+![Асинхронные стектрейсы: почему await побеждает .then()](./async-await-1024x430.jpg)
+
 В сравнении использованием промисов напрямую, [async/await](https://developers.google.com/web/fundamentals/getting-started/primers/async-functions) не только делают код более читабельным для разработчиков, но также добавляют некоторые оптимизации в движке JavaScript.
 
 Фундаментальное отличие между `await` и нативными промисами в том, что `await X()` приостанавливает выполнение текущей функции, когда `promise.then(X)` продолжает выполнение после добавления вызова `X` в цепочку функций обратного вызова (*callback*). Для стектрейса эта разница весьма значительная.
