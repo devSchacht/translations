@@ -124,7 +124,7 @@ error happened during reading the file
 
 Для более глубокого понимания работы цикла событий рекомендуем посмотреть это видео:
 
-[https://www.youtube.com/watch?v=8aGhZQkoFbQ](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
+[https://www.youtube.com/watch?v=8cV4ZvHXQL4](https://www.youtube.com/watch?v=8cV4ZvHXQL4)
 
 ## Асинхронный поток управления
 
