@@ -9,7 +9,7 @@
 В традиционной практике программирования большинство операций ввода-вывода происходит синхронно. Если вы думаете о Java и о том, как вы читаете файл в  Java, вы получите что-то вроде этого:
 
 ```java
-try(FileInputStream inputStream = new FileInputStream(“foo.txt”)) {
+try(FileInputStream inputStream = new FileInputStream("foo.txt")) {
     Session IOUtils;
     String  fileContent = IOUtils.toString(inputStream); 
 }
@@ -90,7 +90,7 @@ console.log('start reading a file...')
 
 fs.readFile('file.md', 'utf-8', function (err, content) {
     if (err) {
-        console.log(‘error happened during reading the file’)
+        console.log('error happened during reading the file')
         return console.log(err)
     }
     console.log(content)
@@ -144,7 +144,7 @@ Async.js помогает структурировать ваши приложе
 async.parallel(['file1', 'file2', 'file3'],
     fs.stat,
     function (err, results) {
-        // results is now an array of stats for each file
+        // results теперь содержит массив системных данных для каждого файла
 })
 ```
 
