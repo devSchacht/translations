@@ -78,4 +78,4 @@
 66. [Quasar Framework - универсальный Vue-фреймворк](/articles/greg-kroczek-quasar-framework)
 67. [Асинхронные стектрейсы: почему await побеждает .then()](/articles/mathias-bynens-asynchronous-stack-traces-why-await-beats-then)
 68. [Используем миксины во Vue.js](/articles/using-mixins-in-vuejs)
-69. [Cerebral 2](/arcticles/cristian-alfoni-cerebral-2)
+69. [Cerebral 2](/articles/cristian-alfoni-cerebral-2)
