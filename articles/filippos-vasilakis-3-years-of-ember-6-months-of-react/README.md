@@ -1,6 +1,6 @@
 # 3+ года Ember, 6 месяцев React
 
-**Перевод статьи [Filippos Vasilakis](https://blog.kollegorna.se/@vasilakisfil): [3+ years of Ember, 6 months of React](https://blog.kollegorna.se/3-years-of-ember-6-months-of-react-34ce909a5ce1)**
+*Перевод статьи [Filippos Vasilakis](https://blog.kollegorna.se/@vasilakisfil): [3+ years of Ember, 6 months of React](https://blog.kollegorna.se/3-years-of-ember-6-months-of-react-34ce909a5ce1)*
 
 ![](https://cdn-images-1.medium.com/max/1000/1*yl_K-aaEBGBSOKip4YwrZw.jpeg)
 
