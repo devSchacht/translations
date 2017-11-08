@@ -40,9 +40,9 @@
 ### Библиотеки, используемые для тестирования в Node.js
 
 Для модульного тестирования мы собираемся использовать следующие библиотеки:
-• **запуск тестов**: [mocha](https://www.npmjs.com/package/mocha), альтернативно [tape](https://www.npmjs.com/package/tape)
-• **библиотека утверждений**: [chai](http://chaijs.com/), альтернативно [assert](https://www.npmjs.com/package/assert)
-• **шпионы, стабы и моки**: [sinon](http://sinonjs.org/) *(для настройки тестов)*.
+* **запуск тестов**: [mocha](https://www.npmjs.com/package/mocha), альтернативно [tape](https://www.npmjs.com/package/tape)
+* **библиотека утверждений**: [chai](http://chaijs.com/), альтернативно [assert](https://www.npmjs.com/package/assert)
+* **шпионы, стабы и моки**: [sinon](http://sinonjs.org/) *(для настройки тестов)*.
 
 ### Шпионы, стабы и моки - что использовать и когда?
 
