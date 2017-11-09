@@ -1,4 +1,5 @@
 # Отладка
+*Перевод книги [Node Hero](https://risingstack.com/resources/node-hero) от [RisingStack](https://risingstack.com/). Переведено с разрешения правообладателей.*
 
 В этой главе вы узнаете, как отлаживать приложения Node.js с помощью модуля `debug`, встроенного отладчика Node и инструментов разработчика в Chrome.
 
