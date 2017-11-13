@@ -1,4 +1,5 @@
-# БЕЗОПАСНОСТЬ
+# Безопасность
+*Перевод книги [Node Hero](https://risingstack.com/resources/node-hero) от [RisingStack](https://risingstack.com/). Переведено с разрешения правообладателей.*
 
 В этой главе, посвящённой безопасности Node.js, вы узнаете, как защитить свои приложения от наиболее распространённых атак.
 
@@ -164,3 +165,10 @@ nsp check
 ---
 
 В следующей главе Node Hero вы узнаете, **как развернуть защищённое Node.js-приложение**, чтобы люди могли начать его использовать!
+
+
+---
+
+*Слушайте наш подкаст в [iTunes](https://itunes.apple.com/ru/podcast/девшахта/id1226773343) и [SoundCloud](https://soundcloud.com/devschacht), читайте нас на [Medium](https://medium.com/devschacht), контрибьютьте на [GitHub](https://github.com/devSchacht), общайтесь в [группе Telegram](https://t.me/devSchacht), следите в [Twitter](https://twitter.com/DevSchacht) и [канале Telegram](https://t.me/devSchachtChannel), рекомендуйте в [VK](https://vk.com/devschacht) и [Facebook](https://www.facebook.com/devSchacht).*
+
+[Глава на Medium]()
