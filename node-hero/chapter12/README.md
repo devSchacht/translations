@@ -1,4 +1,5 @@
 # Деплой вашего приложения
+*Перевод книги [Node Hero](https://risingstack.com/resources/node-hero) от [RisingStack](https://risingstack.com/). Переведено с разрешения правообладателей.*
 
 В этой главе о деплое Node.js вы узнаете, как развернуть приложения Node.js на сервер PaaS-провайдера (Heroku), либо с помощью Docker.
 
@@ -143,3 +144,9 @@ docker run IMAGE_ID
 ---
 
 В следующей главе Node Hero вы узнаете, **как мониторить свои приложения Node.js**, так, чтобы они могли быть онлайн 24/7.
+
+---
+
+*Слушайте наш подкаст в [iTunes](https://itunes.apple.com/ru/podcast/девшахта/id1226773343) и [SoundCloud](https://soundcloud.com/devschacht), читайте нас на [Medium](https://medium.com/devschacht), контрибьютьте на [GitHub](https://github.com/devSchacht), общайтесь в [группе Telegram](https://t.me/devSchacht), следите в [Twitter](https://twitter.com/DevSchacht) и [канале Telegram](https://t.me/devSchachtChannel), рекомендуйте в [VK](https://vk.com/devschacht) и [Facebook](https://www.facebook.com/devSchacht).*
+
+[Глава на Medium]()
