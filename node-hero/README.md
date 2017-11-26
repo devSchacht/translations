@@ -18,3 +18,6 @@
 12. [Деплой вашего приложения](chapter12)
 13. [Мониторинг Node.js-приложений](chapter13)
 
+## Читать целиком
+
+[md](full_book.md) [epub](node-hero.epub)
