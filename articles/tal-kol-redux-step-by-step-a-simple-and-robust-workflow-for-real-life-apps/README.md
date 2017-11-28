@@ -1,5 +1,9 @@
 # Redux: шаг за шагом
 
+*Перевод статьи [Tal Kol](https://hackernoon.com/@talkol) — [Redux Step by Step: A Simple and Robust Workflow for Real Life Apps](https://hackernoon.com/redux-step-by-step-a-simple-and-robust-workflow-for-real-life-apps-1fdf7df46092)*
+
+![Stones-circle](https://cdn-images-1.medium.com/max/2000/1*7lHJdZ2Tupj7kb6AgHPt-Q.jpeg)
+
 *Redux стал одной самых популярных реализаций идей Flux'a для управления потоком данных в приложениях на React.
 Однако, в процессе изучения Redux'а, часто возникает ситауция, когда "из за деревьев мы не видим леса".
 Далее будет представлено простое и продуманное рабочее окружение для работы с приложениями, использующими Redux.
@@ -22,7 +26,7 @@
 После того, как пользователь сделает выбор, будем показывать список постов по выбранным темам (все посты либо посты по конкретной теме). По клику на пост в списке будем показывать его содержание.
 
 ## Установка
-Поскольку мы используем React, то для начала работы возьмем [Create React App](https://github.com/facebookincubator/create-react-app) — официальный стартовый шаблон. ТАкже установим [redux](https://www.npmjs.com/package/redux), [react-redux](https://www.npmjs.com/package/react-redux) и [redux-thunk](https://www.npmjs.com/package/redux-thunk).
+Поскольку мы используем React, то для начала работы возьмем [Create React App](https://github.com/facebookincubator/create-react-app) — официальный стартовый шаблон. Также установим [redux](https://www.npmjs.com/package/redux), [react-redux](https://www.npmjs.com/package/react-redux) и [redux-thunk](https://www.npmjs.com/package/redux-thunk).
 
 Добавим index.js, создадим в нем стор, подключим санки.
 
