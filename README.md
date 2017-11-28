@@ -80,3 +80,4 @@
 68. [Используем миксины во Vue.js](/articles/using-mixins-in-vuejs)
 69. [Cerebral 2](/articles/cristian-alfoni-cerebral-2)
 70. [3+ года Ember, 6 месяцев React](/articles/filippos-vasilakis-3-years-of-ember-6-months-of-react)
+71. [Итак, вы хотите научиться функциональному программированию (Часть 1)](/articles/charles-scalfani-so-you-want-to-be-a-functional-programmer-part-1)
