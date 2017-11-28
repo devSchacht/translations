@@ -414,3 +414,7 @@ export function getPosts(state) {
 Помните, что Redux предоставляет большое поле для экспериментов. Существуют подходы отличные от того, что использовали мы. У меня есть друзья предпочитающие использовать *[redux-promise-middleware](https://github.com/pburtchaell/redux-promise-middleware)* вместо *санков* и писать бизнес-логику только в редюсерах.
 
 Если вы хотите поделиться своей собственной методолигией для решения нашей задачи, не стесняйтесь — делайте PR в репозиторий проекта и мы рассмотрим его.
+
+---
+
+*Слушайте наш подкаст в [iTunes](https://itunes.apple.com/ru/podcast/девшахта/id1226773343) и [SoundCloud](https://soundcloud.com/devschacht), читайте нас на [Medium](https://medium.com/devschacht), контрибьютьте на [GitHub](https://github.com/devSchacht), общайтесь в [группе Telegram](https://t.me/devSchacht), следите в [Twitter](https://twitter.com/DevSchacht) и [канале Telegram](https://t.me/devSchachtChannel), рекомендуйте в [VK](https://vk.com/devschacht) и [Facebook](https://www.facebook.com/devSchacht).*
