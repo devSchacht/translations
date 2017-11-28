@@ -3,6 +3,7 @@
 *Перевод статьи [Tal Kol](https://hackernoon.com/@talkol) — [Redux Step by Step: A Simple and Robust Workflow for Real Life Apps](https://hackernoon.com/redux-step-by-step-a-simple-and-robust-workflow-for-real-life-apps-1fdf7df46092)*
 
 ![Stones-circle](https://cdn-images-1.medium.com/max/2000/1*7lHJdZ2Tupj7kb6AgHPt-Q.jpeg)
+<span>no trees, just rocks</span>
 
 *Redux стал одной самых популярных реализаций идей Flux'a для управления потоком данных в приложениях на React.
 Однако, в процессе изучения Redux'а, часто возникает ситауция, когда "из за деревьев мы не видим леса".
