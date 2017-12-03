@@ -1,5 +1,7 @@
 # Ember.js - идеальный фреймворк для веб приложений.
 
+*Перевод статьи [Graham Cox](https://twitter.com/grahamcox82): [Ember.js: The Perfect Framework for Web Applications](https://www.sitepoint.com/ember-js-perfect-framework-web-applications/)*
+
 ![Ember.js](https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2015/03/1425997476emberjs-logo-300x300.png)
 
 Ember.js - уверенный в себе фронтенд фреймворк, получивший много внимания в последнее время. Это статья познакомит вас с основными концепциями фреймворка во время написания простого приложения и покажет что с его помощью можно сделать.
