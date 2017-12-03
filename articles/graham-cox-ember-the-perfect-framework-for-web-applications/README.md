@@ -123,7 +123,7 @@ Rollup (1)                                    | 445ms
 
 Начальная страница подсказывает нам что делать. Давайте изменим ее и посмотрим что произойдет. Мы собираемся изменить файл `app/templates/application.hbs`, чтобы он выглядел так:
 
-```
+```hbs
 This is my new application.
 
 {{outlet}}
@@ -216,7 +216,7 @@ ok 8 PhantomJS 2.1 - ESLint | tests: test-helper.js
 
 К сожалению аддон для Materialize пока что не совместим с последней версией Ember, поэтому мы просто добавим ссылку на него. Чтобы сделать это мы обновим `app/index.html` файл, который является корневой страницей в которую будет отрендерено наше приложение. Мы хотим добавить ссылки на CDN для jQuery, Google Icon Font, и Materialize.
 
-```
+```html
 <!-- Внутри тэга head -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
@@ -228,7 +228,7 @@ ok 8 PhantomJS 2.1 - ESLint | tests: test-helper.js
 
 Теперь мы может обновить нашу главную страницу, добавив разметки. Для чего отредактируем файл `app/templates/application.hbs`:
 
-```
+```hbs
 <nav>
     <div class="nav-wrapper">
         <a href="#" class="brand-logo">
@@ -281,7 +281,7 @@ installing route-test
 
 Давайте посмотрим на это в действии. Для начала мы хотим создать довольно простую страницу, позволяющую нам получить число, после броска костей. Для этого обновим файл `app/templates/roll.hbs`:
 
-```
+```hbs
 <div class="row">
     <form class="col s12">
         <div class="row">
@@ -320,7 +320,7 @@ installing route-test
 
 В нашем случае нужно обновить файл `app/templates/application.hbs`, чтобы он содержал следующее:
 
-```
+```hbs
 <ul id="nav-mobile" class="right hide-on-med-and-down">
     {{#link-to 'roll' tagName="li"}}
         <a href="roll">Бросить кость</a>
@@ -358,7 +358,7 @@ installing component-test
 
 Обновим шаблон компонента `app/templates/components/roll-dice.hbs`:
 
-```
+```hbs
 <form class="col s12">
     <div class="row">
         <div class="input-field col s12">
@@ -387,7 +387,7 @@ installing component-test
 
 А также шаблон роута `app/templates/roll.hbs`:
 
-```
+```hbs
 <div class="row">
     {{roll-dice}}
 </div>
@@ -403,7 +403,7 @@ installing component-test
 
 Сделать это можно обновив код компонента `app/components/roll-dice.js` таким образом:
 
-```
+```js
 /* global Materialize:false */
 import Ember from 'ember';
 
@@ -424,7 +424,7 @@ export default Ember.Component.extend({
 
 В нашем случае у нас есть три поля ввода, поэтому нам нужно добавить три строчки внутри класса компонента в файле `app/components/roll-dice.js`:
 
-```
+```js
     rollName: '',
     numberOfDice: 1,
     numberOfSides: 6,
@@ -432,7 +432,7 @@ export default Ember.Component.extend({
 
 Затем мы обновим наш шаблон, заменив HTML разметку полей ввода на специальные хелперы.
 
-```
+```hbs
 <div class="row">
     <div class="input-field col s12">
         <!-- This replaces the <input> tag for "roll_name" -->
@@ -468,7 +468,7 @@ export default Ember.Component.extend({
 
 Добавим экшен в наш компонент `app/components/roll-dice.js`:
 
-```
+```js
 actions: {
     triggerRoll() {
         alert(`Rolling ${this.numberOfDice}D${this.numberOfSides} as "${this.rollName}"`);
@@ -483,7 +483,7 @@ actions: {
 
 Осталось подключить наш экшен. В шаблоне нам нужно сказать тэгу формы что ему нужно вызвать `triggerRoll` экшен, когда случится событие `onsubmit`. Это делается добавлением всего одного атрибута с использованием `action` хелпера. В шаблоне `app/templates/components/roll-dice.hbs` это  выглядит так:
 
-```
+```hbs
 <form class="col s12" onsubmit={{action 'triggerRoll'}}>
 ```
 
@@ -517,7 +517,7 @@ Ember управляет этим используя встроенную кон
 
 В классе, ответственном за управление роутом `app/routes/roll.js` зарегистрируем экшен `saveRoll`, которым мы собираемся выполнить:
 
-```
+```hbs
 actions: {
     saveRoll: function(rollName, numberOfDice, numberOfSides) {
         alert(`Rolling ${numberOfDice}D${numberOfSides} as "${rollName}"`);
@@ -527,7 +527,7 @@ actions: {
 
 И перепишем логику экшена компонента. Теперь мы хотим вызвать другой экшен в нашем компоненте, передав параметры броска в его аргументы. Это делается с помощью метода `sendAction`, доступного в классе компонента.
 
-```
+```hbs
 triggerRoll() {
     this.sendAction('roll', this.rollName, this.numberOfDice, this.numberOfSides);
     return false;
@@ -536,7 +536,7 @@ triggerRoll() {
 
 Осталось связать экшен из роута и экшен компонента. Для этого изменим внешний вид вызова компонента в шаблоне роута `app/templates/roll.hbs`:
 
-```
+```hbs
 {{roll-dice roll="saveRoll" }}
 ```
 
@@ -560,7 +560,7 @@ installing model-test
 
 Теперь мы можем заполнить модель `app/models/roll.js` необходимыми для представления наших данных атрибутами:
 
-```
+```js
 import DS from 'ember-data';
 
 export default DS.Model.extend({
@@ -575,7 +575,7 @@ export default DS.Model.extend({
 
 Используем эту модель для создания броска кости в хранилище и сохранения на бэкенд. Для этого нам нужно получить доступ к хранилищу в классе роута `app/routes/roll.js`:
 
-```
+```js
 saveRoll: function(rollName, numberOfDice, numberOfSides) {
     let result = 0;
     for (let i = 0; i < numberOfDice; ++i) {
@@ -609,7 +609,7 @@ Ember неявно использует роут под названием `inde
 
 Так как `index` роут уже существует, то нам не нужно вызывать никаких команд с помощью ember-cli, мы просто созданим файл `app/routes/index.js`, в который добавим:
 
-```
+```js
 import Ember from 'ember';
 
 export default Ember.Route.extend({
@@ -623,7 +623,7 @@ export default Ember.Route.extend({
 
 Создадим файл `app/templates/index.hbs` и добавим в него разметку:
 
-```
+```hbs
 <table>
     <thead>
         <tr>
