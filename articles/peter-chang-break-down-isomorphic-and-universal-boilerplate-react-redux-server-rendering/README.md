@@ -85,3 +85,47 @@ render(
 — маппинг стейта в пропсы позволит компоненту *Hello* использовать *this.props._message_* из **Redux стора**.
 
 — маппинг диспатчинга экшенов для *_HELLO WORLD_* позволяет использовать *_this.props.onClick_*, как функцию внутри компонента *Hello*
+
+```javascript
+const mapStateToProps = (state, ownProps) => {
+   return {
+      message: state.helloWorld.message
+   }
+}
+const mapDispatchToProps = (dispatch, ownProps) => {
+   return {
+      onClick: () => {
+         dispatch({ type: HELLO_WORLD })
+      }
+   }
+}
+const HelloWorld = connect(
+   mapStateToProps,
+   mapDispatchToProps
+)(Hello)
+```
+
+## NPM модули, которые вы должны знать
+
+*Ниже представлены некоторые из npm модулей, о которых знают не все*
+
+### react-redux
+
+По умолчанию Redux не включен в React, поэтому пакет *_react-redux_* нужно устанавливать дополнительно.
+Это предполагает, что вы должны использовать сборщики модулей типа **Webpack** или **Broserify**, которые работают с CommonJS.
+
+### webpack-dev-middleware
+
+Это простая миддлвара для вебпака. Служит для обратотки файлов загружающихся из npm пакетов. Используется *_только при разработке_* ([узнать больше](https://www.npmjs.com/package/webpack-dev-middleware)).
+ No files are written to disk, it handle the files in memory
+
+### webpack-hot-server-middleware
+
+Миддлвара, работающая в паре с (webpack-dev-middleware)[https://www.npmjs.com/package/webpack-dev-middleware], для "горячего обновления" webpack-бандлов на серевере (узнать больше)[https://www.npmjs.com/package/webpack-hot-server-middleware].
+
+## Пояснение
+
+*Ниже представлены некоторые термины и концепции*
+
+## HMR
+означает "Горячая Замена Мрдулей"(*хотрелоад*). Это фишка Webpack, позволяющая обновять ваш Javascript без перезагрузки браузера.(узнать больше)(http://andrewhfarmer.com/webpack-hmr-tutorial/).
