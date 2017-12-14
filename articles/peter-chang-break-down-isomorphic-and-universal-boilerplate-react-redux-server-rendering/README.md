@@ -133,7 +133,7 @@ const HelloWorld = connect(
 
 Миддлвара, работающая в паре с (webpack-dev-middleware)[https://www.npmjs.com/package/webpack-dev-middleware], для "горячего обновления" webpack-бандлов на серевере (узнать больше)[https://www.npmjs.com/package/webpack-hot-server-middleware].
 
-## Пояснение
+### Пояснение
 
 *Ниже представлены некоторые термины и концепции*
 
