@@ -186,9 +186,9 @@ let store = createStore(mixReducers, [ 'Use Redux' ])
 * "Тупые" компоненты: 1) Не имеют зависимостей от остального приложения, 2) Определяют визуальную составляющую элемента.
 
 ## Ссылки:
-https://www.npmjs.com/package/redux
-http://redux.js.org/docs/introduction/Examples.html
-https://medium.com/@firasd/quick-start-tutorial-using-redux-in-react-apps-89b142d6c5c1
-http://andrewhfarmer.com/starter-project/
-https://www.codementor.io/reactjs/tutorial/redux-server-rendering-react-router-universal-web-app
-https://github.com/WilberTian/StepByStep-Redux/blob/master/06.react-redux.md
+* https://www.npmjs.com/package/redux
+* http://redux.js.org/docs/introduction/Examples.html
+* https://medium.com/@firasd/quick-start-tutorial-using-redux-in-react-apps-89b142d6c5c1
+* http://andrewhfarmer.com/starter-project/
+* https://www.codementor.io/reactjs/tutorial/redux-server-rendering-react-router-universal-web-app
+* https://github.com/WilberTian/StepByStep-Redux/blob/master/06.react-redux.md
