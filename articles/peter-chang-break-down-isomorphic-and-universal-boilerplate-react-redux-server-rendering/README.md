@@ -4,7 +4,7 @@
 
 *Ищите шаблон на React-Redux? Если да, то вряд ли у вас проблемы с поиском. Потому что вы нашли ТОННЫ шаблонов.([Andrew Farmer](https://www.andrewhfarmer.com/starter-project/))*
 
-![Серверный рендеринг с помощью React Redux](/images/isomophic-react1.jpeg)
+![Серверный рендеринг с помощью React Redux](images/isomophic-react1.jpeg)
 <p style="text-align: center;">Серверный рендеринг с помощью React Redux</p>
 
 **Вам также может понравиться:**
