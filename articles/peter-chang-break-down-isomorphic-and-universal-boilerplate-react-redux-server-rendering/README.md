@@ -2,10 +2,10 @@
 
 *Перевод статьи [Peter Chang](https://hackernoon.com/isomorphic-universal-boilerplate-react-redux-server-rendering-tutorial-example-webpack-compenent-6e22106ae285)*
 
-### *Ищите шаблон на React-Redux? Если да, то вряд ли у вас проблемы с поиском. Потому что вы нашли ТОННЫ шаблонов. ([Andrew Farmer](https://www.andrewhfarmer.com/starter-project/))*
-
 ![Серверный рендеринг с помощью React Redux](images/isomophic-react1.jpeg)
 <p style="text-align: center;">Серверный рендеринг с помощью React Redux</p>
+
+### *Ищите шаблон на React-Redux? Если да, то вряд ли у вас проблемы с поиском. Потому что вы нашли ТОННЫ шаблонов. ([Andrew Farmer](https://www.andrewhfarmer.com/starter-project/))*
 
 **Вам также может понравиться:**
 * [Isomorphic Application: Best Practice](https://hackernoon.com/react-redux-isomorphic-boilerplate-best-practice-example-tutorial-learning-rendering-reducer-action-8a448d0dbddb)
