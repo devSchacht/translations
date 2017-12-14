@@ -131,7 +131,7 @@ const HelloWorld = connect(
 
 ### webpack-hot-server-middleware
 
-Миддлвара, работающая в паре с [webpack-dev-middleware](https://www.npmjs.com/package/webpack-dev-middleware), для _горячего обновления(HMR)_" webpack-бандлов на серевере [узнать больше](https://www.npmjs.com/package/webpack-hot-server-middleware).
+Миддлвара, работающая в паре с [webpack-dev-middleware](https://www.npmjs.com/package/webpack-dev-middleware), для **горячего обновления(HMR)** webpack-бандлов на серевере [узнать больше](https://www.npmjs.com/package/webpack-hot-server-middleware).
 
 ## Пояснение
 
