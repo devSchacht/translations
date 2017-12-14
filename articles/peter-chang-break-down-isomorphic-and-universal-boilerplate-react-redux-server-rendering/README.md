@@ -133,12 +133,12 @@ const HelloWorld = connect(
 
 Миддлвара, работающая в паре с [webpack-dev-middleware](https://www.npmjs.com/package/webpack-dev-middleware), для **горячего обновления(HMR)** webpack-бандлов на серевере [узнать больше](https://www.npmjs.com/package/webpack-hot-server-middleware).
 
-## Пояснение
+## Пояснения
 
-*Ниже представлены некоторые термины и концепции*
+*Ниже раскрыты некоторые термины и концепции*
 
 ### HMR
-означает "Горячая Замена Мрдулей"(*хотрелоад*). Это фишка Webpack, позволяющая обновять ваш Javascript без перезагрузки браузера. (узнать больше)(http://andrewhfarmer.com/webpack-hmr-tutorial/).
+означает "Горячая Замена(Обновление) Модулей"(*хотрелоад*). Это фишка Webpack, позволяющая обновлять ваш Javascript-код без перезагрузки браузера. (узнать больше)(http://andrewhfarmer.com/webpack-hmr-tutorial/).
 
 
 ### combineReducers(...)
