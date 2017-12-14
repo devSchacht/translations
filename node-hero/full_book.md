@@ -656,17 +656,17 @@ app.listen(3000)
 Как и во всех фреймворках, правильная обработка ошибок имеет решающее значение. В Express вы должны создать специальный промежуточный обработчик - middleware с четырьмя входными параметрами:
 
 ```javascript
-const express = require(‘express’)
+const express = require('express')
 const app = express()
 
-app.get(‘/’, (request, response) => {
-    throw new Error(‘oops’)
+app.get('/', (request, response) => {
+    throw new Error('oops')
 })
 
 app.use((err, request, response, next) => {
     // логирование ошибки, пока просто console.log
     console.log(err)
-    response.status(500).send(‘Something broke!’)
+    response.status(500).send('Something broke!')
 })
 ```
 
