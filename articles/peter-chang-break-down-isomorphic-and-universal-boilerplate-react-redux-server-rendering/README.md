@@ -126,7 +126,7 @@ const HelloWorld = connect(
 
 ### webpack-dev-middleware
 
-Это простая миддлвара для вебпака. Служит для обратотки файлов загружающихся из npm пакетов. Используется *_только при разработке_* ([узнать больше](https://www.npmjs.com/package/webpack-dev-middleware)).
+Это простая миддлвара для **Webpack**. Служит для обратотки файлов, загружающихся из npm пакетов. Используется *_только при разработке_* ([узнать больше](https://www.npmjs.com/package/webpack-dev-middleware)).
  No files are written to disk, it handle the files in memory
 
 ### webpack-hot-server-middleware
