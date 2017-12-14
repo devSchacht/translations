@@ -178,7 +178,7 @@ let store = createStore(mixReducers, [ 'Use Redux' ])
 
 С помощью _connect()_ создается "умный" компонент, подключаемый к Redux-стору.
 
-## "Умные компоненту" VS "Тупые" компоненты
+## "Умные" компоненты VS "Тупые" компоненты
 
 Подробнее о разделении на "умные" и "тупые" [тут](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)
 
