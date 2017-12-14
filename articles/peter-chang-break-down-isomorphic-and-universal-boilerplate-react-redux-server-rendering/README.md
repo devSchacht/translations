@@ -133,19 +133,19 @@ const HelloWorld = connect(
 
 Миддлвара, работающая в паре с (webpack-dev-middleware)[https://www.npmjs.com/package/webpack-dev-middleware], для "горячего обновления" webpack-бандлов на серевере (узнать больше)[https://www.npmjs.com/package/webpack-hot-server-middleware].
 
-### Пояснение
+## Пояснение
 
 *Ниже представлены некоторые термины и концепции*
 
-## HMR
+### HMR
 означает "Горячая Замена Мрдулей"(*хотрелоад*). Это фишка Webpack, позволяющая обновять ваш Javascript без перезагрузки браузера. (узнать больше)(http://andrewhfarmer.com/webpack-hmr-tutorial/).
 
 
-## combineReducers(...)
+### combineReducers(...)
 
 Создает объект, содеражащий значение нескольких редюсеров, который затем можно передать в *_createStore_*.
 
-## createStore (reducer, [preloadedState], [enhancer])
+### createStore (reducer, [preloadedState], [enhancer])
 
 1. Создает Redux-стор, хранящий стейт-дерево вашего приложения.
 2. Непосредственно создание функции _createStore(reducer, [initialState], [enhancer])_, которая затем передается в <Provider>:
@@ -172,13 +172,13 @@ const mixReducers= combineReducers({todos, prefixTodos})
 let store = createStore(mixReducers, [ 'Use Redux' ])
 ```
 
-## subscribe( … ) VS connect(…)
+### subscribe( … ) VS connect(…)
 
 По факту эти функции делают одно и то же в Redux, но официальная документация React'а *_НЕ_* советует использовать _store.subscribe()_, по той причине, что в connect() внесено множество оптимизаций, которые сложно сделать вручную, используя _store.subscribe()_.
 
 С помощью _connect()_ создается "умный" компонент, подключаемый к Redux-стору.
 
-## "Умные" компоненты VS "Тупые" компоненты
+### "Умные" компоненты VS "Тупые" компоненты
 
 Подробнее о разделении на "умные" и "тупые" [тут](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)
 
