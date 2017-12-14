@@ -128,4 +128,57 @@ const HelloWorld = connect(
 *Ниже представлены некоторые термины и концепции*
 
 ## HMR
-означает "Горячая Замена Мрдулей"(*хотрелоад*). Это фишка Webpack, позволяющая обновять ваш Javascript без перезагрузки браузера.(узнать больше)(http://andrewhfarmer.com/webpack-hmr-tutorial/).
+означает "Горячая Замена Мрдулей"(*хотрелоад*). Это фишка Webpack, позволяющая обновять ваш Javascript без перезагрузки браузера. (узнать больше)(http://andrewhfarmer.com/webpack-hmr-tutorial/).
+
+
+## combineReducers(...)
+
+Создает объект, содеражащий значение нескольких редюсеров, который затем можно передать в *_createStore_*.
+
+## createStore (reducer, [preloadedState], [enhancer])
+
+1. Создает Redux-стор, хранящий стейт-дерево вашего приложения.
+2. Непосредственно создание функции _createStore(reducer, [initialState], [enhancer])_, которая затем передается в <Provider>:
+
+```javascript
+import { createStore, combineReducers } from 'redux'
+function todos(state = [], action) {
+   switch (action.type) {
+      case 'ADD_TODO':
+      return state.concat([ action.text ])
+   default:
+      return state
+   }
+}
+function prefixTodos(state = [], action) {
+   switch (action.type) {
+      case 'PRE_ADD_TODO':
+      return state.concat([ 'pre_'+action.text ])
+   default:
+      return state
+   }
+}
+const mixReducers= combineReducers({todos, prefixTodos})
+let store = createStore(mixReducers, [ 'Use Redux' ])
+```
+
+## subscribe( … ) VS connect(…)
+
+По факту эти функции делают одно и то же в Redux, но официальная документация React'а *_НЕ_* советует использовать _store.subscribe()_, по той причине, что в connect() внесено множество оптимизаций, которые сложно сделать вручную, используя _store.subscribe()_.
+
+С помощью _connect()_ создается "умный" компонент, подключаемый к Redux-стору.
+
+## "Умные компоненту" VS "Тупые" компоненты
+
+Подробнее о разделении на "умные" и "тупые" [тут](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)
+
+* "Умные" компоненты предоставляют данные для "тупых" компонентов
+* "Тупые" компоненты: 1) Не имеют зависимостей от остального приложения, 2) Определяют визуальную составляющую элемента.
+
+## Ссылки:
+https://www.npmjs.com/package/redux
+http://redux.js.org/docs/introduction/Examples.html
+https://medium.com/@firasd/quick-start-tutorial-using-redux-in-react-apps-89b142d6c5c1
+http://andrewhfarmer.com/starter-project/
+https://www.codementor.io/reactjs/tutorial/redux-server-rendering-react-router-universal-web-app
+https://github.com/WilberTian/StepByStep-Redux/blob/master/06.react-redux.md
