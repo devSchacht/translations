@@ -115,7 +115,7 @@ CREATE TABLE users(
 Наконец, мы можем вернуться к программированию. Вот как вы можете взаимодействовать с вашей базой данных через вашу программу на Node.js:
 
 ```javascript
-‘use strict’
+'use strict'
 
 const pg = require('pg')
 const conString = 'postgres://username:password@ localhost/node_hero' // Убедитесь, что вы указали данные от вашей базы данных
