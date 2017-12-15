@@ -94,9 +94,9 @@ render(
 
    Документация React-Redux описывает множество способов использования *connect*. Для моей цели понадобятся только **mapStateToProps** и **mapDispatchToProps**, чтобы покрыть всю функциональность.
 
-— преобразование стейта в пропсы позволит компоненту *Hello* использовать *this.props._message_* из **Redux стора**.
+— преобразование стейта в пропсы позволит компоненту *Hello* использовать **_this.props.message_** из **Redux стора**.
 
-— преобразование диспатчинга экшенов для *_HELLO WORLD_* позволяет использовать *_this.props.onClick_*, как функцию внутри компонента *Hello*
+— преобразование диспатчинга экшенов для **_HELLO WORLD_** позволяет использовать **_this.props.onClick_**, как функцию внутри компонента **_Hello_**
 
 ```javascript
 const mapStateToProps = (state, ownProps) => {
@@ -128,8 +128,7 @@ const HelloWorld = connect(
 
 ### webpack-dev-middleware
 
-Это простая миддлвара для **Webpack**. Служит для обработки файлов, загружающихся из npm пакетов. Используется *_только при разработке_* ([узнать больше](https://www.npmjs.com/package/webpack-dev-middleware)).
- No files are written to disk, it handle the files in memory
+Это простая миддлвара для **Webpack**. Служит для обработки файлов, загружающихся из npm пакетов. Используется **_только при разработке_** ([узнать больше](https://www.npmjs.com/package/webpack-dev-middleware)).
 
 ### webpack-hot-server-middleware
 
@@ -145,7 +144,7 @@ const HelloWorld = connect(
 
 ### combineReducers(...)
 
-Создает объект, содержащий значение нескольких редюсеров, который затем можно передать в *_createStore_*.
+Создает объект, содержащий значение нескольких редюсеров, который затем можно передать в **_createStore_**.
 
 ### createStore (reducer, [preloadedState], [enhancer])
 
