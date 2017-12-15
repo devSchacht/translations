@@ -124,7 +124,7 @@ const HelloWorld = connect(
 ### react-redux
 
 По умолчанию Redux не включен в React, поэтому пакет *_react-redux_* нужно устанавливать дополнительно.
-Это предполагает, что вы должны использовать сборщики модулей типа **Webpack** или **Broserify**, которые работают с CommonJS.
+Это предполагает, что вы должны использовать сборщики модулей типа **Webpack** или **Browserify**, которые работают с CommonJS.
 
 ### webpack-dev-middleware
 
