@@ -84,3 +84,4 @@
 72. [Ember.js - идеальный фреймворк для веб приложений](/articles/graham-cox-ember-the-perfect-framework-for-web-applications)
 73. [Redux: шаг за шагом](/articles/tal-kol-redux-step-by-step-a-simple-and-robust-workflow-for-real-life-apps)
 74. [Итак, вы хотите научиться функциональному программированию (Часть 2)](/articles/charles-scalfani-so-you-want-to-be-a-functional-programmer-part-2)
+75. [Итак, вы хотите научиться функциональному программированию (Часть 3)](/articles/charles-scalfani-so-you-want-to-be-a-functional-programmer-part-3)
