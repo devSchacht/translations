@@ -19,4 +19,4 @@
 
 ## Фундаментальные знания по JS
 
-* [You Don't Know JS: Async & Performance - Глава 1](https://github.com/getify/You-Dont-Know-JS/blob/master/async%20&%20performance/README.md#you-dont-know-js-async--performance)
+* [You Don't Know JS: Async & Performance - Глава 1](https://github.com/getify/You-Dont-Know-JS/blob/master/async%20&%20performance/README.md#you-dont-know-js-async--performance) - **[vislogurov](https://github.com/vislogurov)**
