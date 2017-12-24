@@ -16,5 +16,5 @@
 * [What's a Transducer?](http://raganwald.com/2017/04/30/transducers.html)
 * [The Many Faces of Functions in JavaScript](https://bocoup.com/blog/the-many-faces-of-functions-in-javascript)
 * [Composing Software: An Introduction](https://medium.com/javascript-scene/composing-software-an-introduction-27b72500d6ea)
-* [So You Want to be a Functional Programmer (Part 4)](https://medium.com/@cscalfani/so-you-want-to-be-a-functional-programmer-part-4-18fbe3ea9e49) - **[communar](https://github.com/communar)**
+* [So You Want to be a Functional Programmer (Part 5)](https://medium.com/@cscalfani/so-you-want-to-be-a-functional-programmer-part-5-c70adc9cf56a) - **[communar](https://github.com/communar)**
 * [Apple pie with reduce](https://medium.freecodecamp.com/understanding-array-prototype-reduce-and-recursion-using-apple-pie-f60cde58ea51)
