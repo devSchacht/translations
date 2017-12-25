@@ -86,3 +86,4 @@
 74. [Итак, вы хотите научиться функциональному программированию (Часть 2)](/articles/charles-scalfani-so-you-want-to-be-a-functional-programmer-part-2)
 75. [Итак, вы хотите научиться функциональному программированию (Часть 3)](/articles/charles-scalfani-so-you-want-to-be-a-functional-programmer-part-3)
 76. [Укрощаем изоморфный и универсальный шаблон: серверный рендеринг на React-Redux](/articles/peter-chang-break-down-isomorphic-and-universal-boilerplate-react-redux-server-rendering)
+77. [Итак, вы хотите научиться функциональному программированию (Часть 4)](/articles/charles-scalfani-so-you-want-to-be-a-functional-programmer-part-4)
