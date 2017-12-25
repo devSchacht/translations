@@ -16,7 +16,3 @@
 * [Composing Software: An Introduction](https://medium.com/javascript-scene/composing-software-an-introduction-27b72500d6ea)
 * [So You Want to be a Functional Programmer (Part 2)](https://medium.com/@cscalfani/so-you-want-to-be-a-functional-programmer-part-2-7005682cec4a) - **[communar](https://github.com/communar)**
 * [Apple pie with reduce](https://medium.freecodecamp.com/understanding-array-prototype-reduce-and-recursion-using-apple-pie-f60cde58ea51)
-
-## Фундаментальные знания по JS
-
-* [You Don't Know JS: Async & Performance - Глава 1](https://github.com/getify/You-Dont-Know-JS/blob/master/async%20&%20performance/README.md#you-dont-know-js-async--performance) - **[vislogurov](https://github.com/vislogurov)**
