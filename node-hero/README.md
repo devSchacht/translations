@@ -20,4 +20,4 @@
 
 ## Читать целиком
 
-[md](full_book.md) [epub](node-hero.epub)
+[md](full_book.md) [epub](node-hero.epub) [mobi](node-hero.mobi)
