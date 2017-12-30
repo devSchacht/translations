@@ -1,4 +1,4 @@
-# Cпецификация волшебного мира 2: Описание типов
+# Спецификация волшебного мира 2: Описание типов
 
 *Перевод статьи [Tom Harding](http://www.tomharding.me): [Fantas, Eel, and Specification 2: Type Signatures](http://www.tomharding.me/2017/03/08/fantas-eel-and-specification-2/). Опубликовано с разрешения автора.*
 
