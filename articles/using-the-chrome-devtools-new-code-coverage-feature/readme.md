@@ -26,7 +26,7 @@ Chrome также позволяет вам подробно изучить по
 ## Стоит почитать
 - Более полезные (и менее известные) инструменты в Chrome devtools: [https://blog.logrocket.com/making-the-most-of-the-chrome-developer-tools-8cac9a206979](https://blog.logrocket.com/making-the-most-of-the-chrome-developer-tools-8cac9a206979)
 
-- Визуализация производительности бекенда в Chrome devtools: https://blog.logrocket.com/visualizing-backend-performance-in-the-chrome-devtools-bb6fd232540
+- Визуализация производительности бэкенда в Chrome devtools: https://blog.logrocket.com/visualizing-backend-performance-in-the-chrome-devtools-bb6fd232540
 
 *Примечание переводчика: для тех, кто не может найти этот новый инструмент в Chrome devtools, я в свою очередь подготовил небольшое демо.*
 
