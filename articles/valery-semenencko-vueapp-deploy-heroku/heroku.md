@@ -181,7 +181,7 @@ vuejs-test-app|master ⇒ heroku git:remote -a vuejs-test-app
 set git remote heroku to https://git.heroku.com/vuejs-test-app.git
 ```
 
-Директрия `dist` на данный момент **не находится** под версионным контролем Git, однако необходимо сделать так, чтобы она попала под него. Для этого я нахожу в корне директории `vuejs-test-app` файл `.gitignore`:
+Директория `dist` на данный момент **не находится** под версионным контролем Git, однако необходимо сделать так, чтобы она попала под него. Для этого я нахожу в корне директории `vuejs-test-app` файл `.gitignore`:
 
 ```bash
 vuejs-test-app|master ⇒ nano .gitignore
