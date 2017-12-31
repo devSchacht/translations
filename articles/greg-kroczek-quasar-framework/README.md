@@ -150,7 +150,7 @@ $ npm install -g cordova
 $ quasar wrap cordova
 ```
 
-... из текущего Quasar-проекта создается Cordova-приложение.
+... из текущего Quasar-проекта создаётся Cordova-приложение.
 
 В дополнение к платформе Cordova крайне рекомендуется установить в текущем проекте плагин [Crosswalk WebView Cordova](https://github.com/crosswalk-project/cordova-plugin-crosswalk-webview "Crosswalk WebView Cordova"). Цель данного плагина - предотвращение возможных проблем, связанных с ошибками поведения более старых Android-платформ.
 
