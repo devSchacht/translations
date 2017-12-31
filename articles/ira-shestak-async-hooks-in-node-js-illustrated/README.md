@@ -2,7 +2,7 @@
 
 *Перевод статьи [Ирины Шестак](https://medium.com/@_lrlna?source=post_header_lockup):[async_hooks in node.js, illustrated](https://medium.com/the-node-js-collection/async-hooks-in-node-js-illustrated-b7ce1344111f). Опубликовано с разрешения автора.*
 
-Несколько недель назад я обратила внимание на [async_hooks](http://devdocs.io/node/async_hooks), новое и все еще экспериментальное API, которое вышло с node 8, и я решила немного разобраться, чем оно может мне помочь.
+Несколько недель назад я обратила внимание на [async_hooks](http://devdocs.io/node/async_hooks), новое и все ещё экспериментальное API, которое вышло с node 8, и я решила немного разобраться, чем оно может мне помочь.
 
 ![](https://cdn-images-1.medium.com/max/2000/1*WvQ_cZPu8DaHTx2StbpPTA.jpeg)
 
@@ -87,7 +87,7 @@ server.on('close', function () {
 
 ## Что дальше?
 
-*async_hooks* все еще довольно экспериментальны — все сломано™, и API, возможно, все еще меняется (например, `async_hooks.executionAsyncId()` используется как `async_hooks.currentId()`), но так приятно видеть, что node объединяет вместе новые способы для мониторинга наших приложений.
+*async_hooks* все ещё довольно экспериментальны — все сломано™, и API, возможно, все ещё меняется (например, `async_hooks.executionAsyncId()` используется как `async_hooks.currentId()`), но так приятно видеть, что node объединяет вместе новые способы для мониторинга наших приложений.
 
 ## Дополнительная информация:
 

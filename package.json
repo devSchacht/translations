@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "test": "yaspeller articles -e '.md'"
+    "test": "yaspeller articles -e '.md' --check-yo"
   },
   "dependencies": {
     "yaspeller": "^4.0.3"
