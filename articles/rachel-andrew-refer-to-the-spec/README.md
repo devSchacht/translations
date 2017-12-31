@@ -1,6 +1,6 @@
 # Обратитесь к спецификации
 
-*Перевод вступительной заметки приглашенного эксперта Рабочей группы CSS [Rachel Andrew](http://twitter.com/rachelandrew) к серии [Refer to the spec](https://rachelandrew.co.uk/archives/2017/04/11/refer-to-the-spec/).*
+*Перевод вступительной заметки приглашённого эксперта Рабочей группы CSS [Rachel Andrew](http://twitter.com/rachelandrew) к серии [Refer to the spec](https://rachelandrew.co.uk/archives/2017/04/11/refer-to-the-spec/).*
 
 ![](./grid_draft.png)
 
