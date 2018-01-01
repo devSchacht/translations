@@ -194,4 +194,4 @@ function FunctionBind(this_arg) { // Length is 1.
 
 - - - -
 
-*Читайте нас на [медиуме](https://medium.com/devschacht), контрибьютьте на [гитхабе](https://github.com/devSchacht), общайтесь в [группе телеграма](https://t.me/devSchacht), следите в [твиттере](https://twitter.com/DevSchacht) и [канале телеграма](https://t.me/devSchachtChannel), скоро подъедет подкаст. Не теряйтесь.*
+*Слушайте наш подкаст в [iTunes](https://itunes.apple.com/ru/podcast/девшахта/id1226773343) и [SoundCloud](https://soundcloud.com/devschacht), читайте нас на [Medium](https://medium.com/devschacht), контрибьютьте на [GitHub](https://github.com/devSchacht), общайтесь в [группе Telegram](https://t.me/devSchacht), следите в [Twitter](https://twitter.com/DevSchacht) и [канале Telegram](https://t.me/devSchachtChannel), рекомендуйте в [VK](https://vk.com/devschacht) и [Facebook](https://www.facebook.com/devSchacht).*
