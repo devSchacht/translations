@@ -13,7 +13,7 @@
 
 ---
 
-С момента релиза React и Redux я находился на седьмом небе от счастья потому что **1) Изоморфность React** дает преимущества к *скорости загрузки* и SEO при серверном рендеренге и позволяет рендерить компоненты на клиенте уже после загрузки страницы и **2) Идеи [Flux-архитектуры](http://facebook.github.io/flux/)** расширяют компоненты React с помощью использования однонаправленного потока данных.
+С момента релиза React и Redux я находился на седьмом небе от счастья потому что **1) Изоморфность React** даёт преимущества к *скорости загрузки* и SEO при серверном рендеренге и позволяет рендерить компоненты на клиенте уже после загрузки страницы и **2) Идеи [Flux-архитектуры](http://facebook.github.io/flux/)** расширяют компоненты React с помощью использования однонаправленного потока данных.
 
 Однако, после анализа тысячи шаблонов, мне пришлось выпить не одну чашку чая, чтобы успокоиться. Потому что ни один из шаблонов не оказался простым в освоении. Так что мне пришлось изучать разработку шаблонов с нуля. Эта статья представляет собой заметку, где я пояснил, как разбить шаблон на понятные части шаг за шагом. В конце концов, я выделил пять пунктов и они являются причиной такого большого разнообразия изоморфных шаблонов:
 
@@ -151,7 +151,7 @@ const HelloWorld = connect(
 ### createStore(reducer, [preloadedState], [enhancer])
 
 1. Создает Redux-стор, хранящий стейт-дерево вашего приложения.
-2. Cоздание функции `createStore(reducer, [initialState], [enhancer])`, которая затем передается в `<Provider>`:
+2. Cоздание функции `createStore(reducer, [initialState], [enhancer])`, которая затем передаётся в `<Provider>`:
 
 ```javascript
 import { createStore, combineReducers } from 'redux'
@@ -179,7 +179,7 @@ let store = createStore(mixReducers, [ 'Use Redux' ])
 
 По факту эти функции делают одно и то же в Redux, но официальная документация React **НЕ** советует использовать `store.subscribe()`, по той причине, что в `connect()` внесено множество оптимизаций, которые сложно сделать вручную, используя `store.subscribe()`.
 
-С помощью `connect()` создается «умный» компонент, подключаемый к Redux-стору.
+С помощью `connect()` создаётся «умный» компонент, подключаемый к Redux-стору.
 
 ### «Умные» компоненты против «Глупых»
 
@@ -199,3 +199,5 @@ let store = createStore(mixReducers, [ 'Use Redux' ])
 ---
 
 *Слушайте наш подкаст в [iTunes](https://itunes.apple.com/ru/podcast/девшахта/id1226773343) и [SoundCloud](https://soundcloud.com/devschacht), читайте нас на [Medium](https://medium.com/devschacht), контрибьютьте на [GitHub](https://github.com/devSchacht), общайтесь в [группе Telegram](https://t.me/devSchacht), следите в [Twitter](https://twitter.com/DevSchacht) и [канале Telegram](https://t.me/devSchachtChannel), рекомендуйте в [VK](https://vk.com/devschacht) и [Facebook](https://www.facebook.com/devSchacht).*
+
+[Статья на Medium](https://medium.com/devschacht/peter-chang-break-down-isomorphic-and-universal-boilerplate-react-redux-server-rendering-8fd0ec4a8512)
