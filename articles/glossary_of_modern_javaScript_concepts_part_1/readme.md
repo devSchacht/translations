@@ -73,7 +73,7 @@ function incrementGlobalVal(x) {
   globalVal += x;
 }
 
-// нечистая функция процедурно вызывает чистую фунцию
+// нечистая функция процедурно вызывает чистую функцию
 function proceduralFn() {
   const result1 = pureFnFirst(1);
   const result2 = pureFnLast(2);

@@ -1,4 +1,4 @@
-# (Нe) все в JavaScript - объект
+# (Не) все в JavaScript - объект
 
 *Перевод заметки [Daniel Li](http://danyll.com): [(Not) Everything in JavaScript is an Object](http://blog.brew.com.hk/not-everything-in-javascript-is-an-object/).*
 
