@@ -485,7 +485,7 @@ class OneWay extends React.Component {
 * [Веб-компоненты: как создавать собственные пользовательские компоненты](https://auth0.com/blog/web-components-how-to-craft-your-own-custom-components/)
 * [MDN: веб-компоненты](https://developer.mozilla.org/ru/docs/Web/Web_Components)
 * [Использование веб-компонентов в React](https://facebook.github.io/react/docs/web-components.html)
-* [Создайте свое первое приложение с помощью Polymer и веб-компонентов](https://auth0.com/blog/build-your-first-app-with-polymer-and-web-components/)
+* [Создайте своё первое приложение с помощью Polymer и веб-компонентов](https://auth0.com/blog/build-your-first-app-with-polymer-and-web-components/)
 * [Разве мы все ещё компонезируем?](http://jonrimmer.github.io/are-we-componentized-yet/)
 * [webcomponent.js on GitHub](https://github.com/webcomponents/webcomponentsjs)
 * [Google Polymer](https://www.polymer-project.org/)
