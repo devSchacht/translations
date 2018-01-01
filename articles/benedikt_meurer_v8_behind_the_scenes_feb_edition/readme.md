@@ -17,7 +17,7 @@
 
 ![](http://livedoor.blogimg.jp/bipblog/imgs/f/f/ffff3629.jpg)
 
-V8 походил на эту скалу. Если вы присмотритесь, то это потрясающе и красиво. Но если вы этого не сделаете, и упадете со скалы, вы будете измочаленны. Разница в производительности в **100 раз** не была редкостью в прошлом. Будучи одной из этих скал, обработка объекта `arguments` в Crankshaft, вероятно, является наиболее часто встречаемой людьми и самой неприятной. Фундаментальное предположение в Crankshaft заключается в том, что объект `arguments` не уходит, и Crankshaft не нужно материализовать фактический объект `arguments` JavaScript каждый раз. Вместо чего он может просто взять параметры из записи активации. Другими словами, нет никакой страховки. Это все или ничего. Рассмотрим эту простую логику диспетчеризации:
+V8 походил на эту скалу. Если вы присмотритесь, то это потрясающе и красиво. Но если вы этого не сделаете, и упадете со скалы, вы будете измочалены. Разница в производительности в **100 раз** не была редкостью в прошлом. Будучи одной из этих скал, обработка объекта `arguments` в Crankshaft, вероятно, является наиболее часто встречаемой людьми и самой неприятной. Фундаментальное предположение в Crankshaft заключается в том, что объект `arguments` не уходит, и Crankshaft не нужно материализовать фактический объект `arguments` JavaScript каждый раз. Вместо чего он может просто взять параметры из записи активации. Другими словами, нет никакой страховки. Это все или ничего. Рассмотрим эту простую логику диспетчеризации:
 
 ``` javascript
 var callbacks = [
@@ -46,7 +46,7 @@ $ node --trace-opt example.js
 [disabled optimization for 0x167a24a58fc9 <SharedFunctionInfo dispatch>, reason: Bad value context for arguments value]
 ```
 
-Причина в бесславном [Bad value context for arguments value](https://gist.github.com/Hypercubed/89808f3051101a1a97f3). Итак, в чем проблема? Несмотря на код, созданный по всем правилам объекта `arguments`, он падает со скалы производительности. Реальная причина довольно тонкая: Crankshaft может оптимизировать `fn.apply(receiver, arguments)`, если только он знает, что `fn.apply` является [Function.prototype.apply](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Function/apply), и он знает это только для мономорфного доступа к свойству `fn.apply`. То есть, в терминологии V8, `fn` должен иметь точно такую же скрытую карту классов все время. Но коллбэки[0] и коллбэки[1] имеют разные карты, так как коллбэки[0] являются функцией в нестрогом режиме, тогда как коллбэки[1] - функции в строгом режиме:
+Причина в бесславном [Bad value context for arguments value](https://gist.github.com/Hypercubed/89808f3051101a1a97f3). Итак, в чем проблема? Несмотря на код, созданный по всем правилам объекта `arguments`, он падает со скалы производительности. Реальная причина довольно тонкая: Crankshaft может оптимизировать `fn.apply(receiver, arguments)`, если только он знает, что `fn.apply` является [Function.prototype.apply](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Function/apply), и он знает это только для мономорфного доступа к свойству `fn.apply`. То есть, в терминологии V8, `fn` должен иметь точно такую же скрытую карту классов все время. Но колбэки[0] и колбэки[1] имеют разные карты, так как колбэки[0] являются функцией в нестрогом режиме, тогда как колбэки[1] - функции в строгом режиме:
 
 ```
 $ cat example2.js
@@ -194,4 +194,4 @@ function FunctionBind(this_arg) { // Length is 1.
 
 - - - -
 
-*Читайте нас на [медиуме](https://medium.com/devschacht), контрибьютьте на [гитхабе](https://github.com/devSchacht), общайтесь в [группе телеграма](https://t.me/devSchacht), следите в [твиттере](https://twitter.com/DevSchacht) и [канале телеграма](https://t.me/devSchachtChannel), скоро подъедет подкаст. Не теряйтесь.*
+*Слушайте наш подкаст в [iTunes](https://itunes.apple.com/ru/podcast/девшахта/id1226773343) и [SoundCloud](https://soundcloud.com/devschacht), читайте нас на [Medium](https://medium.com/devschacht), контрибьютьте на [GitHub](https://github.com/devSchacht), общайтесь в [группе Telegram](https://t.me/devSchacht), следите в [Twitter](https://twitter.com/DevSchacht) и [канале Telegram](https://t.me/devSchachtChannel), рекомендуйте в [VK](https://vk.com/devschacht) и [Facebook](https://www.facebook.com/devSchacht).*

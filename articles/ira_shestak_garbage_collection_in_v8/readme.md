@@ -43,6 +43,6 @@ V8 выделяет память в куче при создании новых 
 - [memory management](http://www.memorymanagement.org/); мне нравится читать [глоссарий](http://www.memorymanagement.org/glossary/), потому что вы обнаруживаете кучу замечательных вещей.
 - это действительно хороший и детальный [справочник](https://github.com/thlorenz/v8-perf)
 по производительности v8.
-- выможете заглянуть в [v8 wiki](https://github.com/v8/v8/wiki) для получения большей информации о внутренней работе v8 и том, как отлаживать ваши проекты.
+- вы можете заглянуть в [v8 wiki](https://github.com/v8/v8/wiki) для получения большей информации о внутренней работе v8 и том, как отлаживать ваши проекты.
 - о "частоте кадров" в [firefox dev tools](https://developer.mozilla.org/en-US/docs/Tools/Performance/Frame_rate)
 - другое хорошее руководство [V8 && garbage collection](http://jayconrod.com/posts/55/a-tour-of-v8-garbage-collection)

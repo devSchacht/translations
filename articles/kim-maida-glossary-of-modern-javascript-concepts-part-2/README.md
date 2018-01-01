@@ -105,7 +105,7 @@ outerFunc(); // выводит 3 (1 + 2)
 
 #### Замыкания
 
-В [первой части cправочника современных концепций JavaScript](https://medium.com/devschacht/glossary-of-modern-javascript-concepts-1198b24e8f56) мы узнали о функциях и функциях высшего порядка в качестве объектов первого класса. Если звучит незнакомо, найдите минутку, чтобы ознакомиться с разделом о функциях высшего порядка.
+В [первой части Справочника современных концепций JavaScript](https://medium.com/devschacht/glossary-of-modern-javascript-concepts-1198b24e8f56) мы узнали о функциях и функциях высшего порядка в качестве объектов первого класса. Если звучит незнакомо, найдите минутку, чтобы ознакомиться с разделом о функциях высшего порядка.
 
 Теперь давайте перейдем к примеру функции высшего порядка, который мы видели в первой части:
 
@@ -320,7 +320,7 @@ class OneWay extends React.Component {
 * [Привязка данных в 9 фреймворках JavaScript (2015 год, но все же стоит посмотреть)](http://engineering.paiza.io/entry/2015/03/12/145216)
 * [Двусторонняя привязка данных в Angular (v2+)](https://blog.thoughtram.io/angular/2016/10/13/two-way-data-binding-in-angular-2.html)
 * [Документация AngularJS - привязка данных](https://docs.angularjs.org/guide/databinding)
-* [Мысли React'ом](https://facebook.github.io/react/docs/thinking-in-react.html)
+* [Мысли React](https://facebook.github.io/react/docs/thinking-in-react.html)
 
 ### Обнаружение изменений в JavaScript фреймворке: грязная проверка, аксессоры, виртуальный DOM
 
