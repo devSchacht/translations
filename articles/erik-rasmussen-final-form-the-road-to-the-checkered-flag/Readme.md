@@ -119,18 +119,6 @@ https://codesandbox.io/s/ww40y2m595
 
 🙏 Спасибо за чтение. Пойдите, установите, запустите и попробуйте! 🎉
 
-* [React](https://medium.com/tag/react?source=post)
-* [Redux](https://medium.com/tag/redux?source=post)
-* [Redux Form](https://medium.com/tag/redux-form?source=post)
-
-By clapping more or less, you can signal to us which stories really stand out.
-
-Не забывайте хлопать — тем самым вы показываете нам, какие истории вам больше нравятся.
-
-### [Ridergg](https://medium.com/@ridergg)
-
-Front End, Kyiv
-
 - - - -
 
 *Слушайте наш подкаст в [iTunes](https://itunes.apple.com/ru/podcast/девшахта/id1226773343) и [SoundCloud](https://soundcloud.com/devschacht), читайте нас на [Medium](https://medium.com/devschacht), контрибьютьте на [GitHub](https://github.com/devSchacht), общайтесь в [группе Telegram](https://t.me/devSchacht), следите в [Twitter](https://twitter.com/DevSchacht) и [канале Telegram](https://t.me/devSchachtChannel), рекомендуйте в [VK](https://vk.com/devschacht) и [Facebook](https://www.facebook.com/devSchacht).*
