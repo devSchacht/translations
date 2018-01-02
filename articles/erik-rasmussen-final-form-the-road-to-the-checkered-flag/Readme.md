@@ -224,3 +224,9 @@ By clapping more or less, you can signal to us which stories really stand out.
 ### [Ridergg](https://medium.com/@ridergg)
 
 Front End, Kyiv
+
+- - - -
+
+*Слушайте наш подкаст в [iTunes](https://itunes.apple.com/ru/podcast/девшахта/id1226773343) и [SoundCloud](https://soundcloud.com/devschacht), читайте нас на [Medium](https://medium.com/devschacht), контрибьютьте на [GitHub](https://github.com/devSchacht), общайтесь в [группе Telegram](https://t.me/devSchacht), следите в [Twitter](https://twitter.com/DevSchacht) и [канале Telegram](https://t.me/devSchachtChannel), рекомендуйте в [VK](https://vk.com/devschacht) и [Facebook](https://www.facebook.com/devSchacht).*
+
+[Ссылка на medium](https://medium.com/p/neil-fenton-improving-react-and-redux-performance-with-reselect-40f1d3efba89)
