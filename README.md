@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/devSchacht/translations.svg?branch=master)](https://travis-ci.org/devSchacht/translations)
+
 # Переводы
 
 ## Содержание репозитория
