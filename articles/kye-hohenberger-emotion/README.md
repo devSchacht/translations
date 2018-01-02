@@ -5,7 +5,7 @@
 
 *Перевод статьи [Kye Hohenberger](https://t.co/SY7htPqRHF): [emotion. The Next Generation of CSS-in-JS](https://medium.com/@tkh44/emotion-ad1c45c6d28b).*
 
-[Emotion](https://github.com/tkh44/emotion) - это [высокопроизводительная](https://github.com/tkh44/emotion/blob/master/docs/benchmarks.md), легкая библиотека css-in-js. Основная идея исходит из библиотеки [glam](https://github.com/threepointone/glam) [Сунила Пая](https://medium.com/@threepointone), и её философия изложена здесь. Ключевая идея очень проста. Вам не нужно жертвовать производительностью ради удобства разработчиков при написании CSS. Emotion минимизируют стоимость исполнения css-in-js, анализируя ваши стили с помощью babel и PostCSS. Ядро библиотеки в рантайме занимает 2,3кб и поддержка React — 4кб. Всего.
+[Emotion](https://github.com/tkh44/emotion) - это [высокопроизводительная](https://github.com/tkh44/emotion/blob/master/docs/benchmarks.md), легкая библиотека css-in-js. Основная идея исходит из библиотеки [glam](https://github.com/threepointone/glam) [Сунила Пая](https://medium.com/@threepointone), и её философия изложена здесь. Ключевая идея очень проста. Вам не нужно жертвовать производительностью ради удобства разработчиков при написании CSS. Emotion минимизируют стоимость исполнения css-in-js, анализируя ваши стили с помощью babel и PostCSS. Ядро библиотеки в рантайме занимает 2,3 кб и поддержка React — 4 кб. Всего.
 
 ## Первый взгляд
 
@@ -285,7 +285,7 @@ const flexCenter = css`
 
 Огромное спасибо [Митчеллу Гамильтону](https://medium.com/@hamiltown), потому что без него emotion не работали бы так хорошо. Его [вклад](https://github.com/tkh44/emotion/commits?author=mitchellhamilton) был неоценим в том, чтобы мы достигли того, чего достигли.
 
-Спасибо всем [котрибьюторам](https://github.com/tkh44/emotion/graphs/contributors), создателям ишью и тестировщикам ранних релизов!
+Спасибо всем [контрибьюторам](https://github.com/tkh44/emotion/graphs/contributors), создателям ишью и тестировщикам ранних релизов!
 
 [emotion.sh](https://emotion.sh/) — вебсайт
 

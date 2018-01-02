@@ -128,7 +128,7 @@ var invert = _.partial(divide, 1);
 
 ### Каррирование
 
-Lodash предлагает ещё одну функцию, похожую на `_.partial()`. Эта функция называется [_.curry()](https://lodash.com/docs/4.17.4#curry). Давайте опробуем ее:
+Lodash предлагает ещё одну функцию, похожую на `_.partial()`. Эта функция называется [_.curry()](https://lodash.com/docs/4.17.4#curry). Давайте опробуем её:
 
 ```javascript
 > var divideC = _.curry(divide);
