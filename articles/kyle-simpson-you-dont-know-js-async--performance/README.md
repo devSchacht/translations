@@ -1,7 +1,7 @@
 # Вы не знаете JS: Асинхронность и Производительность
 # Глава 1: Асинхронность: Сейчас и Потом
 
-Перевод первой главы книги Kyle Simpson:[You Don't Know JS: Async & Performance](https://github.com/getify/You-Dont-Know-JS/tree/master/async%20%26%20performance)
+Перевод первой главы книги Kyle Simpson: [You Don't Know JS: Async & Performance](https://github.com/getify/You-Dont-Know-JS/tree/master/async%20%26%20performance)
 
 ![Async & Performance](https://github.com/getify/You-Dont-Know-JS/blob/master/async%20%26%20performance/cover.jpg)
 
