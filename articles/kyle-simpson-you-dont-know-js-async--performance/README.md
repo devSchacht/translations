@@ -1,6 +1,10 @@
 # Вы не знаете JS: Асинхронность и Производительность
 # Глава 1: Асинхронность: Сейчас и Потом
 
+Перевод первой главы книги Kyle Simpson:[You Don't Know JS: Async & Performance](https://github.com/getify/You-Dont-Know-JS/tree/master/async%20%26%20performance)
+
+![Async & Performance](https://github.com/getify/You-Dont-Know-JS/blob/master/async%20%26%20performance/cover.jpg)
+
 Одной из наиболее важных, но часто непонятных областей программирования на JavaScript, является способ управления программой, которая выполняется в течение определенного периода времени.
 
 Эта книга не только о том, что происходит во время цикла `for`, выполнение которого *конечно же* требует некоторого времени (от микросекунд до миллисекунд). Эта книга о том, что происходит, когда часть вашей программы выполняется *сейчас*, а другая часть должна выполниться *позже* — то есть о том промежутке между *сейчас* и *позже*, когда ваша программа не выполняется.
@@ -866,3 +870,9 @@ b = 30 + c.bar;
 
 
 Часто бывает необходимо выполнить некоторые координации взаимодействия между этими параллельными «процессами». Например, для обеспечения определенного порядка выполнения или предотвращения «состояния гонки». Эти «процессы» также могут разбиваться на более мелкие куски и позволяя другим «процессам» чередоваться.
+
+---
+
+*Слушайте наш подкаст в [iTunes](https://itunes.apple.com/ru/podcast/девшахта/id1226773343) и [SoundCloud](https://soundcloud.com/devschacht), читайте нас на [Medium](https://medium.com/devschacht), контрибьютьте на [GitHub](https://github.com/devSchacht), общайтесь в [группе Telegram](https://t.me/devSchacht), следите в [Twitter](https://twitter.com/DevSchacht) и [канале Telegram](https://t.me/devSchachtChannel), рекомендуйте в [VK](https://vk.com/devschacht) и [Facebook](https://www.facebook.com/devSchacht).*
+
+[Статья на Medium](https://medium.com/devschacht/redux-step-by-step-e6c42a9b00cd)
