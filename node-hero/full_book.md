@@ -595,7 +595,7 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-app.get(‘/’, (request, response) => {
+app.get('/', (request, response) => {
     response.send('Hello from Express!')
 })
 
@@ -604,7 +604,7 @@ app.listen(port, (err) => {
         return console.log('something bad happened', err)
     }
 
-    console.log('server is listening on ${port}')
+    console.log(`server is listening on ${port}`)
 })
 ```
 
@@ -656,17 +656,17 @@ app.listen(3000)
 Как и во всех фреймворках, правильная обработка ошибок имеет решающее значение. В Express вы должны создать специальный промежуточный обработчик - middleware с четырьмя входными параметрами:
 
 ```javascript
-const express = require(‘express’)
+const express = require('express')
 const app = express()
 
-app.get(‘/’, (request, response) => {
-    throw new Error(‘oops’)
+app.get('/', (request, response) => {
+    throw new Error('oops')
 })
 
 app.use((err, request, response, next) => {
     // логирование ошибки, пока просто console.log
     console.log(err)
-    response.status(500).send(‘Something broke!’)
+    response.status(500).send('Something broke!')
 })
 ```
 
@@ -890,7 +890,7 @@ CREATE TABLE users(
 Наконец, мы можем вернуться к программированию. Вот как вы можете взаимодействовать с вашей базой данных через вашу программу на Node.js:
 
 ```javascript
-‘use strict’
+'use strict'
 
 const pg = require('pg')
 const conString = 'postgres://username:password@ localhost/node_hero' // Убедитесь, что вы указали данные от вашей базы данных
@@ -899,7 +899,7 @@ pg.connect(conString, function (err, client, done) {
   if (err) {
     return console.error('error fetching client from pool', err)
   }
-  client.query('SELECT $1::varchar AS my_ rst_query', ['node hero'], function (err, result) {
+  client.query('SELECT $1::varchar AS my_first_query', ['node hero'], function (err, result) {
     done()
 
     if (err) {
@@ -1173,7 +1173,7 @@ app.listen(3000)
 
 Проблемы с этим подходом:
 * Чтобы понять, как работает страница `product`, вам нужно открыть три разных каталога с большим количеством переключений контекста
-* В конечном итоге вы пишете длинные пути при подключении модулей: `require(‘../../controllers/user.js’)`
+* В конечном итоге вы пишете длинные пути при подключении модулей: `require('../../controllers/user.js')`
 
 Вместо этого вы можете структурировать Node.js-приложения вокруг функций продукта / страниц / компонентов. Это облегчает понимание:
 
