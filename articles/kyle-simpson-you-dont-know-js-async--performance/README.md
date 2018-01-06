@@ -875,4 +875,4 @@ b = 30 + c.bar;
 
 *Слушайте наш подкаст в [iTunes](https://itunes.apple.com/ru/podcast/девшахта/id1226773343) и [SoundCloud](https://soundcloud.com/devschacht), читайте нас на [Medium](https://medium.com/devschacht), контрибьютьте на [GitHub](https://github.com/devSchacht), общайтесь в [группе Telegram](https://t.me/devSchacht), следите в [Twitter](https://twitter.com/DevSchacht) и [канале Telegram](https://t.me/devSchachtChannel), рекомендуйте в [VK](https://vk.com/devschacht) и [Facebook](https://www.facebook.com/devSchacht).*
 
-[Статья на Medium](https://medium.com/devschacht/redux-step-by-step-e6c42a9b00cd)
+[Статья на Medium](https://medium.com/devschacht/kyle-simpson-you-dont-know-js-async-performance-2d8cfa7cb6df)
