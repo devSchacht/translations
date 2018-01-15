@@ -14,7 +14,6 @@
 * [What's a Transducer?](http://raganwald.com/2017/04/30/transducers.html)
 * [The Many Faces of Functions in JavaScript](https://bocoup.com/blog/the-many-faces-of-functions-in-javascript) - **[rikkalo](https://github.com/rikkalo)**
 * [Composing Software: An Introduction](https://medium.com/javascript-scene/composing-software-an-introduction-27b72500d6ea)
-* [Apple pie with reduce](https://medium.freecodecamp.com/understanding-array-prototype-reduce-and-recursion-using-apple-pie-f60cde58ea51)
 
 ## Фундаментальные знания по JS
 * [You Don't Know JS: Async & Performance. Chapter 1: Asynchrony: Now & Later](https://github.com/devSchacht/You-Dont-Know-JS/blob/master/async%20%26%20performance/ch1.md) - **[vislogurov](https://github.com/vislogurov)** - Переведено
