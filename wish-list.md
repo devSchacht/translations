@@ -24,3 +24,6 @@
 * [You Don't Know JS: Async & Performance. Chapter 6: Benchmarking & Tuning](https://github.com/devSchacht/You-Dont-Know-JS/blob/master/async%20%26%20performance/ch6.md)
 * [You Don't Know JS: Async & Performance. Appendix A: Library: asynquence](https://github.com/devSchacht/You-Dont-Know-JS/blob/master/async%20%26%20performance/apA.md)
 * [You Don't Know JS: Async & Performance. Appendix B: Advanced Async Patterns](https://github.com/devSchacht/You-Dont-Know-JS/blob/master/async%20%26%20performance/apB.md)
+
+## React
+* [Boost your React with State Machines](https://medium.freecodecamp.org/boost-your-react-with-state-machines-1e9641b0aa43) - **[NKBelousov](https://github.com/NKBelousov)**
