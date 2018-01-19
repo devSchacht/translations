@@ -92,3 +92,4 @@
 78. [Как я портировал bcrypt на новое N-API](/articles/nicola-del-gobbo-how-i-ported-bcrypt-to-new-n-api)
 79. [Итак, вы хотите научиться функциональному программированию (Часть 5)](/articles/charles-scalfani-so-you-want-to-be-a-functional-programmer-part-5)
 80. [Итак, вы хотите научиться функциональному программированию (Часть 6)](/articles/charles-scalfani-so-you-want-to-be-a-functional-programmer-part-6)
+81. [Введение в Immutable.js и основные концепции функционального программирования](/articles/sebastián-peyrott-introduction-to-immutablejs-and-functional-programming-concepts)
