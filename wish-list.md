@@ -4,7 +4,7 @@
 * [From Monolith to Microservices](https://blog.poki.com/from-monolith-to-microservices-b16bae1d6c9d)
 
 ## Vue.js
-* [How we do Vue: one year later](https://about.gitlab.com/2017/11/09/gitlab-vue-one-year-later/)
+* [How we do Vue: one year later](https://about.gitlab.com/2017/11/09/gitlab-vue-one-year-later/) – **[TheNovel](https://github.com/TheNovel)**
 
 ## Redux
 * [Idiomatic Redux: The Tao of Redux, Part 1 - Implementation and Intent](http://blog.isquaredsoftware.com/2017/05/idiomatic-redux-tao-of-redux-part-1) - **[maksugr](https://github.com/maksugr)** - до 16.10.2017
