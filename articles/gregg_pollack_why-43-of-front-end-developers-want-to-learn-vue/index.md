@@ -8,7 +8,7 @@
 
 В соответствии со [статистикой за 2017 год](https://stateofjs.com/2017/front-end/results/), подавляющее большинство фронтенд-разработчиков хотели бы изучить в качестве нового инструмента фреймворк Vue.js. В этой статье я собираюсь показать, почему я придерживаюсь того же мнения; для более наглядного примера в статье будет приведен пример создания простого приложения на Vue.js.
 
-Недавно мною совместно с Эваном Ю ([Evan You](https://twitter.com/youyuxi)), Крисом Фрицем ([Chris Fritz](https://twitter.com/chrisvfritz)), Сарой Дрэснер ([Sarah Drasner](https://twitter.com/sarah_edo)) и Адамом Яром ([Adam Jahr](https://twitter.com/AdamJahr)) был создан вступительный видеоролик, который можно посмотреть на главной странице проекта [http://vuejs.org](http://vuejs.org/). Приведенная ниже статья является текстовой версией данного видео.
+Недавно мною совместно с Эваном Ю ([Evan You](https://twitter.com/youyuxi)), Крисом Фрицем ([Chris Fritz](https://twitter.com/chrisvfritz)), Сарой Драснер ([Sarah Drasner](https://twitter.com/sarah_edo)) и Адамом Яром ([Adam Jahr](https://twitter.com/AdamJahr)) был создан вступительный видеоролик, который можно посмотреть на главной странице проекта [http://vuejs.org](http://vuejs.org/). Приведенная ниже статья является текстовой версией данного видео.
 
 ## Великая миграция JavaScript
 
@@ -142,4 +142,4 @@
 
 Первый источник - это бесплатный [Vue Resource Guide/Cheat Sheet](http://www.vuemastery.com/download-1), который был создан мною совместно с [VueMastery.com](http://www.vuemastery.com/). Затем можно переходить к [официальной документации Vue.js](https://vuejs.org/v2/guide/).
 
-И в заключение я хотел бы поблагодарить Эвана Ю ([Evan You](https://twitter.com/youyuxi)), Криса Фрица ([Chris Fritz](https://twitter.com/chrisvfritz)), Сару Дрэснер ([Sarah Drasner](https://twitter.com/sarah_edo)) и Адама Яра ([Adam Jahr](https://twitter.com/AdamJahr)) за помощь в создании данного материала, а также видео.
+И в заключение я хотел бы поблагодарить Эвана Ю ([Evan You](https://twitter.com/youyuxi)), Криса Фрица ([Chris Fritz](https://twitter.com/chrisvfritz)), Сару Драснер ([Sarah Drasner](https://twitter.com/sarah_edo)) и Адама Яра ([Adam Jahr](https://twitter.com/AdamJahr)) за помощь в создании данного материала, а также видео.
