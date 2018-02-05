@@ -94,3 +94,4 @@
 80. [Итак, вы хотите научиться функциональному программированию (Часть 6)](/articles/charles-scalfani-so-you-want-to-be-a-functional-programmer-part-6)
 81. [Введение в Immutable.js и основные концепции функционального программирования](/articles/sebastián-peyrott-introduction-to-immutablejs-and-functional-programming-concepts)
 82. [Улучшаем ваш React с помощью конечных автоматов](/articles/jean-paul-delimat-boost-your-react-with-state-machines)
+83. [Почему 43% фронтенд-разработчиков хотят учить Vue.js](/articles/gregg_pollack_why-43-of-front-end-developers-want-to-learn-vue)
