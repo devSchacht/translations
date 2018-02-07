@@ -15,7 +15,7 @@
 ## Необходимые требования
 
 * Базовые знания JavaScript
-* Концепции [REST](https://ru.wikipedia.org/wiki/REST) и [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete)
+* Концепции [REST](https://ru.wikipedia.org/wiki/REST) и [CRUD](https://ru.wikipedia.org/wiki/CRUD)
 * Установленные Node.js и [NVM](https://github.com/creationix/nvm)
 * Установленная MongoDB
 
@@ -32,7 +32,7 @@
 * Vue.js v2.4.2
 * Node.js v8.5.0
 
-В статье будет описан процесс создания каркаса приложения на стеке MEVN. Работа с базой данных MongoDB будет описана во второй части данного руководства. Исходный код создаваемого приложения расположен в репозитории - [ MEVN-boilerplate](https://github.com/anaida07/MEVN-boilerplate).
+В статье будет описан процесс создания каркаса приложения на стеке MEVN. Работа с базой данных MongoDB будет описана во [второй части](https://medium.com/@gearmobile/%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-mevn-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-%D1%87%D0%B0%D1%81%D1%82%D1%8C-2-2-f0bd9962acf2) данного руководства. Исходный код создаваемого приложения расположен в репозитории - [ MEVN-boilerplate](https://github.com/anaida07/MEVN-boilerplate).
 
 **Примечание переводчика**: *я взял на себя смелость пошагово воссоздать описываемое в данной статье приложение. В результате у меня получился работоспособный аналог, исходный код которого расположен в репозитории - [ MEVN-Application](https://gitlab.com/learning-stacks/learning-express.js/tree/master/mevn-application). В процессе создания текущего проекта мною были внесены незначительные изменения, которые не повлияли на общий функционал приложения.*
 
@@ -109,7 +109,7 @@ $ yarn add nodemon --dev
 ```js
 ...
   "scripts": {
-    "start": "nodemon --ext js --watch src/index.js"
+    "start": "nodemon --ext js --watch src"
   }
 ...
 ```
@@ -126,7 +126,7 @@ $ yarn add nodemon --dev
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "nodemon --ext js --watch src/index.js"
+    "start": "nodemon --ext js --watch src"
   },
   "devDependencies": {
     "nodemon": "^1.14.10"
@@ -172,7 +172,7 @@ $ yarn add morgan body-parser cors
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "nodemon --ext js --watch src/index.js"
+    "start": "nodemon --ext js --watch src"
   },
   "dependencies": {
     "body-parser": "^1.18.2",
@@ -379,7 +379,7 @@ new Vue({
 })
 ```
 
-**Примечание переводчика**: *данная система подключения плагинов была "подсмотрена" мною здесь - [vue-2-boilerplate](https://github.com/petervmeijgaard/vue-2-boilerplate).*
+**Примечание переводчика**: *данная система подключения плагинов была подмечена мною здесь - [vue-2-boilerplate](https://github.com/petervmeijgaard/vue-2-boilerplate).*
 
 Осталось создать сам компонент `PostsPage.vue` (*переводчик данной статьи большой поклонник шаблонизатора [Pug](https://pugjs.org/api/getting-started.html), поэтому при создании Vue-компонентов везде и всюду будет такая "экзотическая" разметка*):
 
@@ -435,15 +435,15 @@ new Vue({
 </script>
 ```
 
-Что здесь происходит? Во-первых, в шаблоне `template` компонента определяем две секции - секция `section.panel.panel-success` для отображения записей (posts), если они есть ("пришли" с сервера); и секция `section.panel.panel-danger`, если записей нет.
+Что здесь происходит? Во-первых, в шаблоне `template` компонента определяем две секции - одну `section.panel.panel-success` для отображения записей (posts), если они есть ("пришли" с сервера); другую - `section.panel.panel-danger`, если записей нет.
 
-В скриптах `script` компонента мы подключаем модуль `PostsService` чтобы воспользоваться методом `fetchPosts`:
+В скриптах `script` компонента мы подключаем модуль `PostsService` для того, чтобы воспользоваться методом `fetchPosts`:
 
 ```js
 import PostsService from '@/services/PostsService'
 ```
 
-Затем в компоненте создаем метод `getPosts`, который через async-await вызовет на исполнение метод `fetchPosts` объекта `PostsService`. Результат будет записан в массив `this.posts`. И наконец мы "повесим" метод `getPosts` на хук `mounted`, чтобы он вызывался на исполнение каждый раз, как компонент `PostsPage.vue` будет смонтирован в DOM.
+Затем в компоненте создаем метод `getPosts`, который через async/await вызовет на исполнение метод `fetchPosts` объекта `PostsService`. Результат будет записан в массив `this.posts`. И наконец мы "повесим" метод `getPosts` на хук `mounted`, чтобы он вызывался на исполнение каждый раз, как компонент `PostsPage.vue` будет смонтирован в DOM.
 
 Ну и в секции `section.panel.panel-success` данные из массива `this.posts` будут "разбрасываться" по таблице через директиву `v-for`.
 
@@ -453,9 +453,9 @@ import PostsService from '@/services/PostsService'
 
 ![browser posts](./images/mevn-05.png)
 
-Все хорошо — на странице записей нет, ибо мы их не получили с сервера, так и должно быть. Сервер не "отдал" записи (posts), так как он не подключен к базе данных MongoDB и не может "достать" их оттуда.
+Все хорошо  —  на странице записей нет, потому что мы их не получили с сервера, так и должно быть. Сервер не вернул записи (posts), так как он не подключен к базе данных MongoDB и не может получить их оттуда.
 
-Подключением к базе данных MongoDB и операциями CRUD мы займемся в следующей части данного руководства.
+Подключением к базе данных MongoDB и операциями CRUD мы займемся в [следующей части](https://medium.com/@gearmobile/%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-mevn-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F-%D1%87%D0%B0%D1%81%D1%82%D1%8C-2-2-f0bd9962acf2) данного руководства.
 
 ## Полезные ссылки по теме
 
