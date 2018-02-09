@@ -2,6 +2,8 @@
 
 *Перевод статьи [Sam Williams](https://twitter.com/SamWSoftwares): [ES6 tips and tricks to make your code cleaner, shorter, and easier to read!](https://medium.freecodecamp.org/make-your-code-cleaner-shorter-and-easier-to-read-es6-tips-and-tricks-afd4ce25977c)*.
 
+![ECMAScript 6](https://cdn-images-1.medium.com/max/2000/1*2VqxkdyNCmWa8ojZZIoQOg.jpeg)
+
 ## Литералы шаблонов
 
 Литералы шаблонов облегчают работу со строками. Они обозначаются обратным апострофом ``` ` ```, и дают возможность вставлять значения переменных используя конструкцию `${variable}`.
@@ -152,7 +154,7 @@ let fordGt = { make: 'Ford', ...car, model: 'GT'};
 console.log(fordGt); // {make: 'Ford', model: 'GT', type: 'vehicle', wheels: 4}
 ```
 
-Другая возможность оператора `...` это создание массива или объекта. В примере ниже создадим новый массив `b`, но массив `c` это только ссылка на тот же массив.
+Другая возможность оператора `...` это создание массива или объекта. В примере ниже создаются новые массивы `b` и `c`, но в отличии от `b`, массив `c` это только ссылка на исходный массив `a`.
 
 ```javascript
 let a = [1, 2, 3];
@@ -423,4 +425,4 @@ Number( 0b11101 ) // 29 in binary form
 
 ___
 
-Слушайте наш подкаст в [iTunes](https://itunes.apple.com/ru/podcast/%D0%B4%D0%B5%D0%B2%D1%88%D0%B0%D1%85%D1%82%D0%B0/id1226773343) и [SoundCloud](https://soundcloud.com/devschacht), читайте нас на [Medium](https://medium.com/devschacht), контрибьютьте на [GitHub](https://github.com/devSchacht), общайтесь в [группе Telegram](https://t.me/devSchacht), следите в [Twitter](https://twitter.com/DevSchacht) и [канале Telegram](https://t.me/devSchachtChannel), рекомендуйте в [VK](https://vk.com/devschacht) и [Facebook](https://www.facebook.com/devSchacht).
+*Слушайте наш подкаст в [iTunes](https://itunes.apple.com/ru/podcast/девшахта/id1226773343) и [SoundCloud](https://soundcloud.com/devschacht), читайте нас на [Medium](https://medium.com/devschacht), контрибьютьте на [GitHub](https://github.com/devSchacht), общайтесь в [группе Telegram](https://t.me/devSchacht), следите в [Twitter](https://twitter.com/DevSchacht) и [канале Telegram](https://t.me/devSchachtChannel), рекомендуйте в [VK](https://vk.com/devschacht) и [Facebook](https://www.facebook.com/devSchacht).*
