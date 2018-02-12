@@ -1,4 +1,4 @@
-# ES6 советы и приёмы, которые сделают ваш код чище, лаконичней и читабельней
+# Советы и приёмы ES6, которые сделают ваш код чище, лаконичней и читабельней
 
 *Перевод статьи [Sam Williams](https://twitter.com/SamWSoftwares): [ES6 tips and tricks to make your code cleaner, shorter, and easier to read!](https://medium.freecodecamp.org/make-your-code-cleaner-shorter-and-easier-to-read-es6-tips-and-tricks-afd4ce25977c)*.
 
@@ -41,7 +41,7 @@ console.log(a) // car
 Областью видимости переменной, объявленной при помощи `let`, будет блок `{}`. Это помогает дать ответ на классический вопрос, который задают на собеседованиях: "что выведет `console.log` и как сделать так, чтобы код работал ожидаемо?".
 
 ```javascript
-for (var i = 1; i < 5; i++){
+for (var i = 1; i < 5; i++) {
     setTimeout(() => { console.log(i); }, 1000);
 }
 ```
@@ -71,7 +71,7 @@ for (var i = 1; i < 5; i++){
 
 Из-за более жёстко ограниченной области видимости и более предсказуемого поведения бытует мнение, что необходимо использовать `let` вместо `var`, исключая случаи, когда вам специально нужно поднятие или более свободная область видимости, которую дает `var`.
 
-## Const
+## Объявления const
 
 Раньше, если Вам нужно было объявить константу в JavaScript, то, по соглашению, имя константы должно было быть задано в верхнем регистре. Однако это не защищало переменную от перезаписи  —  только давало понять другим разработчикам, что переменная является константой и не должна быть изменена.
 
@@ -143,7 +143,7 @@ console.log(b);  // [1, 2, 3, 4, 5, 6]
 ```javascript
 function foo(a, b, c) { console.log(`a=${a}, b=${b}, c=${c}`)}
 let data = [5, 15, 2];
-foo( ...data); // a=5, b=15, c=2
+foo( ...data); // a = 5, b = 15, c = 2
 ```
 
 Объект тоже может быть распределён, то есть каждая пара ключ-значение будет добавлена в новый объект  (распределение объекта находится на стадии 4 черновика и официально должен быть включен в ES2018. Сейчас поддерживает только Chrome 60 или выше, Firefox 55 или выше и Node 6.4.0 или выше).
@@ -162,10 +162,10 @@ let b = [ ...a ];
 let c = a;
 b.push(4);
 console.log(a);  // [1, 2, 3]
-console.log(b);  // [1, 2, 3, 4] referencing different arrays
+console.log(b);  // [1, 2, 3, 4] ссылки на разные массивы
 c.push(5);
 console.log(a);  // [1, 2, 3, 5]
-console.log(c);  // [1, 2, 3, 5] referencing the same array
+console.log(c);  // [1, 2, 3, 5] ссылки на тот же массив
 ```
 
 Второй вариант использования - объединение переменных вместе в массив. Это очень удобно когда точно не известно сколько параметров может быть передано в функцию.
@@ -174,7 +174,7 @@ console.log(c);  // [1, 2, 3, 5] referencing the same array
 function foo(...args) {
     console.log(args);
 }
-foo( 'car', 54, 'tree');  //  [ 'car', 54, 'tree' ]
+foo( 'car', 54, 'tree');  // [ 'car', 54, 'tree' ]
 ```
 
 ## Параметры по умолчанию
@@ -189,7 +189,7 @@ foo();  // 15
 foo( 7, 12 );  // 19
 foo( undefined, 8 ); // 13
 foo( 8 ); // 18
-foo( null ); // 10 as null is coerced to 0
+foo( null ); // 10, так как null приводится к 0
 ```
 
 Значения по умолчанию могут быть не только простыми значениями, но и выражениями или функциями.
@@ -200,7 +200,7 @@ function bar( x = 2, y = x + 4, z = foo(x)) {
     console.log([ x, y, z ]);
 }
 bar();  // [ 2, 6, 8 ]
-bar( 1, 2, 3 ); //[ 1, 2, 3 ]
+bar( 1, 2, 3 ); // [ 1, 2, 3 ]
 bar( 10, undefined, 3 );  // [ 10, 14, 3 ]
 ```
 
@@ -210,10 +210,10 @@ bar( 10, undefined, 3 );  // [ 10, 14, 3 ]
 
 ```javascript
 let [ a, b, c ] = [ 6, 2, 9];
-console.log(`a=${a}, b=${b}, c=${c}`); //a=6, b=2, c=9
+console.log(`a=${a}, b=${b}, c=${c}`); // a = 6, b = 2, c = 9
 function foo() { return ['car', 'dog', 6 ]; }
 let [ x, y, z ] = foo();
-console.log(`x=${x}, y=${y}, z=${z}`);  // x=car, y=dog, z=6
+console.log(`x=${x}, y=${y}, z=${z}`);  // x = car, y = dog, z = 6
 ```
 
 При деструктуризации объекта ключи объекта могут быть перечислены в фигурных скобках для извлечения пары ключ-значение.
@@ -270,10 +270,10 @@ function foo() {
        job: { company: 'Tesco', title: 'Manager' }
     };
 }
-// pre ES6
+// до ES6
 let a = foo(), name = a.name, age = a.age, company = a.job.company;
-// ES6 destructuring and concise parameters
-let { name, age, job: {company} = foo();
+// ES6 деструктуризация и краткие параметры
+let { name, age, job: {company}} = foo();
 ```
 
 Также это может быть использовано для деструктуризации объекта переданного в функцию. Методы 1 и 2 показывают, как это можно было сделать до появления ES6, а метод 3 - с использованием деструктуризации и лаконичных параметров.
@@ -284,12 +284,12 @@ let person = {
     age: 56,
     job: { company: 'Tesco', title: 'Manager' }
 };
-// method 1
+// метод 1
 function old1( person) {
     var yearOfBirth = 2018 - person.age;
     console.log( `${ person.name } works at ${ person.job.company } and was born in ${ yearOfBirth }.`);
 }
-// method 2
+// метод 2
 function old1( person) {
     var age = person.age,
         yearOfBirth = 2018 - age,
@@ -297,7 +297,7 @@ function old1( person) {
         company = person.job.company;
     console.log( `${ name } works at ${ company } and was born in ${ yearOfBirth }.`);
 }
-// method 3
+// метод 3
 function es6({ age, name, job: {company}) {
     var yearOfBirth = 2018 - age;
     console.log( `${ name } works at ${ company } and was born in ${ yearOfBirth }.`);
@@ -395,7 +395,7 @@ let a = ['a', 'b', 'c', 'd' ];
 for ( var val of a ) {
     console.log( val );
 } // "a" "b" "c" "d"
-// pre-ES6
+// до ES6
 for ( var idx in a ) {
     console.log( idx );
 }  // 0 1 2 3
@@ -413,10 +413,10 @@ ES6 добавил новый формат записи числа, добавь
 
 ```javascript
 Number( 29 )  // 29
-Number( 035 ) // 35 in old octal form.
-Number( 0o35 ) // 29 in new octal form
-Number( 0x1d ) // 29 in hexadecimal
-Number( 0b11101 ) // 29 in binary form
+Number( 035 ) // 35 в старой восьмеричной форме записи
+Number( 0o35 ) // 29 в новой восьмеричной форме записи
+Number( 0x1d ) // 29 в шестнадцатеричной форме записи
+Number( 0b11101 ) // 29 в двоичной форме записи
 ```
 
 ## И многое другое…
