@@ -95,3 +95,4 @@
 81. [Введение в Immutable.js и основные концепции функционального программирования](/articles/sebastián-peyrott-introduction-to-immutablejs-and-functional-programming-concepts)
 82. [Улучшаем ваш React с помощью конечных автоматов](/articles/jean-paul-delimat-boost-your-react-with-state-machines)
 83. [Почему 43% фронтенд-разработчиков хотят учить Vue.js](/articles/gregg_pollack_why-43-of-front-end-developers-want-to-learn-vue)
+84. [Создание MEVN-приложения (Часть 1/2)](/articles/aneeta-sharma-mevn-stack-application-part-1/)
