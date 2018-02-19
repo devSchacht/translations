@@ -2,7 +2,7 @@
 
 *Перевод статьи [Joseph Zimmerman](https://twitter.com/joezimjs): [How To Make A Drag-and-Drop File Uploader With Vanilla JavaScript](https://www.smashingmagazine.com/2018/01/drag-drop-file-uploader-vanilla-js/)*.
 
-Известен факт, что поле загрузки файолов трудно стилизовать так, как хочется разработчику, многие просто скрывают его и добавляют кнопку, которая открывает диалог выбора файлов. Теперь, однако, у нас появился даже более модный способ обработки выбора файлов: drag and drop.
+Известен факт, что поле загрузки файлов трудно стилизовать так, как хочется разработчику, многие просто скрывают его и добавляют кнопку, которая открывает диалог выбора файлов. Теперь, однако, у нас появился даже более модный способ обработки выбора файлов: drag and drop.
 
 Технически, это уже было возможно сделать потому что большинство (если не все) реализаций поля выбора файлов позволяли перетаскивать файлы чтобы их выбрать, но это требовало от вас показывать элемент `file`. Так что давайте действительно использовать API, которое дает нам браузер, для реализации выбора файлов через drag-and-drop и их загрузчик.
 
@@ -125,7 +125,7 @@ function preventDefaults (e) {
 }
 ```
 
-Now let’s add an indicator to let the user know that they have indeed dragged the item over the correct area by using CSS to change the color of the border color of the drop area. The styles should already be there under the `#drop-area.highlight` selector, so let’s use JS to add and remove that `highlight` class when necessary.
+Теперь давайте добавим индикатор, который позволит пользователям понять, что они действительно перетаскивали элементы над нужной областью, используем CSS для изменения цвета границы области для перетаскивания. Стили уже описаны выше для селектора `#drop-area.highlight`, так что давайте используем JS для добавления и удаления класса `highlight`, когда это необходимо.
 
 ```javascript
 ;['dragenter', 'dragover'].forEach(eventName => {
@@ -145,11 +145,11 @@ function unhighlight(e) {
 }
 ```
 
-We had to use both dragenter and dragover for the highlighting because of what I mentioned earlier. If you start off hovering directly over dropArea and then hover over one of its children, then dragleave will be fired and the highlight will be removed. The dragover event is fired after the dragenter and dragleave events, so the highlight will be added back onto dropArea before we see it being removed.
+Мы использовали оба события `dragenter` и `dragover` для подсвечивания из-за причин, о которых я говорил ранее. Если вы начинаете перетаскивать непосредственно над `dropArea` и затем перешли на дочерний элемент, то сработает событие  `dragleave` и подсвечивание области пропадёт. Событие `dragover` сработает после событий `dragenter` и `dragleave`, так что подсветка вернётся обратно на `dropArea` до того как мы увидим как она пропала.
 
-We also remove the highlight when the dragged item leaves the designated area or when you drop the item.
+Мы также убираем подсветку когда перетаскиваемый элемент покидает обозначеную область и когда его бросают в неё.
 
-Now all we need to do is figure out what to do when some files are dropped:
+Теперь всё что нам нужно сделать это выяснить что делать когда файлы будут брошены:
 
 ```javascript
 dropArea.addEventListener('drop', handleDrop, false)
@@ -162,12 +162,12 @@ function handleDrop(e) {
 }
 ```
 
-This doesn’t bring us anywhere near completion, but it does two important things:
+Код выше не приближает нас к завершению, но делает две важные вещи:
 
-01. Demonstrates how to get the data for the files that were dropped.
-02. Gets us to the same place that the file input was at with its onchange handler: waiting for handleFiles.
+01. Демонстрирует как получить данные о файлах которые были брошены.
+02. Приводит нас в то же место, что и поле `input` с типом `file` и обработчиком на событие `onchange`: `handleFiles`.
 
-Keep in mind that files is not an array, but a FileList. So, when we implement handleFiles, we’ll need to convert it to an array in order to iterate over it more easily:
+Держите в уме, что `files` это не массив, а `FileList`. Таким образом, при реализации `handleFiles`, нам нужно конвертировать `FileList` в массив, чтобы более легко было его итерировать:
 
 ```javascript
 function handleFiles(files) {
@@ -175,7 +175,7 @@ function handleFiles(files) {
 }
 ```
 
-That was anticlimactic. Let’s get into uploadFile for the real meaty stuff.
+Это было разочеровывающе. Давайте посмотрим в `uploadFile` for the *действительно* meaty stuff.
 
 ```javascript
 function uploadFile(file) {
@@ -188,12 +188,12 @@ function uploadFile(file) {
     method: 'POST',
     body: formData
   })
-  .then(() => { /* Done. Inform the user */ })
-  .catch(() => { /* Error. Inform the user */ })
+  .then(() => { /* Готово. Информируем пользователя */ })
+  .catch(() => { /* Ошибка. Информируем пользователя */ })
 }
 ```
 
-Here we use FormData, a built-in browser API for creating form data to send to the server. We then use the fetch API to actually send the image to the server. Make sure you change the URL to work with your back-end or service, and formData.append any additional form data you may need to give the server all the information it needs. Alternatively, if you want to support Internet Explorer, you may want to use XMLHttpRequest, which means uploadFile would look like this instead:
+Здесь мы используем `FormData`, встроенный браузерный API для создания форм с данными для отправки на сервер. Для этого мы используем `fetch` API, чтобы действительно отправить изображения на сервер. Убедитесь что вы изменили URL для работы с вашим сервером или сервисом, и с помощью `formData.append` можете добавить к форме любые дополнительные данные которые могут потребоваться для работы с вашим сервером. Как альтернатива, если вы хотите поддерживать Internet Explorer, вы можете захотеть использовать `XMLHttpRequest`, это значит, что ваш `uploadFile` будет выглядеть так:
 
 ```javascript
 function uploadFile(file) {
@@ -204,10 +204,10 @@ function uploadFile(file) {
 
   xhr.addEventListener('readystatechange', function(e) {
     if (xhr.readyState == 4 && xhr.status == 200) {
-      // Done. Inform the user
+      // Готово. Информируем пользователя
     }
     else if (xhr.readyState == 4 && xhr.status != 200) {
-      // Error. Inform the user
+      // Ошибка. Информируем пользователя
     }
   })
 
@@ -216,15 +216,15 @@ function uploadFile(file) {
 }
 ```
 
-Depending on how your server is set up, you may want to check for different ranges of status numbers rather than just 200, but for our purposes, this will work.
+В зависимости от настроек вашего сервера, вы можете проверять различные значения `status` отличные от `200`, но для наших нужд, это сработает.
 
-## Additional Features
+## Дополнительные возможности
 
-That is all of the base functionality, but often we want more functionality. Specifically, in this tutorial, we’ll be adding a preview pane that displays all the chosen images to the user, then we’ll add a progress bar that lets the user see the progress of the uploads. So, let’s get started with previewing images.
+Это вся базовая функциональность, но часто требуется её расширить. Конкретно в этом руководстве, мы добавим панель предпросмотра, где будут показаны выбраные файлы, также добавим индикатор прогресса, который будет показывать пользователю статус загрузки. Итак, давайте начнём с предпросмотра изображений.
 
-### Image Preview
+### Предпросмотр изображений
 
-There are a couple of ways you could do this: you could wait until after the image has been uploaded and ask the server to send the URL of the image, but that means you need to wait and images can be pretty large sometimes. The alternative — which we’ll be exploring today — is to use the FileReader API on the file data we received from the drop event. This is asynchronous, and you could alternatively use FileReaderSync, but we could be trying to read several large files in a row, so this could block the thread for quite a while and really ruin the experience. So let’s create a previewFile function and see how it works:
+Есть несколько способов сделать это: вы можете ждать пока изображения загрузятся и запросить у сервера URL для картинок, но это означает что вам придется ждать и временами изображения могут быть довольно большими. Альтернатива — которую мы будет исследовать сегодня — это использовать [FileReader API](https://developer.mozilla.org/en-US/docs/Web/API/FileReader) с данными файлов, которые мы получили из события `drop`. Это работает асинхронно, но вы можете использовать альтернативу [FileReaderSync](https://developer.mozilla.org/en-US/docs/Web/API/FileReaderSync), но мы можем попробовать прочитаться несколько больших файлов подряд, таким образом это может заблокировать поток выполнения на долгое время и по-настоящему испортить опыт взаимодействия пользователя. Чтож, давайте создадим `previewFile` функцию и посморим как это работает:
 
 ```javascript
 function previewFile(file) {
@@ -238,15 +238,15 @@ function previewFile(file) {
 }
 ```
 
-Here we create a new FileReader and call readAsDataURL on it with the File object. As mentioned, this is asynchronous, so we need to add an onloadend event handler in order to get the result of the read. We then use the base 64 data URL as the src for a new image element and add it to the gallery element. There are only two things that need to be done to make this work now: add the gallery element, and make sure previewFile is actually called.
+Здесь мы создали `new FileReader` и вызвали метод `readAsDataURL` для объекта `File`. Как уже упоминалось, это работает асинхронно, поэтому нужно добавить обработчик события `onloadend` для обработки результата чтения файла. После этого используем base 64 URL адрес для атрибута `src` нового элемента `<img>` и добавляем его в элемент `gallery`. Есть только две вещи которые надо сделать чтобы всё было готово и работало: добавить элемент `gallery` и добавить вызов функции `previewFile`.
 
-First, add the following HTML right after the end of the form tag:
+Во-первых, добавим HTML, который приведен ниже, сразу после закрывающего тега `form`:
 
 ```html
 <div id="gallery"></div>
 ```
 
-Nothing special; it’s just a div. The styles are already specified for it and the images in it, so there’s nothing left to do there. Now let’s change the handleFiles function to the following:
+Ничего особенного, это просто `div`. Стили уже заданы для него и изображений в нем, так что больше здесь ничего делать не надо. Теперь изменим функцию `handleFiles` на следующую:
 
 ```javascript
 function handleFiles(files) {
@@ -256,17 +256,17 @@ function handleFiles(files) {
 }
 ```
 
-There are a few ways you could have done this, such as composition, or a single callback to forEach that ran uploadFile and previewFile in it, but this works too. And with that, when you drop or select some images, they should show up almost instantly below the form. The interesting thing about this is that — in certain applications — you may not actually want to upload images, but instead store the data URLs of them in localStorage or some other client-side cache to be accessed by the app later. I can’t personally think of any good use cases for this, but I’m willing to bet there are some.
+Есть несколько способов, чтобы сделать это, такой как композиция, или простой колбек функции `forEach` в котором запускается `uploadFile` и `previewFile`, и это тоже работает. Таким образом, когда вы бросаете или выбираете несколько изображений, они будет показаны почти мгновенно ниже формы. Интересная мысль насчет этого — в некоторых приложениях — вы можете не захотеть реально загружать изображения на сервер, а вместо этого хранить ссылки на них в `localStorage` или в каком-нибудь другом кеше на стороне пользователя, чтобы приложение имело к ним доступ позже. Я лично не могу придумать хорошие сценарии использования этого, но я готов поспорить, что такие есть.
 
-### Tracking Progress
+### Отслеживание прогресса
 
-If something might take a while, a progress bar can help a user realize progress is actually being made and give an indication of how long it will take to be completed. Adding a progress indicator is pretty easy thanks to the HTML5 progress tag. Let’s start by adding that to the HTML code this time.
+Если что-нибудь может занять некоторое время, индикатор прогресса может помочь пользователю понимать, что прогресс происходит и показывает как долго это будет выполняться. Добавить индикатора прогресса довольно легко, благодаря HTML5 тегу `progress`. Давайте начнём с добавления его в HTML код.
 
 ```html
 <progress id="progress-bar" max=100 value=0></progress>
 ```
 
-You can plop that in right after the label or between the form and gallery div, whichever you fancy more. For that matter, you can place it wherever you want within the body tags. No styles were added for this example, so it will show the browser’s default implementation, which is serviceable. Now let’s work on adding the JavaScript. We’ll first look at the implementation using fetch and then we’ll show a version for XMLHttpRequest. To start, we’ll need a couple of new variables at the top of the script :
+Вы можете шлёпнуть (_You can plop that_) его сразу после элемента `label` или между элементами `form` и `div` для предпросмотра изображений, как больше нравится. Для этого, вы можете добавить его куда захотите в пределах тега `body`. Стили для этого примера не добавлены, так что будет отрисован браузерный элемент по-умолчанию, которая пригодна. Теперь давайте работать над добавлением JavaScript. Для начала рассмотрим реализацию для `fetch` а затем покажем версию для `XMLHttpRequest`. Для начала нам понадобится пара новых переменных в верхней части скрипта:
 
 ```javascript
 let filesDone = 0
@@ -274,7 +274,7 @@ let filesToDo = 0
 let progressBar = document.getElementById('progress-bar')
 ```
 
-When using fetch we’re only able to determine when an upload is finished, so the only information we track is how many files are selected to upload (as filesToDo) and the number of files that have finished uploading (as filesDone). We’re also keeping a reference to the #progress-bar element so we can update it quickly. Now let’s create a couple of functions for managing the progress:
+При использовании `fetch` мы только можем определить когда загрузка завершена, так что единственная информация, которую мы отслеживаем, - это то сколько файлов выбрано для загрузки (переменная `filesToDo`) и количество уже загруженных файлов (переменная `filesDone`). Мы также храним ссылку на элемент `#progress-bar`, чтобы мы могли быстро обновлять его. Теперь давайте создадим пару функций для управления прогрессом:
 
 ```javascript
 function initializeProgress(numfiles) {
@@ -289,7 +289,7 @@ function progressDone() {
 }
 ```
 
-When we start uploading, initializeProgress will be called to reset the progress bar. Then, with each completed upload, we’ll call progressDone to increment the number of completed uploads and update the progress bar to show the current progress. So let’s call these functions by updating a couple of old functions:
+Когда мы начинаем загрузку, вызовем  функцию `initializeProgress` для сброса состояния индикатора. Затем, с каждой выполненой загрузкой, мы вызываем функцию `progressDone` для увеличения числа загруженых файлов на единицу и обновления индикатора для демонстрации прогресса. Итак, добавим вызовы этих функций, обновив пару старых:
 
 ```javascript
 function handleFiles(files) {
@@ -309,18 +309,18 @@ function uploadFile(file) {
     method: 'POST',
     body: formData
   })
-  .then(progressDone) // <- Add `progressDone` call here
-  .catch(() => { /* Error. Inform the user */ })
+  .then(progressDone) // <- Добавим `progressDone` вызов здесь
+  .catch(() => { /* Ошибка. Сообщаем пользователю */ })
 }
 ```
 
-And that’s it. Now let’s take a look at the XMLHttpRequest implementation. We could just make a quick update to uploadFile, but XMLHttpRequest actually gives us more functionality than fetch, namely we’re able to add an event listener for upload progress on each request, which will periodically give us information about how much of the request is finished. Because of this, we need to track the percentage completion of each request instead of just how many are done. So, let’s start with replacing the declarations for filesDone and filesToDo with the following:
+И на этом всё. Теперь посмотрим как выглядит реализация с `XMLHttpRequest`. Мы могли бы сделать просто быстроеобновление в `uploadFile`, но `XMLHttpRequest` фактически дает нам больше функциональности чем `fetch`, а именно мы способны добавить обработчик события для прогресса загрузки на каждом запросе, который будет переодически давать информацию о том, каков текущий прогресс загрузки. Поэтому, нам нужно отслеживать процентную готовность каждого запроса вместо количества выполненых запросов. Итак, давайте начнём с замены объявлений переменных `filesDone` и `filesToDo` на следующий код:
 
 ```javascript
 let uploadProgress = []
 ```
 
-Then we need to update our functions as well. We’ll rename progressDone to updateProgress and change them to be the following:
+Тогда нам нужно обносить и наши функции. Переименуем `progressDone` в `updateProgress` и изменим её код как показано ниже:
 
 ```javascript
 function initializeProgress(numFiles) {
@@ -339,26 +339,26 @@ function updateProgress(fileNumber, percent) {
 }
 ```
 
-Now initializeProgress initializes an array with a length equal to numFiles that is filled with zeroes, denoting that each file is 0% complete. In updateProgress we find out which image is having their progress updated and change the value at that index to the provided percent. We then calculate the total progress percentage by taking an average of all the percentages and update the progress bar to reflect the calculated total. We still call initializeProgress in handleFiles the same as we did in the fetch example, so now all we need to update is uploadFile to call updateProgress.
+Теперь `initializeProgress` инициализирует массив с длиной равной `numFiles` который заполнен нулями, означающими что каждый файл загружен на 0%. В `updateProgress` какое из изображений обновляет свой прогресс и изменяем значение элемента с нужным индексом на предоставленный `percent`. Затем мы вычисляем общий процент прогресса как среднее среди всех процентов и обновлеем индикатор прогресса, чтобы отобразить вычисленное значение. Мы по-прежнему вызываем `initializeProgress` в `handleFiles` также как делали это в примере с  `fetch`, так что теперь всё что нам нужно, это обновить `uploadFile` добавив вызов `updateProgress`.
 
 ```javascript
-function uploadFile(file, i) { // <- Add `i` parameter
+function uploadFile(file, i) { // <- Добавили параметр `i`
   var url = 'YOUR URL HERE'
   var xhr = new XMLHttpRequest()
   var formData = new FormData()
   xhr.open('POST', url, true)
 
-  // Add following event listener
+  // Добавили следующие слушатели
   xhr.upload.addEventListener("progress", function(e) {
     updateProgress(i, (e.loaded * 100.0 / e.total) || 100)
   })
 
   xhr.addEventListener('readystatechange', function(e) {
     if (xhr.readyState == 4 && xhr.status == 200) {
-      // Done. Inform the user
+      // Готово. Сообщаем пользователю
     }
     else if (xhr.readyState == 4 && xhr.status != 200) {
-      // Error. Inform the user
+      // Ошибка. Сообщаем пользователю
     }
   })
 
@@ -367,10 +367,10 @@ function uploadFile(file, i) { // <- Add `i` parameter
 }
 ```
 
-The first thing to note is that we added an i parameter. This is the index of the file in the list of files. We don’t need to update handleFiles to pass this parameter in because it is using forEach, which already gives the index of the element as the second parameter to callbacks. We also added the progress event listener to xhr.upload so we can call updateProgress with the progress. The event object (referred to as e in the code) has two pertinent pieces of information on it: loaded which contains the number of bytes that have been uploaded so far and total which contains the number of bytes the file is in total.
+Первое, что нужно отметить, это то, что мы добавили параметр `i`. Это индекс файла в списке файлов. Нам не нужно обновлять `handleFiles` для передачи этого параметра, потому что он использует `forEach`, который уже передаёт индекс элемента вторым параметром в колбек. Мы также добавили слушатель на событие `progress` в `xhr.upload`, чтобы мочь вызвать `updateProgress` со значением прогресса. Объект события (`e` в нашем коде) имеет два куска информации о нём: `loaded` который содержит число байт, которые уже загружены, и `total` который содержит число байт в файле в общей сложности.
 
-The || 100 piece is in there because sometimes if there is an error, e.loaded and e.total will be zero, which means the calculation will come out as NaN, so the 100 is used instead to report that the file is done. You could also use 0. In either case, the error will show up in the readystatechange handler so that you can inform the user about them. This is merely to prevent exceptions from being thrown for trying to do math with NaN.
+Часть `|| 100` нужна потому, что иногда при возникновении ошибки, `e.loaded` и `e.total` будут равны нулю, что означает, что вычисления дадут `NaN`, таким образом `100` используется вместо отчета о выполнении загрузки. Вы можете также использовать `0`. В любом случае, ошибки будут отображаться в обработчике события `readystatechange`, так что вы можете сообщить о нихпользователю. Это сделано просто для предотвращения исключений, связанных с попытками вычислений с `NaN`.
 
-## Conclusion
+## Заключение
 
-That’s the final piece. You now have a web page where you can upload images via drag and drop, preview the images being uploaded immediately, and see the progress of the upload in a progress bar. You can see the final version (with XMLHttpRequest) in action on CodePen, but be aware that the service I upload the files to has limits, so if a lot of people test it out, it may break for a time.
+Это завершающая часть. Вы получили страницу, на которой вы можете загружать изображения с помощью drag and drop, предварительный просмотр изображений, загружаемый немедленно, и просмотр прогресса загрузки с помощью индикатора програсса. Вы можете посмотреть конечную версию (с использованием `XMLHttpRequest`) в действии на [CodePen](https://codepen.io/joezimjs/pen/yPWQbd), но помните, что сервис в который я загружаю файлы имеет ограничения, так что если много людей будут его пробовать, он может сломаться на некоторое время.
