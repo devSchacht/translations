@@ -1,7 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "test": "yaspeller articles -e '.md'"
+    "test": "yaspeller articles -e '.md'",
+    "create-sample": "node ./utils/create-sample.js"
   },
   "dependencies": {
     "yaspeller": "^4.0.3"
