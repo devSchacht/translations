@@ -1,9 +1,11 @@
 {
   "private": true,
   "scripts": {
-    "test": "yaspeller articles -e '.md'"
+    "test": "yaspeller articles -e '.md'",
+    "publish": "sh ./utils/publish.sh"
   },
   "dependencies": {
-    "yaspeller": "^4.0.3"
+    "yaspeller": "^4.0.3",
+    "markdown-to-medium": "^1.4.2"
   }
 }
