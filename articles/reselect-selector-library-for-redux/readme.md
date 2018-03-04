@@ -935,7 +935,7 @@ A: Попробуйте эти [вспомогательные функции](h
 
 ### [reselect-map](https://github.com/HeyImAlex/reselect-map)
 
-Может принести пользу при выполнении **очень дорогостоящих** вычислений на элементах коллекции, потому что Reselect возможно не даёт достаточной детализации кеширования. Ознакомьтесь с README reselect-maps в качестве примеров.
+Может принести пользу при выполнении **очень дорогостоящих** вычислений на элементах коллекции, потому что Reselect возможно не даёт достаточной детализации кэширования. Ознакомьтесь с README reselect-maps в качестве примеров.
 
 **Оптимизации в reselect-map применяются только в некоторых случаях. Если вы не уверены, что вам это нужно, не делайте это!**
 
@@ -950,6 +950,6 @@ MIT
 [coveralls-badge]: https://img.shields.io/coveralls/reactjs/reselect/master.svg?style=flat-square
 [coveralls]: https://coveralls.io/github/reactjs/reselect
 
-- - - -
+---
 
-*Слушайте наш подкаст в [iTunes](https://itunes.apple.com/ru/podcast/девшахта/id1226773343) и [SoundCloud](https://soundcloud.com/devschacht), читайте нас на [Medium](https://medium.com/devschacht), контрибьютьте на [GitHub](https://github.com/devSchacht), общайтесь в [группе Telegram](https://t.me/devSchacht), следите в [Twitter](https://twitter.com/DevSchacht) и [канале Telegram](https://t.me/devSchachtChannel), рекомендуйте в [VK](https://vk.com/devschacht) и [Facebook](https://www.facebook.com/devSchacht).*
+_Слушайте наш подкаст в [iTunes](https://itunes.apple.com/ru/podcast/девшахта/id1226773343) и [SoundCloud](https://soundcloud.com/devschacht), читайте нас на [Medium](https://medium.com/devschacht), контрибьютьте на [GitHub](https://github.com/devSchacht), общайтесь в [группе Telegram](https://t.me/devSchacht), следите в [Twitter](https://twitter.com/DevSchacht) и [канале Telegram](https://t.me/devSchachtChannel), рекомендуйте в [VK](https://vk.com/devschacht) и [Facebook](https://www.facebook.com/devSchacht)._
