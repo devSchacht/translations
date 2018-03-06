@@ -2,6 +2,7 @@
   "private": true,
   "scripts": {
     "test": "yaspeller articles -e '.md'",
+    "create-sample": "node ./utils/create-sample.js",
     "publish": "sh ./utils/publish.sh"
   },
   "dependencies": {
