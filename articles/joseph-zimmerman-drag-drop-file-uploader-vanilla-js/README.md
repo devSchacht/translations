@@ -12,7 +12,7 @@
 
 Ниже можете видеть пример того, что должно получиться:
 
-!["Загрузка изображения с помощью drag and drop в действии"](https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/8a415e72-c17f-4cc3-9b64-1c3ab14cf82c/uploader-preview.gif)
+!["Загрузка изображения с помощью drag and drop в действии"](https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/8a415e72-c17f-4cc3-9b64-1c3ab14cf82c/uploader-preview.gif "Загрузка изображения с помощью drag and drop в действии")
 
 *Демонстрационная страница, на которой можно загрузить файлы с помощью drag and drop с немедленным предварительным просмотром изображений и демонстрацией индикатора прогресса загрузки.*
 
