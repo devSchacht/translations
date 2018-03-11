@@ -96,3 +96,6 @@
 82. [Улучшаем ваш React с помощью конечных автоматов](/articles/jean-paul-delimat-boost-your-react-with-state-machines)
 83. [Почему 43% фронтенд-разработчиков хотят учить Vue.js](/articles/gregg_pollack_why-43-of-front-end-developers-want-to-learn-vue)
 84. [Создание MEVN-приложения (Часть 1/2)](/articles/aneeta-sharma-mevn-stack-application-part-1/)
+85. [Изучите CSS-переменные за 5 минут](/articles/learn-css-variables-in-5-minutes/)
+86. [Исчерпывающее руководство по написанию Dockerfile для веб-приложений на Node.js](/articles/an-exhaustive-guide-to-writing-dockerfiles-for-nodejs-web-apps/)
+87. [Модульное тестирование React-приложения с помощью Jest и Enzyme](/articles/unit-testing-your-react-application-with-jest-and-enzyme/)
