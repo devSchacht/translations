@@ -1,9 +1,5 @@
 # [Reselect](https://github.com/reactjs/reselect.git) - библиотека селекторов для Redux
 
-[![Travis][build-badge]][build]
-[![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
-
 Простая библиотека “селекторов” для Redux, вдохновлённая геттерами в [NuclearJS](https://github.com/optimizely/nuclear-js.git), [подписками](https://github.com/Day8/re-frame#just-a-read-only-cursor) в [re-frame](https://github.com/Day8/re-frame) и этим [предложением](https://github.com/gaearon/redux/pull/169) от [speedskater](https://github.com/speedskater).
 
 * Селекторы могут вычислять производные данные, позволяя Redux сохранять (store) минимально возможное состояние (state).
