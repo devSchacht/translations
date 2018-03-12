@@ -2,7 +2,7 @@
 
 ![logo](./images/logo.png)
 
-*Перевод статьи [Joseph Zimmerman](https://twitter.com/joezimjs): [How To Make A Drag-and-Drop File Uploader With Vanilla JavaScript](https://www.smashingmagazine.com/2018/01/drag-drop-file-uploader-vanilla-js/)*.
+*Перевод статьи [Joseph Zimmerman](https://twitter.com/joezimjs): [How To Make A Drag-and-Drop File Uploader With Vanilla JavaScript](https://www.smashingmagazine.com/2018/01/drag-drop-file-uploader-vanilla-js/)*. Переведено с согласия автора.
 
 Известен факт, что поле для загрузки файлов трудно стилизовать так, как хочется разработчику, многие просто скрывают его и добавляют кнопку, которая открывает диалог выбора файлов. Однако, теперь у нас появился даже ещё более модный способ обработки выбора файлов: drag and drop.
 
@@ -378,3 +378,7 @@ function uploadFile(file, i) { // <- Добавили параметр `i`
 ## Заключение
 
 Это последняя часть. Теперь у нас есть страница, на которой можно загружать изображения с помощью drag and drop, есть мгновенный предпросмотр изображений и отображение прогресса загрузки с помощью индикатора. Вы можете посмотреть окончательную версию (с использованием `XMLHttpRequest`) в действии на [CodePen](https://codepen.io/joezimjs/pen/yPWQbd), но помните, что сервис, через который я загружаю файлы, имеет ограничения, и если много людей будут его использовать одновременно, то он может быть недоступен некоторое время.
+
+---
+
+*Слушайте наш подкаст в [iTunes](https://itunes.apple.com/ru/podcast/девшахта/id1226773343) и [SoundCloud](https://soundcloud.com/devschacht), читайте нас на [Medium](https://medium.com/devschacht), контрибьютьте на [GitHub](https://github.com/devSchacht), общайтесь в [группе Telegram](https://t.me/devSchacht), следите в [Twitter](https://twitter.com/DevSchacht) и [канале Telegram](https://t.me/devSchachtChannel), рекомендуйте в [VK](https://vk.com/devschacht) и [Facebook](https://www.facebook.com/devSchacht).*
