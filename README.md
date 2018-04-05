@@ -102,3 +102,4 @@
 88. [Модульное тестирование React-приложения с помощью Jest и Enzyme](/articles/unit-testing-your-react-application-with-jest-and-enzyme/)
 89. [Reselect - библиотека селекторов для Redux](/articles/reselect-selector-library-for-redux)
 90. [Как сделать Drag-and-Drop загрузчик файлов на чистом JavaScript](/articles/joseph-zimmerman-drag-drop-file-uploader-vanilla-js)
+91. [Составление программного обеспечения: Вступление](/articles/eric-elliott-composing-software-an-introduction/README.md)
