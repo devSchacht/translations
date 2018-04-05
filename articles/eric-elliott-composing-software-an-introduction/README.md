@@ -1,4 +1,4 @@
-# Составление программного обеспечения: Вступление
+# Композиция программного обеспечения: Вступление
 
 *Перевод статьи [Eric Elliott](https://twitter.com/_ericelliott): [Composing Software: An Introduction](https://medium.com/javascript-scene/composing-software-an-introduction-27b72500d6ea).*
 
