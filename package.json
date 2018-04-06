@@ -3,11 +3,7 @@
   "scripts": {
     "test": "yaspeller articles -e '.md'",
     "create-sample": "node ./utils/create-sample.js",
-    "publish": "sh ./utils/publish.sh"
-  },
-  "dependencies": {
-    "yaspeller": "^4.0.3",
-    "markdown-to-medium": "^1.4.2",
+    "publish": "sh ./utils/publish.sh",
     "lint-staged": "lint-staged"
   },
   "pre-commit": "lint-staged",
@@ -16,6 +12,7 @@
   },
   "dependencies": {
     "lint-staged": "^7.0.0",
+    "markdown-to-medium": "^1.4.2",
     "pre-commit": "^1.2.2",
     "yaspeller": "^4.0.3"
   }
