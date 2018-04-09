@@ -103,3 +103,4 @@
 89. [Reselect - библиотека селекторов для Redux](/articles/reselect-selector-library-for-redux)
 90. [Как сделать Drag-and-Drop загрузчик файлов на чистом JavaScript](/articles/joseph-zimmerman-drag-drop-file-uploader-vanilla-js)
 91. [Композиция программного обеспечения: Вступление](/articles/eric-elliott-composing-software-an-introduction/README.md)
+92. [Глубокое погружение в модуль Node.js: EventEmmiter](articles/safia-abdalla-node-module-deep-dive-eventemitter/README.md)
