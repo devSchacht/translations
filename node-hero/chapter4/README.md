@@ -138,6 +138,8 @@ app.use((err, request, response, next) => {
     console.log(err)
     response.status(500).send('Something broke!')
 })
+
+app.listen(3000)
 ```
 
 Что следует здесь отметить:
@@ -167,6 +169,7 @@ const path = require('path')
 const express = require('express')
 const exphbs = require('express-handlebars')
 
+const app = express()
 app.engine('.hbs', exphbs({
     defaultLayout: 'main',
     extname: '.hbs',
@@ -174,6 +177,8 @@ app.engine('.hbs', exphbs({
 }))
 app.set('view engine', '.hbs')
 app.set('views', path.join(__dirname, 'views'))
+
+app.listen(3000)
 ```
 
 Приведенный выше код инициализирует движок handlebars и устанавливает каталог шаблонов в `views/layouts`. Это каталог, в котором будут храниться ваши шаблоны.
@@ -194,7 +199,7 @@ app.set('views', path.join(__dirname, 'views'))
 Вы можете заметить метку `{{{body}}}` — здесь будет размещен ваш контент. Давайте создадим `home.hbs`!
 
 ```html
-<h2>Hello {{name}}<h2>
+<h2>Hello {{name}}</h2>
 ```
 
 Последнее, что мы должны сделать, чтобы заставить всё это работать, - добавить обработчик маршрута в наше приложение Express:
