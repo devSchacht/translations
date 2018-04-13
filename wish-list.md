@@ -1,7 +1,7 @@
 # Список желаний
 
 ## Микросервисы
-* [From Monolith to Microservices](https://blog.poki.com/from-monolith-to-microservices-b16bae1d6c9d)
+* [From Monolith to Microservices](https://blog.poki.com/from-monolith-to-microservices-b16bae1d6c9d) - **[FedorArbuzov](https://github.com/FedorArbuzov)**
 
 ## Vue.js
 * [How we do Vue: one year later](https://about.gitlab.com/2017/11/09/gitlab-vue-one-year-later/) – **[TheNovel](https://github.com/TheNovel)**
