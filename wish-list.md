@@ -11,14 +11,14 @@
 
 ## Функциональное программирование
 * [Refactoring Node with Higher-Order Functions](http://blog.rangle.io/refactoring-node-with-higher-order-functions/) - **[vvscode](https://github.com/vvscode)**
-* [What's a Transducer?](http://raganwald.com/2017/04/30/transducers.html)
+* [What's a Transducer?](http://raganwald.com/2017/04/30/transducers.html) **[vislogurov](https://github.com/vislogurov)**
 * [The Many Faces of Functions in JavaScript](https://bocoup.com/blog/the-many-faces-of-functions-in-javascript) - **[rikkalo](https://github.com/rikkalo)**
 * [Composing Software: An Introduction](https://medium.com/javascript-scene/composing-software-an-introduction-27b72500d6ea) - **[windrushfarer](https://github.com/windrushfarer)**
 
 ## Фундаментальные знания по JS
 * [You Don't Know JS: Async & Performance. Chapter 1: Asynchrony: Now & Later](https://github.com/devSchacht/You-Dont-Know-JS/blob/master/async%20%26%20performance/ch1.md) - **[vislogurov](https://github.com/vislogurov)** - Переведено
-* [You Don't Know JS: Async & Performance. Chapter 2: Callbacks](https://github.com/devSchacht/You-Dont-Know-JS/blob/master/async%20%26%20performance/ch2.md) - **[vislogurov](https://github.com/vislogurov)**
-* [You Don't Know JS: Async & Performance. Chapter 3: Promises](https://github.com/devSchacht/You-Dont-Know-JS/blob/master/async%20%26%20performance/ch3.md) - **[vislogurov](https://github.com/vislogurov)**
+* [You Don't Know JS: Async & Performance. Chapter 2: Callbacks](https://github.com/devSchacht/You-Dont-Know-JS/blob/master/async%20%26%20performance/ch2.md) - **[vislogurov](https://github.com/vislogurov)** Переведено
+* [You Don't Know JS: Async & Performance. Chapter 3: Promises](https://github.com/devSchacht/You-Dont-Know-JS/blob/master/async%20%26%20performance/ch3.md) - **[vislogurov](https://github.com/vislogurov)** - Переведено
 * [You Don't Know JS: Async & Performance. Chapter 4: Generators](https://github.com/devSchacht/You-Dont-Know-JS/blob/master/async%20%26%20performance/ch4.md) - **[JuliaVolkova](https://github.com/JuliaVolkova)**
 * [You Don't Know JS: Async & Performance. Chapter 5: Program Performance](https://github.com/devSchacht/You-Dont-Know-JS/blob/master/async%20%26%20performance/ch5.md) - **[NKBelousov](https://github.com/NKBelousov)**
 * [You Don't Know JS: Async & Performance. Chapter 6: Benchmarking & Tuning](https://github.com/devSchacht/You-Dont-Know-JS/blob/master/async%20%26%20performance/ch6.md)
