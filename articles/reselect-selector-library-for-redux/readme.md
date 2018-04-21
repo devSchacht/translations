@@ -171,7 +171,7 @@ const getVisibleTodosFilteredByKeyword = createSelector(
 
 ### Подключение Селектора к Redux Store
 
-Если Вы используете [React Redux](https://github.com/reactjs/react-redux), Вы можете вызывать селекторы в качестве регулярных функций внутри `mapStateToProps()`:
+Если Вы используете [React Redux](https://github.com/reactjs/react-redux), Вы можете вызывать селекторы в качестве обычных функций внутри `mapStateToProps()`:
 
 #### `containers/VisibleTodoList.js`
 
