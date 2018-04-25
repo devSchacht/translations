@@ -6,6 +6,9 @@
 ## Vue.js
 * [How we do Vue: one year later](https://about.gitlab.com/2017/11/09/gitlab-vue-one-year-later/) – **[TheNovel](https://github.com/TheNovel)**
 
+## React.js
+* [Our Best Practices for Writing React Components](https://engineering.musefind.com/our-best-practices-for-writing-react-components-dec3eb5c3fc8) – **[FedorArbuzov](https://github.com/FedorArbuzov)**
+
 ## Redux
 * [Idiomatic Redux: The Tao of Redux, Part 1 - Implementation and Intent](http://blog.isquaredsoftware.com/2017/05/idiomatic-redux-tao-of-redux-part-1) - **[maksugr](https://github.com/maksugr)** - до 16.10.2017
 
