@@ -112,7 +112,8 @@ const LocalStrategy = require('passport-local').Strategy
 
 const user = {
     username: 'test-user',
-    password: 'test-password', id: 1
+    password: 'my-password',
+    id: 1
 }
 passport.use(new LocalStrategy(
     function(username, password, done) {
