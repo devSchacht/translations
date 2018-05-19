@@ -155,7 +155,7 @@ console.log('hello from Node.js')
 ```javascript
 // package.json
 {
-  "name": “@risingstack/node-hero",
+  "name": "@risingstack/node-hero",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
