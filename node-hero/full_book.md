@@ -155,7 +155,7 @@ console.log('hello from Node.js')
 ```javascript
 // package.json
 {
-  "name": “@risingstack/node-hero",
+  "name": "@risingstack/node-hero",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -1097,7 +1097,7 @@ const options = {
 const express = require('express')
 const rp = require('request-promise')
 const exphbs = require('express-handlebars')
-
+const path = require('path')
 const app = express()
 
 app.engine('.hbs', exphbs({
@@ -1110,16 +1110,19 @@ app.set('views', path.join(__dirname, 'views'))
 
 app.get('/:city', (req, res) => {
     rp({
-        uri: 'http://apidev.accuweather.com/locations/v1/ search',
+        uri: 'http://dataservice.accuweather.com/locations/v1/cities/search',
         qs: {
             q: req.params.city,
-            apiKey: 'api-key'
-                // Используйте ваш ключ для accuweather API
+            apikey: 'api-key'
+            // Используйте ваш ключ для accuweather API
+                
         },
         json: true
     })
     .then((data) => {
-        res.render('index', data)
+        res.render('home', {
+            res: JSON.stringify(data)
+        })
     })
     .catch((err) => {
         console.log(err)
@@ -1270,7 +1273,7 @@ module.exports = {
 
 ### Что такое Passport.js?
 
-*Простая ненавязчивая аутентификация для Node.js - [passportjs.org](passportjs.org)*
+*Простая ненавязчивая аутентификация для Node.js - [passportjs.org](http://passportjs.org)*
 
 ![](./chapter8/NodeHeroEbook-TheComplete-011.png)
 
@@ -1278,7 +1281,7 @@ Passport.js - это middleware для проверки подлинности. 
 
 ### Что такое Redis?
 
-*Redis это опенсорс (лицензии BSD) хранилище структур данных в оперативной памяти, используемое как база данных, кэш и брокер сообщений — [redis.io](redis.io)*
+*Redis это опенсорс (лицензии BSD) хранилище структур данных в оперативной памяти, используемое как база данных, кэш и брокер сообщений — [redis.io](http://redis.io)*
 
 Мы собираемся хранить информацию о сессии пользователя в Redis, а не в памяти процесса. Таким образом, наше приложение будет намного проще масштабировать.
 

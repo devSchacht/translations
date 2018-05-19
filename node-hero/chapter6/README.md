@@ -123,7 +123,7 @@ const options = {
 const express = require('express')
 const rp = require('request-promise')
 const exphbs = require('express-handlebars')
-
+const path = require('path')
 const app = express()
 
 app.engine('.hbs', exphbs({
@@ -136,16 +136,19 @@ app.set('views', path.join(__dirname, 'views'))
 
 app.get('/:city', (req, res) => {
     rp({
-        uri: 'http://apidev.accuweather.com/locations/v1/ search',
+        uri: 'http://dataservice.accuweather.com/locations/v1/cities/search',
         qs: {
             q: req.params.city,
-            apiKey: 'api-key'
-                // Используйте ваш ключ для accuweather API
+            apikey: 'api-key'
+            // Используйте ваш ключ для accuweather API
+                
         },
         json: true
     })
     .then((data) => {
-        res.render('index', data)
+        res.render('home', {
+            res: JSON.stringify(data)
+        })
     })
     .catch((err) => {
         console.log(err)
