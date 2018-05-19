@@ -1273,7 +1273,7 @@ module.exports = {
 
 ### Что такое Passport.js?
 
-*Простая ненавязчивая аутентификация для Node.js - [passportjs.org](passportjs.org)*
+*Простая ненавязчивая аутентификация для Node.js - [passportjs.org](http://passportjs.org)*
 
 ![](./chapter8/NodeHeroEbook-TheComplete-011.png)
 
