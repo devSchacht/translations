@@ -32,7 +32,7 @@ Vue.component('jsx-example', {
 
 В [одном из issue](https://github.com/vuejs/babel-plugin-transform-vue-jsx/issues/6) создатель фреймворка Vue.js Эван Ю ([Evan You](https://twitter.com/youyuxi)) так объясняет, что такое `h`:
 
-> Термин hyperscript можно объяcнить так - это "скрипт, который генерирует HTML-структуру"
+> Термин hyperscript можно объяснить так - это "скрипт, который генерирует HTML-структуру"
 
 Сокращение `h` используется при написании кода - так быстрее и легче. Более подробно это сокращение также объясняется Эваном в [Advanced Vue Workshop](https://frontendmasters.com/courses/advanced-vue/render-function-api/) - курсов для Frontend-разработчиков [Frontend Masters](https://frontendmasters.com/).
 
