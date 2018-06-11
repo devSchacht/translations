@@ -30,11 +30,15 @@ Vue.component('jsx-example', {
 
 Если кратко - `h` является сокращением от **hyperscript**. Это название является (в свою очередь) сокращением для [Hypertext Markup Language](https://ru.wikipedia.org/wiki/HTML). Такое имя используется потому, что при работе с Vue-приложением мы фактически имеем дело со скриптом, результатом работы которого является виртуальное DOM-дерево. Использование подобного сокращения также встречается в официальной документации других JavaScript-фреймворков. Например, в документации [Cycle.js](https://cycle.js.org/) есть определение `h` - [The hyperscript function h()](https://cycle.js.org/api/dom.html#api-h).
 
+Из [официальной документации Vue.js](https://ru.vuejs.org/v2/guide/render-function.html#JSX):
+
+> Сокращение createElement до h — распространённое соглашение в экосистеме Vue и обязательное для использования JSX. В случае отсутствия h в области видимости, приложение выбросит ошибку.
+
 В [одном из ишью](https://github.com/vuejs/babel-plugin-transform-vue-jsx/issues/6) создатель фреймворка Vue.js Эван Ю ([Evan You](https://twitter.com/youyuxi)) так объясняет, что такое `h`:
 
 > Термин hyperscript можно объяснить так - это "скрипт, который генерирует HTML-структуру"
 
-Сокращение `h` используется при написании кода - так быстрее и легче. Более подробно это сокращение также объясняется Эваном в [Advanced Vue Workshop](https://frontendmasters.com/courses/advanced-vue/render-function-api/) - курсов для Frontend-разработчиков [Frontend Masters](https://frontendmasters.com/).
+Сокращение `h` используется при написании кода - так быстрее и легче. Более подробно это сокращение также объясняется Эваном в [Advanced Vue Workshop](https://frontendmasters.com/courses/advanced-vue/render-function-api/) - курсов для фронтенд-разработчиков [Frontend Masters](https://frontendmasters.com/).
 
 Про сокращение `h` можно думать как о более краткой форме функции `createElement`. Например, полная форма функции `createElement` представлена ниже:
 
@@ -70,7 +74,7 @@ render(h) {
 * второй аргумент - это объект данных (здесь можно передать свойства, атрибуты, классы или стили);
 * третий аргумент - это массив дочерних Node-узлов; здесь можно размещать вложенные вызовы функции `createElement` и вернуть обратно дерево виртуальных DOM-узлов;
 
-Более подробная информация о функции `render()` и ее аргументах представлена в официальном руководстве [Vue Guide](https://ru.vuejs.org/v2/guide/render-function.html#%D0%90%D1%80%D0%B3%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-createElement).
+Более подробная информация о функции `render()` и ее аргументах представлена в [официальном руководстве Vue Guide](https://ru.vuejs.org/v2/guide/render-function.html#%D0%90%D1%80%D0%B3%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D1%8B-createElement).
 
 Термин **hyperscript** может вводить в заблуждение в некоторых случаях, так как это имя JavaScript-библиотеки [hyperscript](https://github.com/hyperhype/hyperscript) (которая уже давно не обновлялась); с другой стороны, это имя небольшой [экосистемы](https://github.com/hyperhype/hyperscript#ecosystem). В нашем конкретном случае речь не идет об этих сущностях.
 
