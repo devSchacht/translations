@@ -4,6 +4,7 @@
 
 const fs = require('fs');
 const readline = require('readline');
+const exec = require('child_process').exec;
 
 const rl = readline.createInterface({
     input: process.stdin,
@@ -24,5 +25,13 @@ rl.question('Введите название статьи\n', articleName => {
 
     console.log(`Образец для перевода создан -> '${articleDir}/README.md'.`);
 
-    rl.close();
+    rl.question('Создать git-ветку для статьи? [yes, no]\n', answer => {
+        if (['y', 'yes'].includes(answer.trim().toLowerCase())) {
+            exec(`git checkout -b ${dirName}`, (error, stdout, stderr) => {
+                console.log(`Переключено на ветку '${dirName}'.`);
+            });
+        }
+        
+        rl.close();
+    });
 });
