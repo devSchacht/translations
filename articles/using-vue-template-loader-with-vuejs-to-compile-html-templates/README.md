@@ -6,7 +6,7 @@
 
 Мы можем использовать [vue-template-loader](https://github.com/ktsn/vue-template-loader), если хотим использовать Vue со способом сборки шаблонов, как в Angular. Поскольку __vue-template-loader__ поддерживает `vue-class-component`, мы можем использовать декораторы для стилевых классов компонентов (class-styled components).
 
-> vue-template-loader компилирует HTML в отдельные функции отрисовки в соответствующих файлах TypeScript или JavaScript.
+> vue-template-loader компилирует HTML в отдельные функции отрисовки в соответствующих TypeScript- или JavaScript-файлах.
 
 ## Установка
 
