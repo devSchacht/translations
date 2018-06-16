@@ -2,9 +2,9 @@
 
 *Перевод статьи [Akanksha Sharma](https://github.com/Akanksha-26): [Using vue-template-loader with Vue.js to Compile HTML Templates](https://alligator.io/vuejs/vue-template-loader/).*
 
-> Большинство людей, знакомых с Angular 2+, знают, что компиляции HTML-шаблонов просто нужно добавить URL-адрес шаблона в файл компонента TypeScript и дело с концом. В случае Vue рекомендуется использовать теги шаблона для сборки разметки шаблона в подавляющем большинстве случаев. 
+> Большинство людей, знакомых с Angular 2+, знают, что для компиляции HTML-шаблонов просто нужно добавить URL-адрес шаблона в файл компонента TypeScript и дело с концом. В случае Vue рекомендуется использовать теги `<template>` для сборки разметки шаблона в подавляющем большинстве случаев. 
 
-Мы можем использовать [vue-template-loader](https://github.com/ktsn/vue-template-loader), если хотим использовать Vue для способа сборки шаблонов, как у Angular. Поскольку __vue-template-loader__ поддерживает `vue-class-component`, мы можем использовать декораторы для стилевых классов компонентов (class-styled components).
+Мы можем использовать [vue-template-loader](https://github.com/ktsn/vue-template-loader), если хотим использовать Vue со способом сборки шаблонов, как в Angular. Поскольку __vue-template-loader__ поддерживает `vue-class-component`, мы можем использовать декораторы для стилевых классов компонентов (class-styled components).
 
 > vue-template-loader компилирует HTML в отдельные функции отрисовки в соответствующих файлах TypeScript или JavaScript.
 
@@ -43,7 +43,7 @@ module.exports = {
 }
 ```
 
-Отрисовка ресурсов, используемых в HTML-шаблоне, связанная с обработкой атрибута `src` тегов, можно указать с помощью опций:
+Отрисовку ресурсов, используемых в HTML-шаблоне, связанная с обработкой атрибута `src` в тегах, можно указать с помощью опций:
 
 ```js
 module.exports = {
@@ -66,11 +66,11 @@ module.exports = {
 }
 ```
 
-Обратите внимание, что для работы вышеуказанных опций также требуется добавление загрузчика для обработки файлов изображений (см. [file-loader](https://github.com/webpack-contrib/file-loader)).
+Обратите внимание, что для работы вышеуказанных опций также необходимо добавление загрузчика для обработки файлов изображений (см. [file-loader](https://github.com/webpack-contrib/file-loader)).
 
 ## Конфигурация для TypeScript
 
-Если мы хотим использовать __vue-template-loader__ с TypeScript, нам нужно установить зависимости `tsloader` и `typescript`, установленные в проекте с помощью `webpack`.
+Если мы хотим использовать __vue-template-loader__ с TypeScript, нам нужны зависимости `tsloader` и `typescript`, установленные в проекте вместе с `webpack`.
 
 > `vue-template-loader` используется аналогичным образом для конфигурации webpack как для JavaScript, так и для TypeScript.
 
@@ -83,7 +83,7 @@ declare module '*.vue' {
   export default Vue;
 }
 
-// Определение типа модуля TypeScript, требуемый vue-template-loader
+// Определение типа модуля TypeScript, требуемого vue-template-loader
 declare module '*.html' {
   import Vue, { ComponentOptions } from 'vue';
 
@@ -108,7 +108,7 @@ declare module '*.html' {
 </div>
 ```
 
-Теперь давайте добавим файл `nest.js`, соответствующий `nest.html`. Мы может использовать __vue-template-loader__ с или без декораторов класса, используя `es6` с `Vue`:
+Теперь давайте добавим файл `nest.js`, использующий `nest.html`. Мы может использовать __vue-template-loader__ с или без декораторов класса, используя `es6` с `Vue`:
 
 ```js
 // Без декораторов класса в JavaScript
