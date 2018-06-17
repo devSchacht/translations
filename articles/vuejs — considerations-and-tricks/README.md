@@ -35,7 +35,7 @@ https://github.com/vuejs/vuejs.org/issues/720
 
 Однако не стоит пугаться, с хорошим понимаем слотов, вы можете создавать собственные абстрактные компоненты. Есть очень хороший пост в блоге, объясняющий, как это сделать.
 
-https://alligator.io/vuejs/vue-abstract-components/
+https://medium.com/devschacht/vue-abstract-components-bc4bc2b89baf
 
 Но всё-таки подумайте дважды, прежде чем воспользоваться этим. Мы всегда полагались на примеси и простые функции для решения задач, оказавшись в тупиковой ситуации.
 
@@ -62,7 +62,7 @@ https://github.com/ktsn/vue-template-loader
 
 Мои коллеги написали по поводу этого отличный пост:
 
-https://alligator.io/vuejs/vue-template-loader/
+https://medium.com/devschacht/vue-template-loader-5fb1ab6c3436
 
 * * *
 
