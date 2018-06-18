@@ -16,7 +16,7 @@ fi
 
 ARTICLE_FILE=$1
 REPO_URL="https://github.com/devSchacht/translations/tree/master/"
-PUBLISH_COMMAND="markdown-to-medium $ARTICLE_FILE --publication=devschacht --tags=devschacht"
+PUBLISH_COMMAND="markdown-to-medium $ARTICLE_FILE --publication=devSchacht --tags=devschacht"
 OPTS=$(getopt --o ":t" --long "token:" -- "$@")
 
 eval set -- "$OPTS"
