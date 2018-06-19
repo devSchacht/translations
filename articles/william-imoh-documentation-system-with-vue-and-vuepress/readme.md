@@ -113,14 +113,14 @@ mkdir docs && cd $_
       }
     },
     methods:{
-      increment(){
+      increment() {
         if(this.number >= 0){
-          this.number++
+          this.number += 1
         }
       },
-      decrement(){
+      decrement() {
         if(this.number > 0){
-          this.number --
+          this.number -= 1
         }
       }
     }
@@ -234,6 +234,8 @@ module.exports = {
 ```bash
 vuepress dev docs
 ```
+
+> Примечание переводчика: приведенная выше команда подразумевает, что пакет vuepress установлен глобально в системе, при помощи команды `npm install --global vuepress`. Если же пакет `vuepress` установлен только локально, то команда запуска должна выглядеть так - `npx vuepress dev docs`.
 
 Локальный сервер запускается на порту `8080`. Хорошей новостью для нас является тот факт, что VuePress из коробки обладает возможностью [горячей перезагрузки](https://webpack.js.org/concepts/hot-module-replacement/), которая выполняется каждый раз при внесении любых изменений в разрабатываемом проекте.
 
