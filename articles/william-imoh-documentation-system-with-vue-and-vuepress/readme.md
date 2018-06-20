@@ -58,6 +58,8 @@ npm init -y
 npm install -D vuepress
 ```
 
+> Примечание переводчика: на момент написания статьи версия VuePress была `0.5.0`. На момент перевода данной статьи актуальная версия VuePress `0.10.1` - [VuePress Releases](https://github.com/vuejs/vuepress/releases).
+
 После установки VuePress нам будет доступна тема оформления документации, которая встроена в VuePress изначально; этой темой мы воспользуемся при построении нашего проекта. Однако нам потребуется внести изменения в саму структуру проекта - создать необходимые папки и файлы, для начала с произвольным содержимым.
 
 ## Создание папок и файлов
@@ -99,27 +101,27 @@ mkdir docs && cd $_
 ```js
 <template>
   <div class="counter">
-    <h1>{{number}}</h1>
-    <button @click="increment">Increment</button>
-    <button @click="decrement">Decrement</button>
+    <h1 class="counter__title">{{ number }}</h1>
+    <button class="counter__button" type="button" @click="increment()">increment</button>
+    <button class="counter__button" type="button" @click="decrement()">decrement</button>
   </div>
 </template>
 
 <script>
   export default {
-    data(){
+    data() {
       return{
         number: 0,
       }
     },
     methods:{
       increment() {
-        if(this.number >= 0){
+        if (this.number >= 0) {
           this.number += 1
         }
       },
       decrement() {
-        if(this.number > 0){
+        if (this.number > 0) {
           this.number -= 1
         }
       }
@@ -128,23 +130,26 @@ mkdir docs && cd $_
 </script>
 
 <style scoped>
-.counter {
-  display: inline-block;
-  margin-left: 30%;
-}
 
-button {
-  display: inline-block;
-  padding: 20px;
-  margin: 10px;
-  font-weight: bold;
-  border-radius: 5px;
-  box-shadow: 0px 0px 5px 0px rgb(11, 11, 114);
-}
+  .counter {
+    display: inline-block;
+    margin-left: 30%;
+  }
 
-h1 {
-  text-align: center;
-}
+  .counter__title {
+    text-align: center;
+  }
+
+  .counter__button {
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgb(11, 11, 114);
+    text-transform: capitalize;
+  }
+
 </style>
 ```
 
@@ -325,3 +330,11 @@ npm run docs:dev
 В процессе чтения данного руководства можно воспользоваться [ссылкой на репозиторий с готовым проектом](https://github.com/Chuloo/scotch-vuepress), где вы можете оставлять свои комментарии и отклики.
 
 Приятного кодинга!
+
+***
+
+### Дополнительная литература:
+
+* [An Introduction to VuePress](https://alligator.io/vuejs/vuepress-introduction/)
+* [VuePress vs Nuxt.js](https://medium.com/vue-mastery/vuepress-vs-nuxt-js-ffc46cc38756)
+* [How to create a custom VuePress theme with Vuetify](https://medium.com/vue-mastery/how-to-create-a-custom-vuepress-theme-with-vuetify-651b7d7e5092)
