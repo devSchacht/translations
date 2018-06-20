@@ -42,7 +42,7 @@ export default {
 
 Хорошо, теперь давайте добавим логики для `IntersectionObserver`.
 
-> Внимание: IntersectionObserver изначально не поддерживается IE или Safari, поэтому вам нужен для него полифил.
+> Внимание: IntersectionObserver изначально не поддерживается IE или Safari, поэтому вам может понадобиться для него полифил
 
 Файл `IntersectionObserver.vue`:
 
