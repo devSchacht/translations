@@ -333,7 +333,7 @@ npm run docs:dev
 
 ***
 
-### Дополнительная литература:
+## Дополнительная литература:
 
 * [An Introduction to VuePress](https://alligator.io/vuejs/vuepress-introduction/)
 * [VuePress vs Nuxt.js](https://medium.com/vue-mastery/vuepress-vs-nuxt-js-ffc46cc38756)
