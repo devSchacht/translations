@@ -105,3 +105,6 @@
 91. [Композиция программного обеспечения: Вступление](/articles/eric-elliott-composing-software-an-introduction/README.md)
 92. [Глубокое погружение в модуль Node.js: EventEmmiter](articles/safia-abdalla-node-module-deep-dive-eventemitter/README.md)
 93. [От монолитной архитектуры к микросервисам](articles/poki-engineering-from-monolith-to-microservices/README.md)
+94. [Функция render() — что такое аргумент h](articles/sarah-drasner-render-function-h)
+95. [Написание абстрактных компонентов во Vue.js](articles/using-vue-template-loader-with-vuejs-to-compile-html-templates)
+96. [Vue.js — соображения и трюки](articles/vuejs — considerations-and-tricks)
