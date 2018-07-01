@@ -3,7 +3,7 @@
 
 *Перевод статьи [Gabriel Peal](https://medium.com/@gpeal): [Building a Cross-Platform Mobile Team](https://medium.com/airbnb-engineering/building-a-cross-platform-mobile-team-3e1837b40a88).*
 
-[](https://cdn-images-1.medium.com/max/2000/1*3WNSZyXGOWKJyPT9r8VY8Q.jpeg)
+![](https://cdn-images-1.medium.com/max/2000/1*3WNSZyXGOWKJyPT9r8VY8Q.jpeg)
 
 *Это третья статья в [серии](../gabriel-peal-react-native-at-airbnb), в которой мы поделимся нашим опытом с React Native и расскажем, что ждёт в дальнейшем мобильную разработку в Airbnb.*
 
@@ -58,9 +58,13 @@
 Это третья часть в серии записей, освещающих наш опыт работы с React Native в Airbnb.
 
 Часть 1: [React Native в Airbnb](../gabriel-peal-react-native-at-airbnb)
+
 Часть 2: [Технология](../gabriel-peal-react-native-at-airbnb-the-technology)
+
 Часть 3: [Создание кроссплатформенной мобильной команды](../gabriel-peal-building-a-cross-platform-mobile-team)
+
 Часть 4: [Принятие решения по React Native](../gabriel-peal-sunsetting-react-native)
+
 Часть 5: [Что дальше с мобильной разработкой](../gabriel-peal-whats-next-for-mobile-at-airbnb)
 
 - - - -

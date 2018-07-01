@@ -3,7 +3,7 @@
 
 *Перевод статьи [Gabriel Peal](https://medium.com/@gpeal): [What’s Next for Mobile at Airbnb](https://medium.com/airbnb-engineering/whats-next-for-mobile-at-airbnb-5e71618576ab).*
 
-[](https://cdn-images-1.medium.com/max/2000/1*_N3sz8fhNFU5tB5YTVfGHg.jpeg)
+![](https://cdn-images-1.medium.com/max/2000/1*_N3sz8fhNFU5tB5YTVfGHg.jpeg)
 
 *Это пятая статья [в серии](../gabriel-peal-react-native-at-airbnb), в которой мы поделимся нашим опытом с React Native и расскажем, что ждёт в дальнейшем мобильную разработку в Airbnb.*
 
@@ -45,7 +45,7 @@ https://gist.github.com/gpeal/93452a45351ddabf2b06e12cca7271b9#file-documentmarq
 
 На Android мы использовали возможности DSL в Kotlin, чтобы сделать реализации компонент простыми для написания и типобезопасными:
 
-```kotlin
+```kt
 basicRow {
  id("settings")
  title(R.string.settings)
@@ -58,7 +58,7 @@ https://gist.github.com/gpeal/94cc2a65cfdc00ed1283329f614c98e1#file-epoxy-kt
 ## Вычисление разницы в Epoxy
 В React вы возвращаете список компонентов из [функции рендера](https://reactjs.org/tutorial/tutorial.html#what-is-react). Ключ к производительности React заключается в том, что эти компоненты являются просто моделью данных фактических представлений/HTML, которые вы хотите отобразить. Затем дерево компонентов сравнивается и отправляются только изменения. Мы создали подобную концепцию для Epoxy. В Epoxy модели объявляются для всего экрана в [buildModels](https://reactjs.org/tutorial/tutorial.html#what-is-react). Это, в сочетании с элегантным Kotlin DSL делает его концептуально очень похожим на React и выглядит так:
 
-```kotlin
+```kt
 override fun EpoxyController.buildModels() {
   header {
     id("marquee")
@@ -113,7 +113,7 @@ https://gist.github.com/gpeal/fb032ca2ee20a3d2541d369101356fca#file-epoxy-swift
 
 До сих пор он работал на различных экранах и почти исключил потребность работать с жизненными циклами. В настоящее время мы оцениваем его по целому ряду продуктов на Android и планируем открыть исходный код, если результат будет успешным. Это полный код, необходимый для создания функционального экрана, который делает сетевой запрос:
 
-```kotlin
+```kt
 data class SimpleDemoState(val listing: Async<Listing> = Uninitialized)
 
 class SimpleDemoViewModel(override val initialState: SimpleDemoState) : MvRxViewModel<SimpleDemoState>() {
@@ -196,9 +196,13 @@ MvRx имеет простые конструкции для обработки 
 Это пятая часть в серии статей, освещающих наш опыт работы с React Native в Airbnb.
 
 Часть 1: [React Native в Airbnb](../gabriel-peal-react-native-at-airbnb)
+
 Часть 2: [Технология](../gabriel-peal-react-native-at-airbnb-the-technology)
+
 Часть 3: [Создание кроссплатформенной мобильной команды](../gabriel-peal-building-a-cross-platform-mobile-team)
+
 Часть 4: [Принятие решения по React Native](../gabriel-peal-sunsetting-react-native)
+
 Часть 5: [Что дальше с мобильной разработкой](../gabriel-peal-whats-next-for-mobile-at-airbnb)
 
 - - - -

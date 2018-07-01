@@ -3,7 +3,7 @@
 
 *Перевод статьи [Gabriel Peal](https://medium.com/@gpeal): [React Native at Airbnb: The Technology](https://medium.com/airbnb-engineering/react-native-at-airbnb-the-technology-dafd0b43838).*
 
-[](https://cdn-images-1.medium.com/max/2000/1*iaYan0f1NeQlzGnwzjXEvg.jpeg)
+![](https://cdn-images-1.medium.com/max/2000/1*iaYan0f1NeQlzGnwzjXEvg.jpeg)
 
 *Это вторая статья [в серии](../gabriel-peal-react-native-at-airbnb), в которой мы поделимся нашим опытом с React Native и расскажем, что ждёт в дальнейшем мобильную разработку в Airbnb.*
 
@@ -148,9 +148,13 @@ Android часто очищает фоновые процессы, но дает
 Это вторая часть в серии записей, освещающих наш опыт работы с React Native в Airbnb.
 
 Часть 1: [React Native в Airbnb](../gabriel-peal-react-native-at-airbnb)
+
 Часть 2: [Технология](../gabriel-peal-react-native-at-airbnb-the-technology)
+
 Часть 3: [Создание кроссплатформенной мобильной команды](../gabriel-peal-building-a-cross-platform-mobile-team)
+
 Часть 4: [Принятие решения по React Native](../gabriel-peal-sunsetting-react-native)
+
 Часть 5: [Что дальше с мобильной разработкой](../gabriel-peal-whats-next-for-mobile-at-airbnb)
 
 - - - -

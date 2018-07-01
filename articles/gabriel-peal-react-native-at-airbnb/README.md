@@ -3,7 +3,7 @@
 
 *Перевод статьи [Gabriel Peal](https://medium.com/@gpeal): [React Native at Airbnb](https://medium.com/airbnb-engineering/react-native-at-airbnb-f95aa460be1c).*
 
-[](https://cdn-images-1.medium.com/max/2000/1*P9Kc_EWojKpqfc1-_AhnSg.jpeg)
+![](https://cdn-images-1.medium.com/max/2000/1*P9Kc_EWojKpqfc1-_AhnSg.jpeg)
 *Годы спустя, все еще можно назначить совещание в нашем Airstream*
 
 *Это первая статья в серии, в которой мы поделимся нашим опытом с React Native и расскажем, что ждёт в дальнейшем мобильную разработку в Airbnb.*
