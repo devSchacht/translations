@@ -3,7 +3,7 @@
 
 *Перевод статьи [Gabriel Peal](https://medium.com/@gpeal): [Sunsetting React Native](https://medium.com/airbnb-engineering/sunsetting-react-native-1868ba28e30a).*
 
-[](https://cdn-images-1.medium.com/max/2000/1*8c-9hgBkRGcllO9CHcTzbQ.jpeg)
+![](https://cdn-images-1.medium.com/max/2000/1*8c-9hgBkRGcllO9CHcTzbQ.jpeg)
 
 *Это четвёртая статья [в серии](../gabriel-peal-react-native-at-airbnb), в которой мы поделимся нашим опытом с React Native и расскажем, что ждёт в дальнейшем мобильную разработку в Airbnb. Где мы находимся сегодня?*
 
