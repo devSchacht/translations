@@ -5,9 +5,9 @@
 
 [](https://cdn-images-1.medium.com/max/2000/1*8c-9hgBkRGcllO9CHcTzbQ.jpeg)
 
-*Это четвёртая статья в серии, в которой мы поделимся нашим опытом с React Native и расскажем, что ждёт в дальнейшем мобильную разработку в Airbnb. Где мы находимся сегодня?*
+*Это четвёртая статья [в серии](../gabriel-peal-react-native-at-airbnb), в которой мы поделимся нашим опытом с React Native и расскажем, что ждёт в дальнейшем мобильную разработку в Airbnb. Где мы находимся сегодня?*
 
-Хотя многие команды полагались на React Native и планировали использовать его в обозримом будущем, мы в конечном итоге не смогли достичь наших первоначальных целей. Кроме того, был ряд [технических](https://medium.com/airbnb-engineering/react-native-at-airbnb-the-technology-dafd0b43838) и [организационных](https://medium.com/airbnb-engineering/building-a-cross-platform-mobile-team-3e1837b40a88) проблем, которые мы не смогли преодолеть, что сделало бы продолжение инвестиций в React Native проблемой.
+Хотя многие команды полагались на React Native и планировали использовать его в обозримом будущем, мы в конечном итоге не смогли достичь наших первоначальных целей. Кроме того, был ряд [технических](../gabriel-peal-react-native-at-airbnb-the-technology) и [организационных](../gabriel-peal-building-a-cross-platform-mobile-team) проблем, которые мы не смогли преодолеть, что сделало бы продолжение инвестиций в React Native проблемой.
 
 В результате, двигаясь вперед, мы **отказываемся от React Native в Airbnb** и реинвестируем все наши усилия обратно в нативную разработку.
 
@@ -58,11 +58,11 @@
 
 Это четвёртая часть в серии статей, освещающих наш опыт работы с React Native в Airbnb.
 
-Часть 1: React Native в Airbnb
-Часть 2: Технология
-Часть 3: Создание кроссплатформенной мобильной команды
-Часть 4: Принятие решения по React Native
-Часть 5: Что дальше с мобильной разработкой
+Часть 1: [React Native в Airbnb](../gabriel-peal-react-native-at-airbnb)
+Часть 2: [Технология](../gabriel-peal-react-native-at-airbnb-the-technology)
+Часть 3: [Создание кроссплатформенной мобильной команды](../gabriel-peal-building-a-cross-platform-mobile-team)
+Часть 4: [Принятие решения по React Native](../gabriel-peal-sunsetting-react-native)
+Часть 5: [Что дальше с мобильной разработкой](../gabriel-peal-whats-next-for-mobile-at-airbnb)
 
 - - - -
 
