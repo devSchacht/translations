@@ -196,9 +196,13 @@ MvRx имеет простые конструкции для обработки 
 Это пятая часть в серии статей, освещающих наш опыт работы с React Native в Airbnb.
 
 Часть 1: [React Native в Airbnb](../gabriel-peal-react-native-at-airbnb)
+
 Часть 2: [Технология](../gabriel-peal-react-native-at-airbnb-the-technology)
+
 Часть 3: [Создание кроссплатформенной мобильной команды](../gabriel-peal-building-a-cross-platform-mobile-team)
+
 Часть 4: [Принятие решения по React Native](../gabriel-peal-sunsetting-react-native)
+
 Часть 5: [Что дальше с мобильной разработкой](../gabriel-peal-whats-next-for-mobile-at-airbnb)
 
 - - - -
