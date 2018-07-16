@@ -1,5 +1,7 @@
 # Vue-UI - первый взгляд
 
+![Vue UI](./images/logo.jpeg)
+
 _Перевод статьи [Stéphane P. Péricat](https://medium.com/@sppericat.morningstar): [Vue UI: A First Look](https://morningstar.engineering/vue-ui-a-first-look-916600d9a918). С разрешения автора_
 
 ---
