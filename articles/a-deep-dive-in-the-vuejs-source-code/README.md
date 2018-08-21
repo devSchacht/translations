@@ -9,21 +9,21 @@
 
 ## Конструктор Vue
 
-Экземпляр Vue наиболее подходящее место откуда мы можем начать наше погружение. Как описывает документация Vue.js, "Каждое приложение Vue начинается с создания нового **экземпляра Vue** с помощью функции `Vue`"
+Экземпляр Vue наиболее подходящее место, откуда мы можем начать наше погружение. Как описывает документация Vue.js, "Каждое приложение Vue начинается с создания нового **экземпляра Vue** с помощью функции `Vue`"
 
-В исходном коде, новые Vue экземпляры создаются используя конструктор Vue:
+В исходном коде новые Vue экземпляры создаются используя конструктор Vue:
 
 ```
 function Vue (options) {  
   if (process.env.NODE_ENV !== 'production' &&  
     !(this instanceof Vue)  
   ) {  
-    warn('Конструктор Vue должен быть вызван с ключевым словом new');  
+    warn('Vue is a constructor and should be called with the `new` keyword');  
   }  
   this._init(options);  
 }
 ```
-[Конструктор объектов](https://www.w3schools.com/js/js_object_constructors.asp) это своего рода лекало для создания дополнительных объектов. Имя функции конструктора пишется с большой буквы:
+[Конструктор объектов](https://www.w3schools.com/js/js_object_constructors.asp), это своего рода шаблон для создания дополнительных объектов. Имя функции конструктора пишется с большой буквы:
 ```
 function Vue (options) {  
     [. . . .]
@@ -45,54 +45,54 @@ var vm = new Vue({
 }
 ```
 
-Конструктор так же проверяет что текущая среда выполнения _не_  является production используя оператор [if](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else):
+Конструктор так же проверяет, что текущая среда выполнения _не_  является production, используя оператор [if](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/if...else):
 
 ```
 [....]  
-  if (**process.env.NODE_ENV !== 'production'** && !(this instanceof Vue)) {  
+  if (process.env.NODE_ENV !== 'production' && !(this instanceof Vue)) {
     warn('Конструктор Vue должен быть вызван с ключевым словом `new`');  
   }  
 [....]
 ```
-Если текущая среда выполнения production, благодаря `&&` выражение заведомо [ложное](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_Operators) и правая часть не будет высчитываться.
+Если текущая среда выполнения production, благодаря быстрой оценке выражений (short-circuit) оператора `&&`, если первое выражение `false`, остальная часть не вычисляется.
 
-Если же текущая среда development, конструктор проверяет что `this` не является экземпляром Vue с помощью [оператора](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof)  `instanceof`
-
-```
-[....]  
-  if (process.env.NODE_ENV !== ‘production’ && **!(this instanceof Vue)**) {  
-    warn(‘Конструктор Vue должен быть вызван с ключевым словом `new`’);  
-  }  
-[....]
-```
-Когда оба условия верны, конструктор вызывает функцию `warn`  c предупреждением о том что конструктор должен вызываться использую ключевое слово `new`:
+Если же текущая среда development, конструктор проверяет что `this` не является экземпляром Vue с помощью [оператора](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/instanceof)  `instanceof`
 
 ```
 [....]  
-  if (process.env.NODE_ENV !== ‘production’ && !(this instanceof Vue)) {  
-    **warn(‘Конструктор Vue должен быть вызван с ключевым словом `new`’);**
+  if (process.env.NODE_ENV !== 'production' && !(this instanceof Vue)) {
+    warn('Конструктор Vue должен быть вызван с ключевым словом `new`');
   }  
 [....]
 ```
-Мы рассмотрим детали реализации функции `warn` в другом посте. Если вы были внимательны, то обратили внимание на два типа кавычек, одинарные и бэктики используемые в вызове `warn`:
+Когда оба условия верны, конструктор вызывает функцию `warn`  c предупреждением о том, что конструктор должен вызываться, используя ключевое слово `new`:
+
 ```
-warn(**'**Vue is a constructor and should be called with the **`**new**`** keyword**'**);
+[....]  
+  if (process.env.NODE_ENV !== 'production’ && !(this instanceof Vue)) {
+  warn('Vue is a constructor and should be called with the `new` keyword')
+  }  
+[....]
+```
+Мы рассмотрим детали реализации функции `warn` в другом посте. Если вы были внимательны, то обратили внимание на два типа кавычек, одинарные и обратный апостроф используемые в вызове `warn`:
+```
+warn('Vue is a constructor and should be called with the `new` keyword');
 ```
 Два типа кавычек имеют очевидное преимущество — передаваемое выражение не прервется раньше времени.
 
-Наконец, конструктор вызывает метод `this._init`  передавая  `options`  в качестве аргумента:
+Наконец, конструктор вызывает метод `this._init`, передавая `options` в качестве аргумента:
 
 ```
-function Vue (**options**) {
+function Vue (options) {
   [....]
-  **this._init(options)**;
+  this._init(options);
 }
  ```
 
 Но подождите, где же метод `init` ? Как мы видели,  в конструкторе он не определен. 
-Быстрый поиск по исходному коду показывает что данный метод добавлен в прототип  Vue отдельной функцией   `initMixin`.
+Быстрый поиск по исходному коду показывает, что данный метод добавлен в прототип  Vue отдельной функцией   `initMixin`.
 
-   Мы рассмотрим `initMixin`  в [следующий раз](https://medium.com/@oneminutejs/a-deep-dive-in-the-vue-js-source-code-the-initmixin-function-part-1-dc951603a3c).  Если вам нравится данная серия и вы хотите мотивировать меня продолжать над ней работу, хлопайте, подписывайте и делитесь  ссылкой :)
+Мы рассмотрим `initMixin`  в [следующий раз](https://medium.com/@oneminutejs/a-deep-dive-in-the-vue-js-source-code-the-initmixin-function-part-1-dc951603a3c).  Если вам нравится данная серия и вы хотите мотивировать меня продолжать над ней работу, хлопайте, подписывайте и делитесь  ссылкой :)
 
 - - - -  
   
