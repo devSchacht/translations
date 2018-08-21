@@ -48,7 +48,7 @@ var vm = **new Vue**({
 ```
 [....]
 **if (process.env.NODE_ENV !== 'production'** && !(this instanceof Vue)) {
-  warn('Конструктор Vue должен быть вызван с ключевым словом `new`');
+  warn('Vue is a constructor and should be called with the `new` keyword');
 }
 [....]
 ```
@@ -59,7 +59,7 @@ var vm = **new Vue**({
 ```
 [....]
 if (process.env.NODE_ENV !== 'production' && **!(this instanceof Vue**)) {
-  warn('Конструктор Vue должен быть вызван с ключевым словом `new`');
+  warn('Vue is a constructor and should be called with the `new` keyword');
  }
 [....]
 ```
