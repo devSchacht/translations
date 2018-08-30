@@ -30,3 +30,6 @@
 
 ## React
 * [Boost your React with State Machines](https://medium.freecodecamp.org/boost-your-react-with-state-machines-1e9641b0aa43) - **[NKBelousov](https://github.com/NKBelousov)**
+
+## Best practices
+* [10 Things You Will Eventually Learn About JavaScript Projects](https://blog.usejournal.com/10-things-you-will-eventually-learn-about-javascript-projects-efd7646b958a) - **[rtplv](https://github.com/rtplv)**
