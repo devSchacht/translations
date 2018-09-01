@@ -1,4 +1,4 @@
-# Что такое тестирование и почему мы должны это делать?
+# Что такое тестирование и почему мы должны его делать?
 
 *Перевод статьи [Alex Jover Morales](https://github.com/alexjoverm): [What’s testing and why should we do it?](https://vueschool.io/articles/vuejs-tutorials/what-is-testing-and-why-should-we-do-it/).*
 
