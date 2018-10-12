@@ -122,3 +122,7 @@
 108. [Отладка JavaScript в Google Chrome и Visual Studio Code](articles/james-quick-debugging-javascript-in-google-chrome-and-visual-studio-code)
 109. [Vue-UI — первый взгляд](articles/stephane-pericat-vue-ui-first-look)
 110. [React - это не новый jQuery](articles/react-is-not-the-new-jquery)
+111. [Что такое тестирование и почему мы должны это делать?](articles/what’s-testing-and-why-should-we-do-it)
+112. [10 вещей, которые вы в конечном итоге узнаете, о JavaScript-проектах.](articles/the-cat-with-a-dragon-tattoo-10-things-you-will-eventually-learn-about-javascript-projects)
+113. [Прощай, Redux](articles/jack-scott-goodbye-redux)
+114. [Hacktoberfest вернулся и празднует свой пятый год!](articles/hacktoberfest-is-back-and-celebrating-its-fifth-year)
