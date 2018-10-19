@@ -269,9 +269,525 @@ it('check DatePicker popup open', () => {
 });
 ```
 
-Полный список тестов: [DateInput.test.js](https://github.com/ned-alyona/testing-jest-enzyme/blob/master/shared/forms/inputs/__tests__/DateInput.test.js)
+**Полный список тестов:** [DateInput.test.js](https://github.com/ned-alyona/testing-jest-enzyme/blob/master/shared/forms/inputs/__tests__/DateInput.test.js)
+
+## 2. Тестирование утилит
+
+Код тестируемой утилиты: [valueToDate.js](https://github.com/ned-alyona/testing-jest-enzyme/blob/master/shared/utils/valueToDate.js)
+
+Цель этой утилиты является преобразование значения даты в пользовательском формате. Прежде всего, давайте проанализируем данную утилиту и определим основные кейсы для тестирования:
+
+**1.** Согласно назначению этой утилиты, она преобразует значение, поэтому нам нужно проверить это значение:
+
+* В случае, если значение не определено: мы должны быть уверены, что утилита не вернет исключение (ошибку)
+* В случае, если значение поеределено: нам нужно проверить, что утилита возращает дату
+
+**2.** Возвращаемое значение должно принадлежать классу `moment`, поэтому он должен быть экземпляром `moment`.
+
+**3.** Второй аргумент - `dateFormat`; установите его как константу перед тестами. Поэтому он будет передаваться в каждом тесте и возвращать значение в соответствии с форматом даты. Должны ли мы тестировать `dateFormat` отдельно? Пологаяю, нет. Этот аргумент необязателен; если мы не зададим `dateFormat`, утилита не сломается, а просто вернет дату в формате по умолчанию; это работа `moment`, а мы не должны тестировать сторонние библиотеки. Как я уже говорил, не стоит забывать о часовом поясе, это очень важный момент, особенно из разных часовых поясов.
+
+**Давайте напишем код:**
+
+**1. Напишем тест для первого случая; когда у нас нет значения, оно пустое. **
+
+```js
+const format = 'DD.MM.YYYY';
+
+it('render valueToDate utility with empty value', () => {  
+    const value = valueToDate('', format);
+    expect(value).toEqual(null);
+});
+```
+
+**2. Проверим, определено ли значение**
+
+```js
+const date = '21.11.2015',  
+      format = ‘DD.MM.YYYY’;
+
+it('render valueToDate utility with defined value', () => {  
+    const value = valueToDate(date, format);
+    expect(value).toEqual(moment(date, format));
+});
+```
+
+**3. Проверим, принадлежит ли значение к классу `moment`**
+
+```js
+const date = '21.11.2015',  
+    format = 'DD.MM.YYYY';
+
+it('check value is instanceof moment', () => {  
+    const value = valueToDate(date, format);
+    expect(value instanceof moment).toBeTruthy();
+});
+```
+
+**Полный список тестов:** [valueToDate.test.js](https://github.com/ned-alyona/testing-jest-enzyme/blob/master/shared/utils/__tests__/valueToDate.test.js)
+
+## 3. Тестирование виджетов
+
+Для тестирования виджетов я взяла компонент `spinner`.
+
+**Код для виджета:** [Spinner.js](https://github.com/ned-alyona/testing-jest-enzyme/blob/master/shared/widgets/Spinner.js)
+
+Выглядит так:
+
+![](./images/img-7.gif)
+
+`Spinner` не требуется в объяснении, так как почти все веб-ресурсы используют этот компонент.
+
+Так что идем писать тесты:
+
+**1. Первый шаг - создание снимка**
+
+```js
+it('render correctly Spinner component', () => {  
+   const SpinnerComponent = mount(<Spinner />);
+   expect(SpinnerComponent).toMatchSnapshot();
+});
+```
+
+**2. Тестирование свойст**
+
+**2.1** Проверим свойство `title` по умолчанию на правильность отображения
+
+```js
+it('check prop title by default', () => {  
+ const SpinnerComponent = mount(<Spinner />);
+    expect(SpinnerComponent.find('p').text()).toEqual('Please wait');
+});
+```
+
+**2.2** Проверим, что правильно возвращается пользовательское значение для свойства `title`. Взгляните на код, `titel` завернут в `rawMarkup`, и выводится с помощью свойства `dangerouslySetInnerHTML`.
+
+Код утилиты rawMarkup:
+
+```js
+export default function rawMarkup(template) {  
+    return {__html: template};
+}
+```
+
+Нужно ли включать тесты `rawMarkup` в компонент `spinner`? Нет, это отдельная утилита и ее нужно тестировать отдельно от `spinner`. Нам все равно, как это работает, нам просто нужно знать, что свойство `title` возвращает правильный результат.
+
+Пояснение: причина использования свойства `dangerouslySetInnerHTML` в следующем: наш сайт многоязычный, за его перевод отвечает маркетинговая команда. Они могут перевести его просто сочетанием слов или дополнить HTML-тегами, такими как `<strong>`, `<i>`, `<s>` или даже разделить текст на список `<ol>`, `<ul>` мы не знаем точно, как они переведут и что будуь использовать в тексте. Нам просто нужно правильно все это отобразить.
+
+Я объединила два теста в один:
+
+* возвращение правильного пользовательского свойства
+* правильное отображение заголовка с `html` тегами
+
+```js
+it('check prop title with html tags', () => {  
+    const props = {
+            title: '<b>Please wait</b>'
+        },
+        SpinnerComponent = mount(<Spinner {...props} />);
+    expect(SpinnerComponent.find('p').text()).toEqual('Please wait');
+});
+```
+
+Возьмем следующее свойство `subTitle`, оно необязательное и именно поэтому у него нет значения по умолчанию, поэтому пропустим шаг с тестированием значения по умолчанию и проверим пользовательское свойство:
+
+* Убедимся, что текст в `subTitle` рендерится корректно:
+
+```js
+const props = {  
+        subTitle: 'left 1 minute'
+    },
+    SpinnerComponent = mount(<Spinner {...props} />);
+
+it('render correct text', () => {  
+    expect(SpinnerComponent.find('p').at(1).text()).toEqual(props.subTitle);
+});
+```
+
+ Мы знаем, что свойство `subTitle`, поэтому нам нужно проверить, не отображается ли он с значением по умолчанию. Просто проверим количество тегов `<p>`:
+
+```js
+it('check subTitle is not rendered', () => {  
+  const SpinnerComponent = mount(<Spinner />);
+    expect(SpinnerComponent.find('p').length).toEqual(1);
+});
+```
+
+**3. Тестирование типов свойст**
+
+* Для свойства `title` ожидаемый тип - строка
+
+```js
+it('check prop type for title is string', () => {  
+    const props = {
+            title: 'Wait'
+        },
+        SpinnerComponent = mount(<Spinner {...props} />);
+    expect(SpinnerComponent.find('p').text()).toBeString();
+});
+```
+
+* Для свойства `subTitle` также ожидаемый тип - строка
+
+```js
+const props = {  
+        subTitle: 'left 1 minute'
+    },
+    SpinnerComponent = mount(<Spinner {...props} />);
+
+it('type for subTitle is string', () => {  
+    expect(SpinnerComponent.find('p').at(1).text()).toBeString();
+});
+```
+
+**Полный список тестов:** [Spinner.test.js](https://github.com/ned-alyona/testing-jest-enzyme/blob/master/shared/widgets/__tests__/Spinner.test.js)
+
+## 4. Тестирование модальных окно (ModalWrapper.js и ModalTrigger.js)
+
+Выглядит так:
+
+![](./images/img-8.gif)
+
+Как тестировать модальные окна
+
+Прежде всего, я хочу объяснить, как организованы модальные окна на нашем проекте. У нас есть два компонента: `ModalWrapper.js` и `ModalTrigger.js`.
+
+`ModalWrapper.js` отвечает за макет модального окна. Он содержит контейнер, кнопку «Закрыть», заголовок и тело.
+
+`ModalTrigger.js` отвечает за управление модальным окном. Он включает в себя шаблон `ModalWrapper.js` и содержит события для управления модальным окном (действия открытия, закрытия).
+
+1. Кода для тестируемого компонента: [ModalWrapper.js](https://github.com/ned-alyona/testing-jest-enzyme/blob/master/shared/modals/ModalWrapper.js)
+
+**Давайте напишем код:**
+
+**1.1** `ModalWrapper.js` получает компоненты и отображает их внутри себя. Прежде всего, убедимся, что `ModalWrapper.js` не сломается без компонента. Создадим снимок со значением по умолчанию:
+
+```js
+it('without component', () => {  
+    const ModalWrapperComponent = shallow(<ModalWrapper />);
+    expect(ModalWrapperComponent).toMatchSnapshot();
+});
+```
+
+**1.2** Следующим шагом будет имитирование его фактического состояния с помощью рендеринга компонента, прощедшего через свойства:
+
+```js
+it('with component', () => {  
+   const props = {
+           component: () => {}
+        },
+        ModalWrapperComponent = shallow(<ModalWrapper {...props} />);
+    expect(ModalWrapperComponent).toMatchSnapshot();
+});
+```
+
+**1.3** Проверяем свойства:
+
+* Получаем свойство `modalClassName`
+
+```js
+it('render correct class name', () => {  
+    const props = {
+            modalClassName: 'custom-class-name'
+        },
+        ModalWrapperComponent = shallow(<ModalWrapper {...props} />).find('Modal');
+        expect(ModalWrapperComponent.hasClass('custom-class-name')).toEqual(true);
+});
+```
+
+* Получаем свойство `title`
+
+```js
+it('render correct title', () => {  
+    const props = {
+           title: 'Modal Title'
+       },
+       ModalWrapperComponent = shallow(<ModalWrapper {...props} />).find('ModalTitle');
+    expect(ModalWrapperComponent.props().children).toEqual('Modal Title');
+});
+```
+
+* Получаем свойство `show`
 
 
+```js
+it('check prop value', () => {
+    const props = {
+            show: true
+        },
+        ModalWrapperComponent = shallow(<ModalWrapper {...props} />).find('Modal');
+    expect(ModalWrapperComponent.props().show).toEqual(true);
+});
+```
+
+**1.4** Тестирование `PropTypes`
+
+* Для свойства `show`
+
+```js
+it('check prop type', () => {  
+    const props = {
+           show: true
+        },
+        ModalWrapperComponent = shallow(<ModalWrapper {...props} />).find('Modal');
+    expect(ModalWrapperComponent.props().show).toBeBoolean();
+});
+```
+
+* Для свойства `onHide`
+
+```js
+it('render correct onHide prop type', () => {  
+    const props = {
+            onHide: () => {}
+        },
+        ModalWrapperComponent = shallow(<ModalWrapper {...props} />).find('Modal');
+    expect(ModalWrapperComponent.props().onHide).toBeFunction();
+});
+```
+
+* Для свойства `component`
+
+```js
+it('render correct component prop type', () => {  
+   const props = {
+           component: () => {}
+       },
+       ModalWrapperComponent = mount(<ModalWrapper {...props} />);
+   expect(ModalWrapperComponent.props().component).toBeFunction();
+});
+```
+
+**Полный список тестов:** [ModalWrapper.test.js](https://github.com/ned-alyona/testing-jest-enzyme/blob/master/shared/modals/__tests__/ModalWrapper.test.js)
+
+2. Кода для тестируемого компонента: [ModalTrigger.js](https://github.com/ned-alyona/testing-jest-enzyme/blob/master/shared/modals/ModalTrigger.js)
+
+`ModalWrapper.js` покрыт тестами, теперь нужно сделать тоже самое для `ModalTrigger.js`.
+
+Обзор компонента:  он основан на переключении состояния, которое указывает на видимость модального окна. Если переключатель в значении `false`, модальное окно скрыто. Функция `open()` открывает модальное окно из дочернего компонента, сделайте клик по кнопке «Закрыть» и функция `close()` скроет модальное окно.
+
+**2.1** Создадим снимок
+
+```js
+it('render ModalTrigger component correctly', () => {  
+    const ModalTriggerComponent = shallow(<ModalTrigger><div /></ModalTrigger>);
+    expect(ModalTriggerComponent).toMatchSnapshot();
+});
+```
+
+Должны ли мы тестировать в `ModalTrigger.js` компоненты передаваемые в свойствах? Нет, поскольку эти компоненты будут отрендерины внутри компонента `ModalWrapper.js`. А это уже было покрыто тестами в компоненте `ModalWrapper.js`.
+
+**2.2** Тестирование свойств. У нас есть одно свойство `children` и мы хотим быть уверен, что у нас есть только один ребенок.
+
+```js
+it('ensure to have only one child (control element)', () => {  
+    expect(ModalTriggerComponent.findWhere(node => node.key() === 'modal-control').length).toEqual(1);
+});
+```
+
+**2.3** Тестирование `PropTypes`. `children` должен быть объектом, проверим это в следующем тесте:
+
+```js
+const ModalTriggerComponent = mount(<ModalTrigger><div /></ModalTrigger>);
+
+it('check children prop type', () => {  
+      expect(ModalTriggerComponent.props().children).toBeObject();
+});
+```
+
+**2.4** Важной частью компонента `ModalTrigger.js` является проверка состояний.
+
+У нас два состояния:
+
+* Модальное окно открыто. Чтобы узнать, что модальное окно открыто, нужно проверить его состояние. Для этого вызовите функцию `open` из экземпляра компонента и ожидать, что состояние `toggled` будет `true`.
+
+```js
+it('check the modal is opened', () => {  
+    const event = {
+        preventDefault: () => {},
+        stopPropagation: () => {}
+    };
+    ModalTriggerComponent.instance().open(event);
+    expect(ModalTriggerComponent.state().toggled).toBeTruthy();
+});
+```
+
+* Модальное окно закрыто. Тестируем обратную ситуацию, нужно чтобы `toggled` был `false`.
+
+```js
+it('check the modal is closed', () => {  
+   ModalTriggerComponent.instance().close();
+   expect(ModalTriggerComponent.state().toggled).toBeFalsy();
+});
+```
+
+**Полный список тестов:** [ModalTrigger.test.js](https://github.com/ned-alyona/testing-jest-enzyme/blob/master/shared/modals/__tests__/ModalTrigger.test.js)
+
+Теперь модальные окна полностью протестированы. Один совет для тестирования компонентов, который зависят друг от друга: сначал просмотрите компоненты и запишите план тестирования, определите, что вам нужно протестировать в каждом компоненте, проверьте тестовые примеры для каждого компонента и убедитесь, что вы не проверяете тот же тест в нескольких компонентах. Тщательно проанализируйте возможные и оптимальные варианты тестирования.
+
+## 5. Тестирование HOC (компоненты высшего порядка)
+
+Последние две части (тестирование HOC и полея формы) взаимосвязаны. Я бы хотела поделиться с вами, как правильно тестировать макеты с HOC.
+
+Объяснение того, что такое `BaseFieldLayout`, зачем нам нужен этот компонент и где мы его используем:
+
+* `BaseFieldLayout` - это обертка для компонентов ввода формы, таких как `TextInput`, `CheckboxInput`, `DateInput`, `SelectInput` и др. Их имена заканчиваются на `-Input`, потому что мы используем пакет `redux-form` и эти компоненты являются компонентами ввода в логике `redux-form`
+* Нам нужен `BaseFieldLayout` для создание макетов для компонентов полей формы, то есть для рендеринга заголовков полей, всплывающих подсказок, префиксов (валют, аббревиатуры кадратных метров и т.д.), иконок, ошибок...
+* Мы используем его в `BaseFieldHOC` для обертывания `inputComponent`в макет поля и подключения его к `redux-form` с помощью компонента `<Field/>`
+
+Кода для тестируемого компонента: [BaseFieldHOC.js](https://github.com/ned-alyona/testing-jest-enzyme/blob/master/shared/hoc/BaseFieldHOC.js)
+
+Анализ HOC:
+
+* Этот компонент получает только одно свойство - компонент. Прежде всего мне нужно создать этот компонент и обернуть его в `BaseFieldHOC`
+* Далее, мне нужно декорировать обертку HOC с `redux-form`, чтобы получить поле, связанное с `redux-form`.
+* Рендерим это поле внутри компонента `React Redux <Provider>`, чтобы сделать хранилище доступным для тестируемого компонента. Чтобы имитировать хранилище, просто сделайте:
+
+```js
+const store = createStore(() => ({}));
+```
+
+Теперь, перед каждым тестом, нужно сделать следующее:
+
+```js
+let BaseFieldHOCComponent;
+
+beforeEach(() => {  
+    const TextInput = () => { return 'text input'; },
+        BaseFieldHOCWrapper = BaseFieldHOC(TextInput),
+        TextField = reduxForm({ form: 'testForm' })(BaseFieldHOCWrapper);
+    BaseFieldHOCComponent = renderer.create(
+        <Provider store={store}>
+            <TextField name="text-input" />
+        </Provider>
+    ).toJSON();
+});
+```
+
+После этого компонент готов к использованию:
+
+1. Создадим снимок
+
+```js
+it('render correctly component', () => {  
+    expect(BaseFieldHOCComponent).toMatchSnapshot();
+});
+```
+
+2. Убедимся, что компонент ввода обернут в `BaseFieldLayout` после отрисовки:
+
+```js
+it('check input component is wrapped in BaseFieldLayout', () => {  
+    expect(BaseFieldHOCComponent.props.className).toEqual('form-group');
+});
+```
+
+Вот и все, HOC покрыт тестами. Самое сложное в тестировании, связанном с компонентами `redux-form` - это подготовка поля (декорировать `redux-form` и настроить хранилище), остальное просто, следутей инструкциям и больше ничего.
+
+**Полный список тестов:** [BaseFieldHOC.test.js](https://github.com/ned-alyona/testing-jest-enzyme/blob/master/shared/hoc/__tests__/BaseFieldHOC.test.js)
+
+## 6. Тестирование форм/полей
+
+Поле HOC, было покрыто тестами, и мы можем перейти к `BaseFieldLayout` компоненту.
+
+Кода для тестируемого компонента: [BaseFieldLayout.js](https://github.com/ned-alyona/testing-jest-enzyme/blob/master/shared/forms/fields/BaseFieldLayout.js)
+
+Давайте напишем тесты для `BaseFieldLayout` в соответствии с инструкциями выше:
+
+**1. Прежде всего, создадим снимок.**
+
+Этот компонент не будет ренедрится без `defaultProps`:
+
+* `inputComponent`
+* Свойства предоставляемые `redux-form`: `input` и `meta` объект. `input` со свойством `name` и `meta` со свойствами `touched` и `error`
+
+```js
+const defaultProps = {  
+   meta: {
+        touched: null,
+        error: null
+    },
+    input: {
+        name: 'field-name'
+    },
+    inputComponent: () => { return 'test case'; }
+}
+```
+
+Чтобы использовать `defaultProps` в каждой тестируемой обертке, выполним следующие действия:
+
+```js
+import TestBaseFieldLayout from '../BaseFieldLayout';
+
+const BaseFieldLayout = (props) => <TestBaseFieldLayout {...defaultProps} {...props} />;  
+```
+
+Теперь мы готовы создать снимок:
+
+```js
+it('render correctly BaseFieldLayout component', () => {  
+    const BaseFieldLayoutComponent = renderer.create(<BaseFieldLayout />).toJSON();
+    expect(BaseFieldLayoutComponent).toMatchSnapshot();
+});
+```
+
+**2. Тестирование свойств**
+
+Этот компонент имеет множество свойст. Я покажу пример нескольких, остальные тестируются по аналогии.
+
+* Убедимся, что свойство `icon` корректно ренедрится
+
+```js
+it('render correctly icon prop', () => {  
+    const props = {
+            icon: <span className="icon-exclamation" />
+        },
+        BaseFieldLayoutComponent = mount(<BaseFieldLayout {...props} />);
+        expect(BaseFieldLayoutComponent.find('span').hasClass('icon-exclamation')).toBeTruthy();
+});
+```
+
+* Убедимся, что свойство `tooltip` корректно ренедрится
+
+```js
+const props = {  
+        labelTooltipContent: 'tooltip for label'
+    },
+    BaseFieldLayoutComponent = mount(<BaseFieldLayout {...props} />);
+
+it('check prop is rendered', () => {  
+   expect(BaseFieldLayoutComponent.find('span').hasClass('tooltip-icon')).toBeTruthy();
+});
+```
+
+* Тестирование `fieldLink` свойства, убедимся, что `fieldLink` имеет значение `null` по умолчанию
+
+```js
+it('check prop is null by default', () => {  
+    const BaseFieldLayoutComponent = shallow(<BaseFieldLayout />);
+    expect(BaseFieldLayoutComponent.props().fieldLink).toBe(null);
+});
+```
+
+**3. Тестирование ошибок**
+
+```js
+it('check if field has error', () => {  
+    const props = {
+            meta: {
+                touched: true,
+                error: 'This field is required'
+            }
+        },
+        BaseFieldLayoutComponent = mount(<BaseFieldLayout {...props} />);
+    expect(BaseFieldLayoutComponent.find('.error')).toHaveLength(1);
+});
+```
+
+**Полный список тестов:** [BaseFieldLayout.test.js](https://github.com/ned-alyona/testing-jest-enzyme/blob/master/shared/forms/fields/__tests__/BaseFieldLayout.test.js)
+
+##  Подведем черту
+
+Теперь у вас есть подробное руководство о том, как выполнять полное тестирование компонентов на основе структуры проекта. По собственному опыту я попыталась объяснить, что и в каком порядке необходимо проверить, а что можно опустить при тестировании. Кроме того, я продемонстрировала примеры тестирования нескольких компонентов и определлила последовательность покрытия кодовой базы. Я надеюсь, что вам будет полезна эта статься. Спасибо, что прочитали.
 
 - - - -
 
