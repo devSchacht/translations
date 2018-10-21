@@ -85,21 +85,6 @@ https://gist.github.com/ufocoder/a6915234ce2af220276e5f3c59153e81#file-typecheck
 
 **Ниже представлена сводка результатов проверок типов:**
 
-```
-| значение | typeof |
-| ----- | ------ |
-| `undefined` | `"undefined"` |
-| `null` | `"object"` |
-| `true` or `false` | `"boolean"` |
-| all numbers or `NaN` | `"number"` |
-| all strings | `"string"` |
-| all symbols | `"symbol"` |
-| all functions | `"function"` |
-| all arrays | `"object"` |
-| native objects | `"object"` |
-| host objects | зависит от реализации |
-| other objects | `"object"` |
-```
 https://gist.github.com/ufocoder/05b1692e336542e5d8a8db7eadf34ff5#file-typeof_summary-md
 
 ## Улучшенная проверка типов
