@@ -1,4 +1,4 @@
-# JavaScript typeof
+# Разбираемся в проверке JavaScript-типов с помощью typeof
 
 *Перевод статьи [Glad Chinda](https://blog.logrocket.com/@gladchinda): [JavaScript typeof](https://blog.logrocket.com/javascript-typeof-2511d53a1a62).*
 
@@ -70,6 +70,7 @@ typeof(typeof 53); // "string"
 console.log(undeclaredVariable === undefined); // ReferenceError
 console.log(typeof undeclaredVariable === 'undefined'); // true
 ```
+https://gist.github.com/ufocoder/047c44e201456b9121ec93f1eb0db4ad#file-undeclared_typeof-js
 
 Однако в ES6, переменные объявленные c блочной областью видимости с помощью `let` и `const` будут возвращать `ReferenceError` , если они использовались с оператором `typeof` до того как были инициализированы. А все потому что:
 
@@ -78,10 +79,13 @@ console.log(typeof undeclaredVariable === 'undefined'); // true
 
 
 ```js
-// Использование typeof для идентификатора, объявленного с блочной областью видимости момент создаст ReferenceError ошибку
+// Использование typeof для идентификатора
+// объявленного с блочной областью видимости
+// создаст `ReferenceError` ошибку
 console.log(typeof tdzVariable === 'undefined'); // ReferenceError
 const tdzVariable = 'I am initialized.';
 ```
+https://gist.github.com/ufocoder/1e7169b111990ec17d3c2c4a5c8cec57#file-tdz_typeof-js
 
 ### Проверка типов
 
@@ -127,6 +131,7 @@ console.log(typeof new RegExp("^(.+)$")); // "object"
 console.log(typeof {}); // "object"
 console.log(typeof new Object); // "object"
 ```
+https://gist.github.com/ufocoder/a6915234ce2af220276e5f3c59153e81#file-typechecks-with-typeof-js
 
 
 Обратите внимание на то, что все значения созданные с помощью ключевого слова `new` всегда имеют тип `“object”`. Исключением из этого является только конструктор `Function`.
@@ -134,7 +139,7 @@ console.log(typeof new Object); // "object"
 **Ниже представлена сводка результатов проверок типов:**
 
 ```
-| value | typeof |
+| значение | typeof |
 | ----- | ------ |
 | `undefined` | `"undefined"` |
 | `null` | `"object"` |
@@ -148,6 +153,7 @@ console.log(typeof new Object); // "object"
 | host objects | зависит от реализации |
 | other objects | `"object"` |
 ```
+https://gist.github.com/ufocoder/05b1692e336542e5d8a8db7eadf34ff5#file-typeof_summary-md
 
 ## Улучшенная проверка типов
 
@@ -168,6 +174,7 @@ function isNull(value) {
   return value === null;
 }
 ```
+https://gist.github.com/ufocoder/37c8865b81c91b39133fa8884ac0cb9a#file-isnull-js
 
 Очень важным здесь является использование оператора строгого сравнения. Следующий фрагмент кода иллюстрирует использования значения `undefined`:
 
@@ -175,6 +182,7 @@ function isNull(value) {
 console.log(undefined == null); // true
 console.log(undefined === null); // false
 ```
+https://gist.github.com/ufocoder/402773140e1bde90bffe00f026b9cada#file-undeclared_typeof-js
 
 ### Проверка на NaN
 
@@ -198,6 +206,7 @@ console.log(Number.isNaN(null)); // false
 console.log(Number.isNaN(undefined)); // false
 console.log(Number.isNaN(Infinity)); // false
 ```
+https://gist.github.com/ufocoder/8bc0105501d1049d0a85599656af7551#file-nan_check-js
 
 > Значение NaN в JavaScript имеет отличительную особенность. Это единственное значение в JavaScript, которое при сравнении с каким-либо другим значением, включая NaN, не будет ему эквивалентно
 
@@ -207,6 +216,7 @@ var x = NaN;
 console.log(x == NaN); // false
 console.log(x === NaN); // false
 ```
+https://gist.github.com/ufocoder/22f876430c23c66d1e8e7875ca0567bb#file-nan_equality-js
 
 Вы можете проверить на значение `NaN` следующим образом
 
@@ -215,6 +225,7 @@ function isNan(value) {
   return value !== value;
 }
 ```
+https://gist.github.com/ufocoder/5f1f14c03853dc32381aa2b66fbf77bb#file-isnan-js
 
 Функция выше очень похожа на реализацию функции `Number.isNaN()`, добавленную в ES6, и следовательно, ее можно использовать в качестве полифила для сред выполнения, отличных от ES6, следующим образом:
 
@@ -223,6 +234,7 @@ Number.isNaN = Number.isNaN || (function(value) {
   return value !== value;
 })
 ```
+https://gist.github.com/ufocoder/65c011cae47e164a78c0afda1d3eee1d#file-polyfill-isnan-js
 
 В заключение вы можете усилить проверку с помощью `Object.is()`, добавленную в ES6 для проверки на значение `NaN`. Функция `Object.is()` позволяет проверить, что два переданных в нее значения это одно и то же значение:
 
@@ -231,6 +243,7 @@ function isNan(value) {
   return Object.is(value, Number.NaN);
 }
 ```
+https://gist.github.com/ufocoder/135c5207148a3da2c56158414286331d#file-isnan_object_is-js
 
 ### Проверка для массивов
 
@@ -261,6 +274,7 @@ function isArray(value) {
   return Array.isArray(value);
 }
 ```
+https://gist.github.com/ufocoder/ea352b1cee49f77ca189ce57c3dda2bf#file-array_check-js
 
 Очень важным здесь является использование оператора строгого сравнения. Следующий фрагмент кода иллюстрирует использования значения `undefined`:
 
@@ -281,6 +295,7 @@ function type(value) {
   return (matches[1] || 'undefined').toLowerCase();
 }
 ```
+https://gist.github.com/ufocoder/7df39101a36b1784b853513e15d134c6#file-type-js
 
 Фрагмент кода ниже демонстрирует результаты проверки типов с использованием созданной функции `type()`:
 
@@ -333,6 +348,7 @@ console.log(type(new Map)); // "map"
 console.log(type(new WeakSet)); // "weakset"
 console.log(type(new WeakMap)); // "weakmap"
 ```
+https://gist.github.com/ufocoder/01e934a691810d84aa0cc49b1dd0ae6e#file-checks_with_type-js
 
 ## Бонус: не все является объектами
 
@@ -362,6 +378,7 @@ console.log(type(new WeakMap)); // "weakmap"
 // объект-обертка: new Number(53.12345)
 (new Number(53.12345)).toFixed(2);
 ```
+https://gist.github.com/ufocoder/ca9e9c61f78ff712c0f41c79c155a891#file-wrapper_objects-js
 
 ## Заключение
 
