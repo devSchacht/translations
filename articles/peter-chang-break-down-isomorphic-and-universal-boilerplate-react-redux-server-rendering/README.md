@@ -134,7 +134,7 @@ const HelloWorld = connect(
 
 ### webpack-hot-server-middleware
 
-Миддлвара, работающая в паре с [webpack-dev-middleware](https://www.npmjs.com/package/webpack-dev-middleware), для **горячего обновления (*HMR*)** webpack-бандлов на серевере ([узнать больше](https://www.npmjs.com/package/webpack-hot-server-middleware)).
+Миддлвара, работающая в паре с [webpack-dev-middleware](https://www.npmjs.com/package/webpack-dev-middleware), для **горячего обновления (*HMR*)** webpack-бандлов на сервере ([узнать больше](https://www.npmjs.com/package/webpack-hot-server-middleware)).
 
 ## Пояснения
 
@@ -151,7 +151,7 @@ const HelloWorld = connect(
 ### createStore(reducer, [preloadedState], [enhancer])
 
 1. Создает Redux-стор, хранящий стейт-дерево вашего приложения.
-2. Cоздание функции `createStore(reducer, [initialState], [enhancer])`, которая затем передаётся в `<Provider>`:
+2. Создание функции `createStore(reducer, [initialState], [enhancer])`, которая затем передаётся в `<Provider>`:
 
 ```javascript
 import { createStore, combineReducers } from 'redux'
