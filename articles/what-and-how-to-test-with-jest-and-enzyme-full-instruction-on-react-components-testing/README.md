@@ -2,6 +2,8 @@
 
 _Перевод статьи [Alona Pysarenko](https://djangostars.com/blog/author/alona-pysarenko/): [What and How to Test with Jest and Enzyme. Full Instruction on React Components Testing](https://djangostars.com/blog/what-and-how-to-test-with-enzyme-and-jest-full-instruction-on-react-component-testing/)._
 
+![](./images/img-9.png)
+
 Тестирование React-компонентов может оказаться сложной задачей как для начинающих, так и для опытных разработчиков, которые уже работали с тестами. Вам может быть интересно сравнить ваши собственные подходы с теми, которые мы используем в нашем проекте. Для покрытия тестами кодовой базы вам необходимо знать, какие компоненты должны быть протестированы и какой код точно должен быть покрыт тестами.
 
 Во время чтения я расскажу о следующих темах:
@@ -276,7 +278,7 @@ it("check DatePicker popup open", () => {
 
 ## 2. Тестирование утилит
 
-**Код тестируемой утилиты: [valueToDate.js](https://github.com/ned-alyona/testing-jest-enzyme/blob/master/shared/utils/valueToDate.js)**s
+**Код тестируемой утилиты:** [valueToDate.js](https://github.com/ned-alyona/testing-jest-enzyme/blob/master/shared/utils/valueToDate.js)
 
 Цель этой утилиты является преобразование значения даты в пользовательском формате. Прежде всего, давайте проанализируем данную утилиту и определим основные кейсы для тестирования:
 
@@ -458,7 +460,7 @@ it("type for subTitle is string", () => {
 
 ![](./images/img-8.gif)
 
-###Как тестировать модальные окна
+### Как тестировать модальные окна
 
 Прежде всего, я хочу объяснить, как организованы модальные окна на нашем проекте. У нас есть два компонента: `ModalWrapper.js` и `ModalTrigger.js`.
 
