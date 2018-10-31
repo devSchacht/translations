@@ -14,9 +14,12 @@ if [ -z $1 ] || [ ! -f $1 ]; then
   exit 0
 fi
 
-ARTICLE_FILE=$1
 REPO_URL="https://github.com/devSchacht/translations/tree/master/"
 PUBLISH_COMMAND="markdown-to-medium $ARTICLE_FILE --publication=devSchacht --tags=devschacht"
+
+ARTICLE_FILE=$1
+ARTICLE_FOOTER="[Статья на GitHub]($REPO_URL$ARTICLE_FILE)"
+
 OPTS=$(getopt --o ":t" --long "token:" -- "$@")
 
 eval set -- "$OPTS"
@@ -33,7 +36,9 @@ if [ ! -z ${TOKEN} ]; then
   PUBLISH_COMMAND="$PUBLISH_COMMAND --token=$TOKEN"
 fi
 
-printf "\n%s" "[Статья на GitHub]($REPO_URL$ARTICLE_FILE)" >> $ARTICLE_FILE
+if [[ $(eval "tail -n 1 $ARTICLE_FILE") != $ARTICLE_FOOTER ]]; then
+  printf "\n%s" "$ARTICLE_FOOTER" >> $ARTICLE_FILE
+fi
 
 $PUBLISH_COMMAND
 
