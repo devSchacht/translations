@@ -1,6 +1,6 @@
 # Elm изменил мое представление о непопулярных языках
 
-*Перевод статьи [Alexander Campbell](https://blog.realkinetic.com/@alexandercampbell)): [Elm changed my mind about unpopular languages](https://blog.realkinetic.com/elm-changed-my-mind-about-unpopular-languages-190a23f4a834)*
+*Перевод статьи [Alexander Campbell](https://blog.realkinetic.com/@alexandercampbell): [Elm changed my mind about unpopular languages](https://blog.realkinetic.com/elm-changed-my-mind-about-unpopular-languages-190a23f4a834)*
 
 Вы когда-нибудь обращались к программному обеспечению так, чтобы это выходило за рамки обыденного? Возможно, вы пытались сделать программное обеспечение для своего [графического калькулятора Fx-9860GX](https://wiki.planet-casio.com/en/Fx-9860G_SDK) и понимали, что вы были одним из тех пяти человек, которые когда-либо пытались это сделать вообще, при том, что документации не было. Опыт отстойный. Или возможно вы относитесь к такому типу людей, которые получают удовольствие посредством мудреных ошибок и полного отсутствия документации (к коим иногда отношусь и я), но я решил, что в профессиональной разработке программного обеспечения, где важен вопрос его поставки на рынок, я буду придерживаться только самых широко используемых инструментов.
 
@@ -16,57 +16,15 @@
 
 Во-первых, Elm имеет естественную для чистого функционального языка предсказуемость; когда вы пишете Elm, компилятор заставляет вас обдумывать каждый случай. Рассмотрим следующий пример: вы пишете некоторое программное обеспечение, чтобы вести электронный учет книг в библиотеке, для своих друзей. Они хотят возможность получать отчет, о том сколько книг находится в их каталоге, о дате издания самой ранней и самой поздней книги в библиотеке, о числе уникальный авторов.
 
-```
-type alias Book =
-    { isbn : String
-    , title : String
-    , authors : List String
-    , copyright : Int
-    , edition : Maybe String
-    }
-
-type alias LibraryReport =
-    { numBooks : Int
-    , oldestCopyright : Int
-    , newestCopyright : Int
-    , uniqueAuthors : Int
-    }
-
-createReport : List Book -> LibraryReport
-createReport books =
-    let
-        copyrightYears =
-            List.map .copyright books
-    in
-        { numBooks = List.length books
-        , oldestCopyright =
-            List.minimum copyrightYears
-                |> Maybe.withDefault 0
-        , newestCopyright =
-            List.maximum copyrightYears
-                |> Maybe.withDefault 0
-        , uniqueAuthors =
-            books
-                |> List.map .authors
-                |> List.concat
-                |> Set.fromList
-                |> Set.size
-        }
-```
+https://gist.github.com/ufocoder/45d16524932a5256b55c1ae0dcf583eb
 
 Я могу более подробно рассмотреть этот код. Например вот этот фрагмент:
 
-```
-newestCopyright =
-    List.maximum copyrightYears
-        |> Maybe.withDefault 0
-```
+https://gist.github.com/ufocoder/a261fd07fe7f574a74a0fc83faf38c18
 
 Здесь мы используем две библиотечные функции: `List.maximum` и `Maybe.withDefault`. Назначение и использовании функции `List.maximum` очевидны, также его [сигнатура типа](https://github.com/elm-lang/core/blob/9a20adc5749c1e68986771c506f0bef7ade9903f/src/List.elm#L391) является показательной.
 
-```
-maximum : List comparable -> Maybe comparable
-```
+https://gist.github.com/ufocoder/b4fba2e095f968568186f13684317750
 
 В данном случае, поскольку наш список имеет тип «List Int», функция возвращает «Maybe Int». Концепция использования `Maybe` знакома людям пришедшим из Haskell (Maybe), из Rust (Option) или из Java (Optional). `Maybe` - это контейнер с нулевым (Nothing) или одним (Just x) элементом. Мы можем использовать функцию `Maybe.withDefault` для «распаковки» значения `Maybe`, заменяя на значение по умолчанию, если контейнер `Maybe` пуст.
 
@@ -74,37 +32,7 @@ maximum : List comparable -> Maybe comparable
 
 Вторая причина почему Elm лучше, чем Javascript - это то, что ELM естественно подходит для работы с DOM. Это настолько естественное чувство, что кажется, что HTML был разработан специально для Elm, но не наоборот. Отчасти причина заключается в том, что Elm использует концепцию виртуального DOM, с которой вы можете быть знакомы, если сталкивались с React (именно виртуальный DOM является причиной почему представление может быть автоматические обновлено с помощью изменной модели программы). Здесь показано то, как мы можем отобразить тип `LibraryReport` в HTML:
 
-```
-renderRow : String -> Int -> Html Msg
-renderRow title data =
-    tr []
-        [ td [] [ text title ]
-        , td
-            [ style
-                [ ( "text-align", "right" )
-                , ( "min-width", "5rem" )
-                ]
-            ]
-            [ data |> toString |> text ]
-        ]
-viewReport : LibraryReport -> Html Msg
-viewReport report =
-    div
-        [ style
-            [ ( "background-color", "#eee" )
-            , ( "padding", "3px" )
-            , ( "margin", "3rem" )
-            ]
-        ]
-        [ b [] [ text "Library Report" ]
-        , table []
-            [ renderRow "Number of Books" report.numBooks
-            , renderRow "Oldest Copyright" report.oldestCopyright
-            , renderRow "Newest Copyright" report.newestCopyright
-            , renderRow "Number of Unique Authors " report.uniqueAuthors
-            ]
-        ]
-```
+https://gist.github.com/ufocoder/96732371e7cccfe080bf673ca7992d6b
 
 Обратите внимание на то, как мы составили функцию `renderRow` включающую `viewReport`. Отображаемый результат:
 
