@@ -1,4 +1,4 @@
-# Играем в Mortal Kombat с TensorFlow.js: Перенос обучения и дополнение данных 
+# Играем в Mortal Kombat с TensorFlow.js: перенос обучения и дополнение данных 
 
 *Перевод статьи [Minko Gechev](https://blog.mgechev.com/): [Playing Mortal Kombat with TensorFlow.js. Transfer learning and data augmentation](https://blog.mgechev.com/2018/10/20/transfer-learning-tensorflow-js-data-augmentation-mobile-net/).*
 
