@@ -126,3 +126,4 @@
 112. [10 вещей, которые вы в конечном итоге узнаете, о JavaScript-проектах.](articles/the-cat-with-a-dragon-tattoo-10-things-you-will-eventually-learn-about-javascript-projects)
 113. [Прощай, Redux](articles/jack-scott-goodbye-redux)
 114. [Hacktoberfest вернулся и празднует свой пятый год!](articles/hacktoberfest-is-back-and-celebrating-its-fifth-year)
+115. [Состояние JavaScript в 2018 году: обзор Vue.js](articles/the-state-of-javascript-2018-the-view-on-vue)
