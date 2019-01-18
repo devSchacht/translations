@@ -13,7 +13,7 @@
 
 ## Redux
 * [Idiomatic Redux: The Tao of Redux, Part 1 - Implementation and Intent](http://blog.isquaredsoftware.com/2017/05/idiomatic-redux-tao-of-redux-part-1) - **[maksugr](https://github.com/maksugr)** — Переведено
-* [Idiomatic Redux: The Tao of Redux, Part 2 - Practice and Philosophy](https://blog.isquaredsoftware.com/2017/05/idiomatic-redux-tao-of-redux-part-2/1)
+* [Idiomatic Redux: The Tao of Redux, Part 2 - Practice and Philosophy](https://blog.isquaredsoftware.com/2017/05/idiomatic-redux-tao-of-redux-part-2/)
 
 ## Функциональное программирование
 * [Refactoring Node with Higher-Order Functions](http://blog.rangle.io/refactoring-node-with-higher-order-functions/) - **[ufocoder](https://github.com/ufocoder)** — Переведено
