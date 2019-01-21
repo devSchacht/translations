@@ -129,4 +129,4 @@
 115. [Состояние JavaScript в 2018 году: обзор Vue.js](articles/the-state-of-javascript-2018-the-view-on-vue)
 116. [6 способов вызвать сбой во время выполнения Elm приложения](articles/top-6-ways-to-make-your-elm-app-crash-at-runtime)
 117. [Визуализация концепций GraphQL](articles/dhaivat-pandya-graphql-concepts-visualized)
-118. [Как работать с деньгами в JavaScript](articles/sarah-dayan-how-to-handle-monetary-values-in-javascript)
+118. [Как работать с денежными значениями в JavaScript](articles/sarah-dayan-how-to-handle-monetary-values-in-javascript)
