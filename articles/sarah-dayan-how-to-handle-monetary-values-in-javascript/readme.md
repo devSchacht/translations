@@ -1,6 +1,6 @@
 # Как работать с денежными значениями в JavaScript
 
-## Перевод статьи Sarah Dayan: [How to Handle Monetary Values in JavaScript](https://frontstuff.io/how-to-handle-monetary-values-in-javascript).
+*Перевод статьи Sarah Dayan: [How to Handle Monetary Values in JavaScript](https://frontstuff.io/how-to-handle-monetary-values-in-javascript).*
 
 **Деньги везде**. Банковские приложения, интернет-магазины, платформы для фондовых бирж, мы встречаемся с деньгами каждый день. И все чаще мы доверяем работу с деньгами технологиям.
 
