@@ -29,9 +29,9 @@
 Мы также должны определить редюсер и начальное состояние на момент запуска. Давайте с этого и начнём:
 
 ```js
-function createStore(reducer, initialState) {
-    var currentReducer = reducer;
-    var currentState = initialState;
+const createStore = (reducer, initialState) => {
+    const currentReducer = reducer;
+    let currentState = initialState;
 }
 ```
 
@@ -39,9 +39,9 @@ function createStore(reducer, initialState) {
 Итак, мы создали функцию, которая просто сохраняет начальное состояние и редюсер как локальные переменные. Сейчас давайте реализуем возможность получать состояние нашего хранилища.
 
 ```js
-function createStore(reducer, initialState) {
-    var currentReducer = reducer;
-    var currentState = initialState;
+const createStore (reducer, initialState) => {
+    const currentReducer = reducer;
+    let currentState = initialState;
 
     return {
         getState() {
@@ -57,9 +57,9 @@ function createStore(reducer, initialState) {
 Следующий шаг - внедрить поддержку передачи действия.
 
 ```js
-function createStore(reducer, initialState) {
-    var currentReducer = reducer;
-    var currentState = initialState;
+const createStore (reducer, initialState) => {
+    const currentReducer = reducer;
+    let currentState = initialState;
 
     return {
         getState() {
@@ -79,10 +79,10 @@ function createStore(reducer, initialState) {
 Теперь мы можем получать текущее состояние и обновлять его! Последний шаг — научиться слушать изменения:
 
 ```js
-function createStore(reducer, initialState) {
-    var currentReducer = reducer;
-    var currentState = initialState;
-    var listener = () => {};
+const createStore = (reducer, initialState) => {
+    const currentReducer = reducer;
+    let currentState = initialState;
+    let listener = () => {};
 
     return {
         getState() {
@@ -109,7 +109,7 @@ function createStore(reducer, initialState) {
 В [официальном репозитории Redux](https://github.com/reactjs/redux) есть пример использования Redux. Мы можем скопировать и вставить этот пример, чтобы проверить нашу собственную реализацию Redux:
 
 ```js
-function counter(state = 0, action) {
+const counter = (state = 0, action) => {
   switch (action.type) {
   case 'INCREMENT':
     return state + 1
