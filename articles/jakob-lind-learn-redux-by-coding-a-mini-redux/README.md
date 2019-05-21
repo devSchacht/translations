@@ -39,7 +39,7 @@ const createStore = (reducer, initialState) => {
 Итак, мы создали функцию, которая просто сохраняет начальное состояние и редюсер как локальные переменные. Сейчас давайте реализуем возможность получать состояние нашего хранилища.
 
 ```js
-const createStore (reducer, initialState) => {
+const createStore = (reducer, initialState) => {
     const currentReducer = reducer;
     let currentState = initialState;
 
@@ -57,7 +57,7 @@ const createStore (reducer, initialState) => {
 Следующий шаг - внедрить поддержку передачи действия.
 
 ```js
-const createStore (reducer, initialState) => {
+const createStore = (reducer, initialState) => {
     const currentReducer = reducer;
     let currentState = initialState;
 
@@ -111,13 +111,13 @@ const createStore = (reducer, initialState) => {
 ```js
 const counter = (state = 0, action) => {
   switch (action.type) {
-  case 'INCREMENT':
-    return state + 1
-  case 'DECREMENT':
-    return state - 1
-  default:
-    return state
-  }
+    case 'INCREMENT':
+        return state + 1
+    case 'DECREMENT':
+        return state - 1
+    default:
+        return state
+    }
 }
 
 let store = createStore(counter)
