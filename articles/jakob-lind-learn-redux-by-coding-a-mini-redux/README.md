@@ -30,8 +30,8 @@
 
 ```js
 function createStore(reducer, initialState) {
-    var currentReducer = reducer;
-    var currentState = initialState;
+    const currentReducer = reducer;
+    let currentState = initialState;
 }
 ```
 
@@ -40,8 +40,8 @@ function createStore(reducer, initialState) {
 
 ```js
 function createStore(reducer, initialState) {
-    var currentReducer = reducer;
-    var currentState = initialState;
+    const currentReducer = reducer;
+    let currentState = initialState;
 
     return {
         getState() {
@@ -58,8 +58,8 @@ function createStore(reducer, initialState) {
 
 ```js
 function createStore(reducer, initialState) {
-    var currentReducer = reducer;
-    var currentState = initialState;
+    const currentReducer = reducer;
+    let currentState = initialState;
 
     return {
         getState() {
@@ -80,9 +80,9 @@ function createStore(reducer, initialState) {
 
 ```js
 function createStore(reducer, initialState) {
-    var currentReducer = reducer;
-    var currentState = initialState;
-    var listener = () => {};
+    const currentReducer = reducer;
+    let currentState = initialState;
+    let listener = () => {};
 
     return {
         getState() {
