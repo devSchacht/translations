@@ -130,3 +130,4 @@
 116. [6 способов вызвать сбой во время выполнения Elm приложения](articles/top-6-ways-to-make-your-elm-app-crash-at-runtime)
 117. [Визуализация концепций GraphQL](articles/dhaivat-pandya-graphql-concepts-visualized)
 118. [Как работать с денежными значениями в JavaScript](articles/sarah-dayan-how-to-handle-monetary-values-in-javascript)
+119. [Объяснение работы EventLoop в JavaScript](articles/javascript-event-loop-explained)
