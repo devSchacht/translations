@@ -6,9 +6,7 @@ _Перевод статьи [Anoop Raveendran](https://medium.com/@anooprav7): 
 
 Теперь посмотрим на длинный ответ.
 
-<img src="https://cdn-images-1.medium.com/max/1600/1*7GXoHZiIUhlKuKGT22gHmA.png" alt="Обзор основных компонентов в браузере" width="700"/>  
-  
-  
+<img src="https://cdn-images-1.medium.com/max/1600/1*7GXoHZiIUhlKuKGT22gHmA.png" alt="Обзор основных компонентов в браузере" width="700"/><br/>
 _Обзор основных компонентов в браузере_
 
 
