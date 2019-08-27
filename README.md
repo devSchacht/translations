@@ -98,7 +98,7 @@
 84. [Создание MEVN-приложения (Часть 1/2)](/articles/aneeta-sharma-mevn-stack-application-part-1/)
 85. [Создание MEVN-приложения (Часть 2/2)](/articles/aneeta-sharma-mevn-stack-application-part-2/)
 86. [Изучите CSS-переменные за 5 минут](/articles/per-harald-borgen-learn-css-variables-in-5-minutes/)
-87. [Исчерпывающее руководство по написанию Dockerfile для веб-приложений на Node.js](/articles/an-exhaustive-guide-to-writing-dockerfiles-for-nodejs-web-apps/)
+87. [Исчерпывающее руководство по написанию Dockerfile для веб-приложений на Node.js](/articles/praveen-durairaj-an-exhaustive-guide-to-writing-dockerfiles-for-node-js-web-apps/)
 88. [Модульное тестирование React-приложения с помощью Jest и Enzyme](/articles/unit-testing-your-react-application-with-jest-and-enzyme/)
 89. [Reselect - библиотека селекторов для Redux](/articles/reselect-selector-library-for-redux)
 90. [Как сделать Drag-and-Drop загрузчик файлов на чистом JavaScript](/articles/joseph-zimmerman-drag-drop-file-uploader-vanilla-js)
