@@ -131,3 +131,4 @@
 117. [Визуализация концепций GraphQL](articles/dhaivat-pandya-graphql-concepts-visualized)
 118. [Как работать с денежными значениями в JavaScript](articles/sarah-dayan-how-to-handle-monetary-values-in-javascript)
 119. [Объяснение работы EventLoop в JavaScript](articles/javascript-event-loop-explained)
+120. [Почему я перестал использовать экспорт по умолчанию в моих JavaScript-модулях](articles/nicholas-c-zakas-why-ive-stopped-exporting-defaults-from-my-javascript-modules)
