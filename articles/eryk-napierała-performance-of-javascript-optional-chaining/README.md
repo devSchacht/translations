@@ -8,13 +8,13 @@
 
 На первый взгляд, синтаксис `optional chaining` может значительно сократить код. Вместо написания такого чудовищного кода, как этот:
 
-```typescript
+```js
 foo && foo.bar && foo.bar.baz && foo.bar.baz.qux
 ```
 
 вы можете написать это
 
-```typescript
+```js
 foo?.bar?.baz?.qux;
 ```
 
@@ -26,14 +26,14 @@ foo?.bar?.baz?.qux;
 
 Как выглядит вышеприведённое выражение на [чистом JavaScript](https://www.typescriptlang.org/play/index.html?ssl=1&ssc=1&pln=1&pc=20#code/GYexH4DoCMEMCcpwF5QI4FcAeBuIA)?
 
-```javascript
+```js
 var _a, _b, _c;
 (_c = (_b = (_a = foo) === null || _a === void 0 ? void 0 : _a.bar) === null || _b === void 0 ? void 0 : _b.baz) === null || _c === void 0 ? void 0 : _c.qux;
 ```
 
 Ну, это гораздо больше, чем 19 символов, даже больше, чем 48, которые вы могли видеть в изначальном варианте. Чтобы быть точным, здесь 172 символа! Минификация уменьшает это число, но это всё ещё 128, что в 6 раз больше по сравнению с исходным кодом.
 
-```javascript
+```js
 var _a,_b,_c;null===(_c=null===(_b=null===(_a=foo)||void 0===_a?void 0:_a.bar)||void 0===_b?void 0:_b.baz)||void 0===_c||_c.qux;
 ```
 
@@ -41,7 +41,7 @@ var _a,_b,_c;null===(_c=null===(_b=null===(_a=foo)||void 0===_a?void 0:_a.bar)||
 
 Давайте проверим, [как это работает с новым синтаксисом](https://babeljs.io/repl#?babili=false&browsers=&build=&builtIns=false&spec=false&loose=false&code_lz=GYexH4DoCMEMCcpwF5QI4FcAeBuIA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=false&presets=&prettier=false&targets=&version=7.7.1&externalPlugins=%40babel%2Fplugin-proposal-optional-chaining%407.6.0%2Cbabel-plugin-syntax-optional-chaining%407.0.0-alpha.13). Это лучше, чем TypeScript? Что-то не похоже! 244 символа.
 
-```javascript
+```js
 var _foo, _foo$bar, _foo$bar$baz;
 
 (_foo = foo) === null || _foo === void 0 ? void 0 : (_foo$bar = _foo.bar) === null || _foo$bar === void 0 ? void 0 : (_foo$bar$baz = _foo$bar.baz) === null || _foo$bar$baz === void 0 ? void 0 : _foo$bar$baz.qux;
@@ -49,7 +49,7 @@ var _foo, _foo$bar, _foo$bar$baz;
 
 Однако, после запуска Terser, код стал меньше, чем минифицированная версия TypeScript - 82 символа.
 
-```javascript
+```js
 var l,n;null==u||null===(l=u.bar)||void 0===l||null===(n=l.baz)||void 0===n||n.qux
 ```
 
@@ -59,13 +59,13 @@ var l,n;null==u||null===(l=u.bar)||void 0===l||null===(n=l.baz)||void 0===n||n.q
 
 Давайте вернемся немного назад. Идея `optional chaining` совсем не нова. Решения проблем невероятно && длинных && цепочек && из двойных амперсандов && существуют уже достаточно давно. Решение Джейсона Миллера [dlv](https://github.com/developit/dlv) лишь одно из многих.
 
-```javascript
+```js
 dlv(foo, 'bar.baz.qux');
 ```
 
 К тому же, этот подход не так хорош, как новый синтаксис, потому что он небезопасный с точки зрения типов, для него требуется немного больше кода - 25 символов. Кроме того, вы должны импортировать функцию из библиотеки. Но как код выглядит в финальном бандле?
 
-```javascript
+```js
 d(u,'bar.baz.qux');
 ```
 
@@ -73,13 +73,13 @@ d(u,'bar.baz.qux');
 
 Если вам некомфортно работать со строками, вы можете передать в функцию массив строк. И хотя как в исходном так и в конечном коде символов больше, возможно стоит это сделать. Вы увидите позже почему.
 
-```javascript
+```js
 dlv(foo, ['bar', 'baz', 'qux']);
 ```
 
 Реализация самой функции занимает всего 101 символ после минификации.
 
-```javascript
+```js
 function d(n,t,o,i,l){for(t=t.split?t.split("."):t,i=0;i<t.length;i++)n=n?n[t[i]]:l;return n===l?o:n}
 ```
 
