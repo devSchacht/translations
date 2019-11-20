@@ -11,9 +11,9 @@
     "*.md": "yaspeller"
   },
   "dependencies": {
-    "lint-staged": "^7.0.0",
-    "markdown-to-medium": "^1.4.2",
+    "lint-staged": "^9.4.3",
+    "markdown-to-medium": "^1.4.4",
     "pre-commit": "^1.2.2",
-    "yaspeller": "^4.0.3"
+    "yaspeller": "^6.0.2"
   }
 }
