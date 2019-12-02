@@ -272,7 +272,7 @@ console.log(spellcheck.getCorrections('soemthing', 2));
 
 Исходный код для каждого из представленных здесь примеров доступен на [Github](https://github.com/Jordanirabor/nlp-node-natural-article). Вы можете совершенно свободно его склонировать, форкнуть или отправить ишью.
 
-## Plug: LogRocket, a DVR для веб-приложений
+## Plug: LogRocket, видеорегистратор для веб-приложений
 
 ![logrocket](images/logrocket.png)
 
