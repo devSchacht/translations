@@ -446,7 +446,7 @@ let x = 1 + 2;
 let foo = () => 1 + 2;
 ```
 
-Я думаю, что те кто использует redux c этим знаком, не так ли?. Действительно, [это именно то, для чего был сделан redux-thunk](https://github.com/reduxjs/redux-thunk#motivation). Фактически, [сам пример выше был взят из их README](https://github.com/reduxjs/redux-thunk#whats-a-thunk).
+Я думаю, что те кто использует redux c этим знакомы, не так ли?. Действительно, [это именно то, для чего был сделан redux-thunk](https://github.com/reduxjs/redux-thunk#motivation). Фактически, [сам пример выше был взят из их README](https://github.com/reduxjs/redux-thunk#whats-a-thunk).
 
 Теперь, когда мы знаем, что такое thunk, давайте отложим выполнение `f(Y(f))`, обернув его в функцию:
 
