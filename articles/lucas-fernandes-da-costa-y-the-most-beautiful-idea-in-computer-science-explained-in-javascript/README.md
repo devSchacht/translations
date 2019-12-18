@@ -472,7 +472,7 @@ console.log(factorial(5));
     В этой функции мы сможем заменить все `f` на `factorialGenerator`:
     `x => factorialGenerator(Y(factorialGenerator))(x)`
     Хитрость здесь в том, что, поскольку все все еще обернуто в функцию, которая принимает `x` в качестве аргумента, мы будем вычислять ее только тогда, когда передадим `x` в эту функцию.
-2. Еще один момент, отметим, что `factorialGenerator(Y(factorialGenerator))` примет то, что вернет `Y(factorialGenerator)`,но не будет выполнять до того, как мы не прошем аргумент (`х`) в нее.
+2. Еще один момент, отметим, что `factorialGenerator(Y(factorialGenerator))` примет то, что вернет `Y(factorialGenerator)`, но не будет выполнять до того, как мы не передадим аргумент (`х`) в нее.
     Он будет в основном возвращать это `n => n === 0 ? 1 : n * Y(factorialGenerator)(n - 1)`.
 3. Делать еще одно расширение, начиная с `Y(factorialGenerator)` равен `x => factorialGenerator(Y(factorialGenerator))(x)` (как мы видели на Шаг 1), мы получим: `n => n === 0 ? 1 : n * (x => factorialGenerator(Y(factorialGenerator)))(n - 1)`
 4. Наконец, мы можем вызвать функцию на предыдущем шаге, например, с помощью `5`.
