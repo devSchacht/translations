@@ -517,7 +517,7 @@ const factorial = factorialRecursive(factorialRecursive);
 console.log(factorial(5)); // 120
 ```
 
-И это работает! Это потому что первый раз мы вызываем `factorialRecursive` мы вернемся:
+И это работает! Это потому что когда  мы вызываем `factorialRecursive` в первый раз мы возвращаем:
 
 ```js
 n => n === 0 ? 1 : n * factorialRecursive(factorialRecursive)(n - 1);
