@@ -552,31 +552,6 @@ console.log(factorial(5)); // 120
 // above for `factorial`, because they are the same thing.
 ```
 
-<!-- "js
-константный factorialRecursive = ф => п => п === 0 ? 1: n * f (f) (n-1);
-
-константный факториал = factorialRecursive(factorialRecursive);
-
-// факториал: n => n = = = 0 ? 1 : н * factorialRecursive(factorialRecursive)(Н - 1);
-
-успокаивать.log(factorial(5)); / / 120
-
-// n => 5 = = = 0 ? 1 : 5 * factorialRecursive(factorialRecursive)(5 - 1);
-
-// n => 4 === 0 ? 1 : 4 * factorialRecursive(factorialRecursive)(4 - 1);
-
-// n => 3 === 0 ? 1 : 3 * factorialRecursive(factorialRecursive)(3 - 1);
-
-// n => 2 === 0 ? 1 : 2 * factorialRecursive(factorialRecursive)(2 - 1);
-
-// n => 1 === 0 ? 1 : 1 * factorialRecursive(factorialRecursive)(1 - 1);
-
-// n => 0 === 0 ? 1 : 0 * factorialRecursive(factorialRecursive)(0 - 1); // возвращает 1
-
-// Обратите внимание, что можно заменить все вхождения factorialRecursive(factorialRecursive
-// выше для " факториал`, потому что они одно и то же.
-`` -->
-
 Имейте в виду, что наша цель — сделать этот процесс достаточно общим, чтобы мы могли заставить его работать для любой функции, которую мы хотим сделать рекурсивным, поэтому давайте удалим `f(f)`, чтобы мы могли вернуть `factorialGenerator` и извлечь его в ближайшем будущем.
 
 Сделать его аргументом этой функции и передать его внутрь через [немедленно вызываемую функцию](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) как мы собираемся это сделать:
