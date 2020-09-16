@@ -20,14 +20,14 @@
 
 Отсюда вы можете напрямую перейти к каждой концепции или продолжить чтение по порядку.
 
-* [Область видимости (глобальная, локальная, лексическая) и замыкания](https://github.com/devSchacht/translations/tree/master/kim-maida-glossary-of-modern-javascript-concepts-part-2#Область-видимости-глобальная-локальная-лексическая-и-замыкания)
-* [Однонаправленный поток данных и двухсторонняя привязка данных](https://github.com/devSchacht/translations/tree/master/kim-maida-glossary-of-modern-javascript-concepts-part-2#Однонаправленный-поток-данных-и-двухсторонняя-привязка-данных)
-* [Обнаружение изменений в JavaScript фреймворке: грязная проверка, аксессоры, виртуальный DOM](https://github.com/devSchacht/translations/tree/master/kim-maida-glossary-of-modern-javascript-concepts-part-2#Обнаружение-изменений-в-javascript-фреймворке-грязная-проверка-аксессоры-виртуальный-dom)
-* [Веб-компоненты](https://github.com/devSchacht/translations/tree/master/kim-maida-glossary-of-modern-javascript-concepts-part-2#Веб-компоненты)
-* [Умные и глупые компоненты](https://github.com/devSchacht/translations/tree/master/kim-maida-glossary-of-modern-javascript-concepts-part-2#Умные-и-глупые-компоненты)
-* [JIT (Just-In-Time) компиляция](https://github.com/devSchacht/translations/tree/master/kim-maida-glossary-of-modern-javascript-concepts-part-2#jit-just-in-time-компиляция)
-* [AOT (Ahead-of-Time) компиляция](https://github.com/devSchacht/translations/tree/master/kim-maida-glossary-of-modern-javascript-concepts-part-2#aot-ahead-of-time-компиляция)
-* [Tree shaking](https://github.com/devSchacht/translations/tree/master/kim-maida-glossary-of-modern-javascript-concepts-part-2#tree-shaking)
+* [Область видимости (глобальная, локальная, лексическая) и замыкания](https://github.com/devSchacht/translations/tree/master/articles/kim-maida-glossary-of-modern-javascript-concepts-part-2#Область-видимости-глобальная-локальная-лексическая-и-замыкания)
+* [Однонаправленный поток данных и двухсторонняя привязка данных](https://github.com/devSchacht/translations/tree/master/articles/kim-maida-glossary-of-modern-javascript-concepts-part-2#Однонаправленный-поток-данных-и-двухсторонняя-привязка-данных)
+* [Обнаружение изменений в JavaScript фреймворке: грязная проверка, аксессоры, виртуальный DOM](https://github.com/devSchacht/translations/tree/master/articles/kim-maida-glossary-of-modern-javascript-concepts-part-2#Обнаружение-изменений-в-javascript-фреймворке-грязная-проверка-аксессоры-виртуальный-dom)
+* [Веб-компоненты](https://github.com/devSchacht/translations/tree/master/articles/kim-maida-glossary-of-modern-javascript-concepts-part-2#Веб-компоненты)
+* [Умные и глупые компоненты](https://github.com/devSchacht/translations/tree/master/articles/kim-maida-glossary-of-modern-javascript-concepts-part-2#Умные-и-глупые-компоненты)
+* [JIT (Just-In-Time) компиляция](https://github.com/devSchacht/translations/tree/master/articles/kim-maida-glossary-of-modern-javascript-concepts-part-2#jit-just-in-time-компиляция)
+* [AOT (Ahead-of-Time) компиляция](https://github.com/devSchacht/translations/tree/master/articles/kim-maida-glossary-of-modern-javascript-concepts-part-2#aot-ahead-of-time-компиляция)
+* [Tree shaking](https://github.com/devSchacht/translations/tree/master/articles/kim-maida-glossary-of-modern-javascript-concepts-part-2#tree-shaking)
 
 ### Область видимости (глобальная, локальная, лексическая) и замыкания
 
