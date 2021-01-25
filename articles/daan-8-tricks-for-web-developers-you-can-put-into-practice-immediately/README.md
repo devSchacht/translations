@@ -1,5 +1,5 @@
 # 8 практичных хитростей веб-разработчика - применить немедленно!
-#### HTML, CSS и JS хинты, которые полезно знать - перевод [8 Tricks for Web Developers You Can Put Into Practice Immediately]()
+#### HTML, CSS и JS хинты, которые полезно знать - перевод [8 Tricks for Web Developers You Can Put Into Practice Immediately](https://medium.com/r?url=https%3A%2F%2Flevelup.gitconnected.com%2F8-tricks-for-web-developers-you-can-put-into-practice-immediately-98079e65fd7d)
 ![Фото Cookie the Pom с Unsplash](https://cdn-images-1.medium.com/max/600/1*KqPUfEEErHiexvE_WKbUZQ.jpeg)
 
 Веб-разработчику всегда приятно лишний раз облегчить себе жизнь. Особенно, если это можно сделать моментально и на практике. Только вот список приемов по облегчению жизни разработчика - почти бесконечен, да и не все из них безопасно часто применять.
