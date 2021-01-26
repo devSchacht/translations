@@ -81,6 +81,7 @@ const dynamic = 'name'const person = {
 
 ```
 const dynamic = 'name'
+
 let person = {
     age: 33,
 }
@@ -108,7 +109,8 @@ CSS поставляется с псевдоклассами ```:optional``` и 
 ```
 input:optional {
   border: 1px solid black;
-}input:required {
+} 
+input:required {
   border: 1px dashed red;
 }
 ```   
