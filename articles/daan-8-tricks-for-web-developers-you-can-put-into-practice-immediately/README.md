@@ -14,7 +14,7 @@
 a[href*="//"]:not([href*="yourwebsite.com"]) {
   /* Apply style here */
 }
-```
+```   
 
 Селектор принимает все те ```a``` теги, атрибут ```href``` которых содержит две косые черты (для фильтрации относительных URL-адресов) и не содержит URL-адреса вашего веб-сайта. То есть, фильтр проходят только внешние ссылки.   
 Просто, неправда ли?!   
@@ -50,7 +50,7 @@ a[href*="//"]:not([href*="yourwebsite.com"]) {
 <track label="Español" kind="subtitles" srclang="es" src="captions/video-es.vtt">
 
 </video>
-```
+```   
 
 Атрибут ```label``` определяет заголовок текстовой дорожки. Атрибут ```kind``` указывает тип текстовой дорожки и может иметь одно из следующих значений: заголовки, главы, описания, метаданные или субтитры. Атрибут ```srclang``` определяет язык текста дорожки и является обязательным, если атрибут ```kind``` это субтитры.   
 ***
@@ -64,7 +64,7 @@ const dynamic = 'name'const person = {
     age: 33,
     [dynamic]: 'John'
 }
-```
+```   
 
 Приятно знать, что в ES6 можно комбинировать динамические свойства с интерполяцией.   
 Давайте рассмотрим следующий пример, в котором мы добавили дополнительное свойство к объекту ```person``` с помощью интерполяции:   
@@ -75,7 +75,7 @@ const dynamic = 'name'const person = {
     [dynamic]: 'John',
     [`interpolated-${dynamic}`]: true
 }
-```
+```   
 
 Последний способ добавить динамическое свойство к объекту - определить его так же, как при добавлении пары ключ-значение в массив:   
 
@@ -85,7 +85,7 @@ const dynamic = 'name'let person = {
 }
 
 person[dynamic] = 'John'
-```
+```   
 
 Большое преимущество этого метода - он позволяет добавлять динамические свойства не только при объявлении объекта; такой способ часто комбинируется с оператором ```if```:   
 
@@ -97,7 +97,7 @@ let person = {
 if (someCondition) {
   person[someProperty] = someValue
 }
-```
+```   
 ***
 
 ## 6. Стилизация необязательных и обязательных элементов ввода.
@@ -110,7 +110,7 @@ input:optional {
 }input:required {
   border: 1px dashed red;
 }
-```
+```   
 
 Вот как это выглядит:   
 ![](https://miro.medium.com/max/700/1*6GPuyCBKBE0yBxSGwOT4kw.png)   
@@ -123,7 +123,7 @@ input:optional {
 ul > li:not(:last-child):after {
   content: “, “;
 }
-```
+```   
 
 Для того, чтобы это сработало, вам необходимо установить для свойства ```display``` тега ```li``` значение ```inline-block```.   
 
@@ -133,7 +133,7 @@ ul > li:not(:last-child):after {
   <li>Second item</li>
   <li>Third item</li>
 </ul>
-```
+```   
 
 Вот как выглядит результат:   
 ![](https://miro.medium.com/max/700/1*Tns9BFDgnKXmTQx99S3LzA.png)   
@@ -146,7 +146,7 @@ ul > li:not(:last-child):after {
 ```
 const numbers = [1, 2, 2, 3, 3, 4, 5, 5, 6, 6, 7, 7, 7]
 const unique_numbers = [...new Set(numbers)]console.log(unique_numbers); // [1, 2, 3, 4, 5, 6, 7]
-```
+```   
 
 ***
 *Слушайте наш подкаст в [iTunes](https://itunes.apple.com/ru/podcast/девшахта/id1226773343) и [SoundCloud](https://soundcloud.com/devschacht), читайте нас на [Medium](https://medium.com/devschacht), контрибьютьте на [GitHub](https://github.com/devSchacht), общайтесь в [группе Telegram](https://t.me/devSchacht), следите в [Twitter](https://twitter.com/DevSchacht) и [канале Telegram](https://t.me/devSchachtChannel), рекомендуйте в [VK](https://vk.com/devschacht) и [Facebook](https://www.facebook.com/devSchacht).*
