@@ -80,7 +80,8 @@ const dynamic = 'name'const person = {
 Последний способ добавить динамическое свойство к объекту - определить его так же, как при добавлении пары ключ-значение в массив:   
 
 ```
-const dynamic = 'name'let person = {
+const dynamic = 'name'
+let person = {
     age: 33,
 }
 
