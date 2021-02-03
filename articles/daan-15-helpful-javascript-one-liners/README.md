@@ -131,7 +131,7 @@ searchParams.set('key', 'value')
 
 history.replaceState(null, null, '?' + searchParams.toString())
 
-// Results in the querystring being updated to "?key=value"
+// Приводит к обновлению строки запроса до "?key = value" 
 ```
 *Обратите внимание*, что ```window.location.search```, переданный в ```URLSearchParams```, хранит текущую строку запроса нетронутой. Значит, в примере, к текущей строке запроса будет добавлено ```key = value```. Если необходимо создать строку запроса с нуля, то не используйте параметр ```window.location.search```.    
 ******
