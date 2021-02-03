@@ -1,5 +1,7 @@
 # 15 полезных однострочных выражений JavaScript
 #### Улучшение JavaScript-кода за пару минут - перевод [15 Helpful JavaScript One-Liners](https://medium.com/javascript-in-plain-english/15-helpful-javascript-one-liners-946e1d1a1653)
+![](https://miro.medium.com/max/700/1*A6-u2G3TDsreY1Y_RLu1sw.png)
+
 Новичок ли вы в программировании на JavaScript, или более опытный разработчик, но узнать что-то новое - всегда будет не лишним. В этой статье я, [Daan](https://medium.com/@daaaan), покажу вам однострочники JavaScript из моей коллекции, которые, надеюсь, помогут вам быстрее выполнить рутинные JavaScript задачи.
 
 Надеюсь, что сейчас вы узнаете для себя кое-что новое!
