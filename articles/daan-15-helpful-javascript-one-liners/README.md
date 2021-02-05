@@ -141,7 +141,7 @@ const getPositiveNumber = (number) => Math.max(number, 0)
 ```
 Бывает необходимым, чтобы переменная содержала только положительные числа. Вместо использования оператора ```if``` для проверки, является ли число отрицательным, можно использовать JavaScript однострочник, что будет эквивалентно такому коду:
 ```
-let nember = doSomeCalculation()
+let number = doSomeCalculation()
 
 if (number < 0) {
   number = 0
