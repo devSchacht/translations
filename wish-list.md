@@ -28,8 +28,8 @@
 * [You Don't Know JS: Async & Performance. Chapter 4: Generators](https://github.com/devSchacht/You-Dont-Know-JS/blob/master/async%20%26%20performance/ch4.md) - **[JuliaVolkova](https://github.com/JuliaVolkova)**
 * [You Don't Know JS: Async & Performance. Chapter 5: Program Performance](https://github.com/devSchacht/You-Dont-Know-JS/blob/master/async%20%26%20performance/ch5.md) - **[NKBelousov](https://github.com/NKBelousov)**
 * [You Don't Know JS: Async & Performance. Chapter 6: Benchmarking & Tuning](https://github.com/devSchacht/You-Dont-Know-JS/blob/master/async%20%26%20performance/ch6.md) - **[swa1ps](https://github.com/swa1ps)**
-* [You Don't Know JS: Async & Performance. Appendix A: Library: asynquence](https://github.com/devSchacht/You-Dont-Know-JS/blob/master/async%20%26%20performance/apA.md)
-* [You Don't Know JS: Async & Performance. Appendix B: Advanced Async Patterns](https://github.com/devSchacht/You-Dont-Know-JS/blob/master/async%20%26%20performance/apB.md)
+* [You Don't Know JS: Async & Performance. Appendix A: Library: asynquence](https://github.com/devSchacht/You-Dont-Know-JS/blob/master/async%20%26%20performance/apA.md) - **[Vasyl Manyo](https://github.com/vasyl-007)**
+* [You Don't Know JS: Async & Performance. Appendix B: Advanced Async Patterns](https://github.com/devSchacht/You-Dont-Know-JS/blob/master/async%20%26%20performance/apB.md) - **[Vasyl Manyo](https://github.com/vasyl-007)**
 * [Reduce JavaScript Payloads with Code Splitting](https://developers.google.com/web/fundamentals/performance/optimizing-javascript/code-splitting/) - **[rtplv](https://github.com/rtplv)**
 
 ## Best practices
